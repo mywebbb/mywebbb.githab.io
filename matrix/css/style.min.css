@@ -16,7 +16,7 @@ nav {
   height: 50px;
   width: 100%;
   z-index: 5;
-  background-color: #171817;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .nav_items {
