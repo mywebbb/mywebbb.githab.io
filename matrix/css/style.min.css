@@ -1,0 +1,124 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  line-height: none;
+  color: #FFFFFF;
+}
+
+header {
+  min-height: 880px;
+  background: url("../img/bg/main_bg.jpg") center center/cover no-repeat;
+}
+
+nav {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  z-index: 5;
+  background-color: #171817;
+}
+
+.nav_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 3px;
+}
+
+.nav_items .logo_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav_items .logo_wrapper img {
+  height: 40px;
+}
+
+.text {
+  margin-left: 10px;
+  ont-family: Montserrat;
+  font-weight: 500;
+  font-size: 15px;
+  color: #E8FFEA;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  width: 500px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+.menu_link {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #22FF3D;
+}
+
+.contact {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 15px;
+  color: #E8FFEA;
+}
+
+.contact_phone {
+  color: #E8FFEA;
+}
+
+.subheader_title {
+  margin-top: 250px;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 125px;
+  line-height: 90px;
+  letter-spacing: 0.05em;
+  color: #E8FFEA;
+}
+
+.subheader_subtitle {
+  margin-top: 80px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 45px;
+  color: #22FF3D;
+}
+
+.subheader_btn {
+  display: block;
+  margin: 80px 0 0 0;
+  width: 280px;
+  height: 63px;
+  -webkit-box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 4px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#E8FFEA), to(#22FF3D));
+  background-image: linear-gradient(to top, #E8FFEA 0%, #22FF3D 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=style.min.css.map */
