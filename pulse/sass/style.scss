@@ -1,0 +1,27 @@
+* {
+    font-family: "Museo";
+    
+  }
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 25px 0 25px;
+    
+  }
+.title {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #0d0d0d;
+    text-transform: uppercase;
+    line-height: 23px;
+}
+
+@import "variables";    
+@import "mixins";
+
+@import "blocks/promo";
+@import "blocks/header";
+@import "blocks/buttons";
+@import "blocks/benefits";
+@import "media";
