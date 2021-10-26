@@ -11,8 +11,11 @@ header
   padding-bottom: 100px
 
 nav
+  display: flex
+  align-items: center
   position: fixed
-  height: 50px
+  /** height: 50px **/
+  height: 100px
   width: 100%
   z-index: 5
   
@@ -21,7 +24,8 @@ nav
   display: flex
   align-items: center
   justify-content: space-between
-  padding-top: 3px
+  align-items: center
+  
   .logo_wrapper
     display: flex
     align-items: center
@@ -43,16 +47,17 @@ nav
   &_link
     font-family: Montserrat
     font-weight: 500
-    font-size: 14px
+    font-size: 15px
     line-height: 24px
     color: #22FF3D
 .contact
   font-family: Montserrat
   font-weight: 500
-  font-size: 13px
+  font-size: 15px
   color: #E8FFEA
   &_phone
     color: #E8FFEA
+    font-size: 20px
 .subheader_title
   margin-top: 250px
   font-family: Montserrat
@@ -61,22 +66,31 @@ nav
   line-height: 90px
   letter-spacing: 0.05em
   color: #E8FFEA
+.subheader
+  img
+    width: 771px
+    margin-top: 0px
+
+    
 .subheader_subtitle
-  margin-top: 80px
+  /** margin-top: 250px **/
+  margin-top: 350px
+  margin-left: 206px
+  margin-bottom: 0px
   font-family: Montserrat
   font-weight: 500
-  font-size: 36px
-  line-height: 45px
+  font-size: 23px
+  line-height: 22px
   color: #22FF3D
 .subheader_btn
   display: block
-  margin: 80px 0 0 0
-  width: 280px
-  height: 63px
+  margin-top: 40px
+  width: 380px
+  height: 80px
   box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12)
   border: none
-  border-radius: 4px
-  background-image: linear-gradient(to top, #E8FFEA 0%, #22FF3D 100%)
+  border-radius: 20px
+  background: #22FF3D
   /** text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21) **/
   color: #171817
   font-size: 18px
@@ -85,14 +99,14 @@ nav
 .divider
   margin: 0 auto
   width: 680px
-  height: 4px
-  margin-top: 100px
-  margin-bottom: 100px
+  height: 2px
+  margin-top: 80px
+  margin-bottom: 80px
   background-color: #22FF3D
 
 .we-have
   min-height: 1000px
-  padding: 120px 0 120px 0
+  padding: 100px 0 120px 0
   background: url('../img/bg/we_bg.jpg') center
   &_wrapper
     
@@ -100,19 +114,20 @@ nav
     justify-content: space-around
     
   &_icons
-    width: 125px
+    width: 132px
     display: block
     
     text-align: center
   &_descr
-    margin-top: 30px
+    margin-top: 40px
     text-align: center
     font-size: 18px
     color: #E8FFEA
   &_hardware-title
     font-weight: 600
-    font-size: 36px
+    font-size: 30px
     text-align: center
+    line-height: 36px
     color: #22FF3D
   &_text
     font-weight: 500
@@ -131,7 +146,12 @@ nav
   img
     display: block
     margin: 0 auto
-    margin-top: 80px
+    
+.photo1
+  padding-top: 50px
+  height: 1000px
+  .photo
+    
 
     
 
