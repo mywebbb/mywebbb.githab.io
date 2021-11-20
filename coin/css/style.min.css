@@ -95,7 +95,7 @@
   right: 1000px;
   animation: move;
   animation-duration: 2s; /* Продолжительность анимации */
-  animation-delay: 0s; /* Задержка */
+  animation-delay: 2s; /* Задержка */
   animation-fill-mode: forwards;
   animation-direction: normal;
   animation-timing-function: linear;
@@ -123,8 +123,8 @@
 
 .blink {
   position: absolute;
-  animation: blink 1s;
-  animation-delay: 2s;
+  animation: blink 2s;
+  animation-delay: 7s;
   animation-iteration-count: infinite;
   
   right: 200px;
@@ -146,7 +146,7 @@
   position: absolute;
   animation-name: spec;
   animation-duration: 2s; /* Продолжительность анимации */
-  animation-delay: 2s; /* Задержка */
+  animation-delay: 4s; /* Задержка */
   animation-fill-mode: forwards;
   
   right: 200px;
