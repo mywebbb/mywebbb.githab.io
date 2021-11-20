@@ -57,6 +57,7 @@
   background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
   width: 100%;
+  z-index: 6;
 }
 
 .nav__items {
@@ -137,8 +138,6 @@
 }
 
 .header {
-  /** display: block **/
-  /** position: relative **/
   min-height: 880px;
   background: url("../img/bg/main_bg.jpg") center center/cover no-repeat;
   padding-top: 1px;
@@ -384,6 +383,7 @@
   width: 400px;
   position: absolute;
   top: 587px;
+  left: 100px;
   z-index: 2;
   opacity: 0.2;
 }
