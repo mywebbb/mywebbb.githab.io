@@ -6,7 +6,7 @@
 .container
   max-width: 1140px
   margin: 0 auto
-  padding: 0 25px 0 25px
+  padding: 0 10px 0 10px
 
 .button
   display: block
@@ -39,12 +39,14 @@
   margin: 0 auto
   margin-top: 100px
   margin-bottom: 100px
-  width: 680px
+  max-width: 680px
   height: 2px
   background: #22FF3D
 
 .nav
-  top: 0px
+  display: none
+
+  top: 1px
   background-color: rgba(0, 0, 0, 0.7)
   position: fixed
   width: 100%
@@ -131,7 +133,7 @@
     width: 292px
     text-align: center  
   &__icon-img
-    width: 100px
+    width: 70px
     display: block
     margin: 0 auto
     margin-bottom: 30px
@@ -155,7 +157,7 @@
     color: #E8FFEA
     margin-top: 30px
   &__descr
-    width: 715px
+    max-width: 715px
     text-align: center
     display: block
     margin: 0 auto
@@ -193,6 +195,7 @@
   
     
 .price
+  // display: none
   min-height: 954px
   background: url('../img/bg/we_bg.jpg') center
   padding: 70px 0 120px 0
@@ -220,6 +223,7 @@
     color: #FFFAFA
 
 .footer
+  // display: none
   min-height: 565px
   padding-top: 80px
   
@@ -263,19 +267,28 @@
     display: block
     margin-top: 40px
     margin-right: 30px
+    border-radius: 30%
+    &:hover
+      box-shadow: 0px 0px 20px 1px #22FF3D
+      text-decoration: none
   &__img
     width: 40px
+    display: block
+    
 
-.vid
+    
+
+/** .vid
   width: 400px
   position: absolute
   top: 587px
   left: 100px
   z-index: 2
   opacity: 0.2
+ **/
 
 
-
+@import "media"
    
   
 
