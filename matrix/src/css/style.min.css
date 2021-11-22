@@ -602,7 +602,10 @@
 
 @media (max-width: 575px) {
   .header {
-    min-height: 400px;
+    min-height: 600px;
+  }
+  .header__title {
+    margin-top: 160px;
   }
   .header__title-img {
     height: 80px;
