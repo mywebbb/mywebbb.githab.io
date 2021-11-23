@@ -13,17 +13,22 @@ window.addEventListener('DOMContentLoaded', () => {
             hamburger.classList.toggle('hamburger_active');
             menu.classList.toggle('menu_active');
         });
-    });
+    });   
 });
 
-$(document).setTimeout(function(){
+
+
+$(document).ready(function(){
 
     // Slow scroll
     $('a[href^="#"').on('click', function() {
+        
 
         let href = $(this).attr('href');
+        
     
         $('html, body').animate({
+            
             scrollTop: $(href).offset().top
         });
         return false;

@@ -387,6 +387,21 @@
   display: block;
 }
 
+.header__title-img.animate__animated.animate__hinge {
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+
+.header__title.animate__animated.animate__bounceInDown {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.button.animate__animated.animate__backInRight {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
 /** .vid
   width: 400px
   position: absolute
