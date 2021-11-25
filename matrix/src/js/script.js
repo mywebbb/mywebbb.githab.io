@@ -36,6 +36,10 @@ $(document).ready(function(){
 
 });
 
-
-
-
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 600) {
+       $('.ani').fadeIn(); 
+    } else {
+        $('.ani').fadeOut();
+    }
+});
