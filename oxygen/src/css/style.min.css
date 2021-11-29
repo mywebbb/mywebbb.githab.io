@@ -125,11 +125,16 @@
   color: #242121;
 }
 
-.title-line {
+.title__line {
   width: 60px;
   height: 4px;
   background: #FCBB08;
-  margin-top: 25px;
+  margin-top: 10px;
+}
+
+.title-big {
+  font-size: 60px;
+  line-height: 75px;
 }
 
 .about {
@@ -252,5 +257,70 @@
   font-size: 14px;
   line-height: 24px;
   color: #777777;
+  margin-top: 18px;
+}
+
+.magic {
+  height: 840px;
+  background: url("../img/man.jpg") left no-repeat;
+}
+
+.magic__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.magic__content {
+  width: 470px;
+  margin: 0 right;
+  padding-top: 100px;
+}
+
+.magic__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #373A39;
+  margin-top: 67px;
+}
+
+.portfolio {
+  min-height: 1420px;
+  padding: 139px 0 41px 0;
+}
+
+.portfolio__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.portfolio__tabs {
+  width: 566px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio__tab {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #333333;
 }
 /*# sourceMappingURL=style.min.css.map */
