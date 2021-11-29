@@ -323,4 +323,10 @@
   text-transform: uppercase;
   color: #333333;
 }
+
+.portfolio__tab_active::after {
+  height: 2px;
+  width: 33px;
+  background-color: #FCBB08;
+}
 /*# sourceMappingURL=style.min.css.map */
