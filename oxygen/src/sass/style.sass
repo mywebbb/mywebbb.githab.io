@@ -112,7 +112,8 @@
 .about
   min-height: 491px
   padding: 152px 0 152px 0
-  background-color: #fff
+  background-color: #F6F8FA
+
   &__inner
     display: flex
     justify-content: space-between
@@ -193,6 +194,8 @@
 .magic
   height: 840px
   background: url('../img/man.jpg') left no-repeat
+  background-color: #F6F8FA
+
   
   
   &__wrapper
@@ -210,17 +213,20 @@
     margin-top: 67px
 
 .portfolio
+  position: relative
   min-height: 1420px
   padding: 139px 0 41px 0
   &__header
     display: flex
     justify-content: space-between
   &__tabs
+    position: relative
     width: 566px
     display: flex
     justify-content: space-between
     align-items: center
   &__tab
+    display: block
     font-weight: 600
     font-size: 12px
     line-height: 12px
@@ -228,7 +234,12 @@
     text-transform: uppercase
     color: #333333
     &_active
+      
+      
+      
       &::after
+        position: absolute
+        display: block
         height: 2px
         width: 33px
         background-color: #FCBB08
