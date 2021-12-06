@@ -343,19 +343,20 @@
           column-gap: 22px;
   row-gap: 22px;
   margin: 0 auto;
+  margin-top: 103px;
 }
 
 .portfolio__img:nth-child(1) {
   display: block;
-  background: url("../img/15.jpg") center center/cover no-repeat;
+  background: url("../img/mogo.jpg") center center/cover no-repeat;
   -ms-grid-row: 1;
   -ms-grid-row-span: 4;
   grid-row: 1/5;
 }
 
 .portfolio__img:nth-child(1):hover {
-  -webkit-transition: 2s all;
-  transition: 2s all;
+  -webkit-transition: 1s all;
+  transition: 1s all;
   background: url("../img/act.jpg") center center/cover no-repeat;
 }
 
@@ -367,56 +368,98 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url("../img/15.jpg") center center/cover no-repeat;
+  background: url("../img/mt.jpg") center center/cover no-repeat;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  font-size: 16px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
   text-transform: uppercase;
-  font-weight: 500;
   -webkit-transition: 1s all;
   transition: 1s all;
   text-decoration: none;
-  color: #fff;
 }
 
 .portfolio__img:nth-child(2):hover {
   -webkit-transition: 1s all;
   transition: 1s all;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(36, 33, 33, 0.8)), to(rgba(36, 33, 33, 0.8))), #EDEDED;
-  background: linear-gradient(0deg, rgba(36, 33, 33, 0.8), rgba(36, 33, 33, 0.8)), #EDEDED;
-  border: 12px solid rgba(255, 255, 255, 0.147164);
+  background: url("../img/mt.jpg") center center/cover no-repeat;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay;
 }
 
 .portfolio__img:nth-child(2):hover::before {
   content: "OCCA CUPIDATAT";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 1.4px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
 }
 
 .portfolio__img:nth-child(2):hover::after {
   content: "DESIGN";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
 }
 
 .portfolio__img:nth-child(3) {
-  display: block;
-  background: url("../img/15.jpg") center center/cover no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url("../img/pl.jpg") center center/cover no-repeat;
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   grid-row: 1/4;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+  text-decoration: none;
 }
 
 .portfolio__img:nth-child(3):hover {
   -webkit-transition: 1s all;
   transition: 1s all;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(36, 33, 33, 0.8)), to(rgba(36, 33, 33, 0.8))), #EDEDED;
-  background: linear-gradient(0deg, rgba(36, 33, 33, 0.8), rgba(36, 33, 33, 0.8)), #EDEDED;
-  border: 12px solid rgba(255, 255, 255, 0.147164);
+  background: url("../img/pl.jpg") center center/cover no-repeat;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+}
+
+.portfolio__img:nth-child(3):hover::before {
+  content: "puls";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 1.4px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.portfolio__img:nth-child(3):hover::after {
+  content: "DESIGN";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
 }
 
 .portfolio__img:nth-child(4) {
