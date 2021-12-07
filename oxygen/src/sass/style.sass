@@ -20,20 +20,24 @@
     margin-bottom: 0
   &__list-item
     text-align: center
+    &_active
+      &::after
+        content: ""
+        display: block
+        height: 2px
+        background-color: #FCBB08
+        margin-top: 10px
+
   &__link
     letter-spacing: 0.6px
     color: #373A39
     font-weight: bold
     font-size: 12px
     line-height: 14px
+    margin: 0 6px 0 6px
     
-  &__line
-    margin: 0 auto
-    width: 50px
-    height: 2px
-    border: 1px solid #FCBB08
-    margin-top: 9px
-
+    
+ 
 .header
   position: relative
   padding: 1px 0 62px 0
@@ -43,7 +47,7 @@
   
     
   &__top
-    display: none
+    display: block
     position: fixed
     top: 1px
     height: 94px
@@ -228,6 +232,7 @@
     letter-spacing: 2px
     text-transform: uppercase
     color: #333333
+    margin: 0 6px 0 6px
     &_active
       &::after
         content: ""
@@ -243,14 +248,8 @@
     row-gap: 22px
     margin: 0 auto
     margin-top: 103px
-
-
-  
-    
   &__img
-    
-  
-    &:nth-child(1)
+    &:nth-child(10)
       display: block
       background: url('../img/mogo.jpg') center center/cover no-repeat
       grid-row: 1/5
@@ -258,7 +257,36 @@
         transition: 1s all
         background: url('../img/act.jpg') center center/cover no-repeat
         
-        
+    &:nth-child(1)
+      display: flex
+      flex-direction: column
+      background: url('../img/mogo.jpg') center center/cover no-repeat
+      grid-row: 1/5
+      align-items: center
+      justify-content: center
+      text-transform: uppercase
+      transition: 1s all
+      text-decoration: none
+      &:hover
+        transition: 1s all
+        background: url('../img/mogo.jpg') center center/cover no-repeat
+        background-color: rgba(0,0,0, .8)
+        background-blend-mode: overlay
+        &::before
+          content: "MOGO"
+          font-weight: 500
+          font-size: 14px
+          line-height: 14px
+          letter-spacing: 1.4px
+          color: #FFFFFF
+          margin-bottom: 10px
+        &::after
+          content: "DESIGN"
+          font-weight: 300
+          font-size: 12px
+          line-height: 16px
+          letter-spacing: 1px
+          color: #FFFFFF    
     &:nth-child(2)
       display: flex
       flex-direction: column
@@ -274,10 +302,10 @@
         // background: linear-gradient(0deg, rgba(36, 33, 33, 0.8), rgba(36, 33, 33, 0.8)), #EDEDED
         // border: 12px solid rgba(255, 255, 255, 0.147164)
         background: url('../img/mt.jpg') center center/cover no-repeat
-        background-color: rgba(0,0,0, .6)
+        background-color: rgba(0,0,0, .8)
         background-blend-mode: overlay
         &::before
-          content: "OCCA CUPIDATAT"
+          content: "MATRIX"
           font-weight: 500
           font-size: 14px
           line-height: 14px
@@ -306,7 +334,7 @@
         // background: linear-gradient(0deg, rgba(36, 33, 33, 0.8), rgba(36, 33, 33, 0.8)), #EDEDED
         // border: 12px solid rgba(255, 255, 255, 0.147164)
         background: url('../img/pl.jpg') center center/cover no-repeat
-        background-color: rgba(0,0,0, .5)
+        background-color: rgba(0,0,0, .8)
         background-blend-mode: overlay
         &::before
           content: "puls"
@@ -323,14 +351,37 @@
           line-height: 16px
           letter-spacing: 1px
           color: #FFFFFF
-          
-
-          
-    
     &:nth-child(4)
-      display: block
+      display: flex
+      flex-direction: column
       background: url('../img/15.jpg') center center/cover no-repeat
       grid-row: 1/3
+      align-items: center
+      justify-content: center
+      text-transform: uppercase
+      transition: 1s all
+      text-decoration: none
+      &:hover
+        transition: 1s all
+        background: url('../img/15.jpg') center center/cover no-repeat
+        background-color: rgba(0,0,0, .8)
+        background-blend-mode: overlay
+        &::before
+          content: "OCCA CUPIDATAT"
+          font-weight: 500
+          font-size: 14px
+          line-height: 14px
+          letter-spacing: 1.4px
+          color: #FFFFFF
+          margin-bottom: 10px
+        &::after
+          content: "DESIGN"
+          font-weight: 300
+          font-size: 12px
+          line-height: 16px
+          letter-spacing: 1px
+          color: #FFFFFF
+    
     &:nth-child(5)
       display: block
       background: url('../img/15.jpg') center center/cover no-repeat
@@ -351,6 +402,14 @@
       display: block
       background: url('../img/15.jpg') center center/cover no-repeat
       grid-row: 3/7
+.wrap
+  &_active
+      &::after
+        content: ""
+        display: block
+        height: 2px
+        background-color: #FCBB08
+        margin-top: 8px
   
         
 

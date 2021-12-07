@@ -28,20 +28,21 @@
   text-align: center;
 }
 
+.menu__list-item_active::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #FCBB08;
+  margin-top: 10px;
+}
+
 .menu__link {
   letter-spacing: 0.6px;
   color: #373A39;
   font-weight: bold;
   font-size: 12px;
   line-height: 14px;
-}
-
-.menu__line {
-  margin: 0 auto;
-  width: 50px;
-  height: 2px;
-  border: 1px solid #FCBB08;
-  margin-top: 9px;
+  margin: 0 6px 0 6px;
 }
 
 .header {
@@ -52,7 +53,7 @@
 }
 
 .header__top {
-  display: none;
+  display: block;
   position: fixed;
   top: 1px;
   height: 94px;
@@ -322,6 +323,7 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #333333;
+  margin: 0 6px 0 6px;
 }
 
 .portfolio__tab_active::after {
@@ -346,7 +348,7 @@
   margin-top: 103px;
 }
 
-.portfolio__img:nth-child(1) {
+.portfolio__img:nth-child(10) {
   display: block;
   background: url("../img/mogo.jpg") center center/cover no-repeat;
   -ms-grid-row: 1;
@@ -354,10 +356,61 @@
   grid-row: 1/5;
 }
 
-.portfolio__img:nth-child(1):hover {
+.portfolio__img:nth-child(10):hover {
   -webkit-transition: 1s all;
   transition: 1s all;
   background: url("../img/act.jpg") center center/cover no-repeat;
+}
+
+.portfolio__img:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url("../img/mogo.jpg") center center/cover no-repeat;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  grid-row: 1/5;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+  text-decoration: none;
+}
+
+.portfolio__img:nth-child(1):hover {
+  -webkit-transition: 1s all;
+  transition: 1s all;
+  background: url("../img/mogo.jpg") center center/cover no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: overlay;
+}
+
+.portfolio__img:nth-child(1):hover::before {
+  content: "MOGO";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 1.4px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.portfolio__img:nth-child(1):hover::after {
+  content: "DESIGN";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
 }
 
 .portfolio__img:nth-child(2) {
@@ -388,12 +441,12 @@
   -webkit-transition: 1s all;
   transition: 1s all;
   background: url("../img/mt.jpg") center center/cover no-repeat;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   background-blend-mode: overlay;
 }
 
 .portfolio__img:nth-child(2):hover::before {
-  content: "OCCA CUPIDATAT";
+  content: "MATRIX";
   font-weight: 500;
   font-size: 14px;
   line-height: 14px;
@@ -439,7 +492,7 @@
   -webkit-transition: 1s all;
   transition: 1s all;
   background: url("../img/pl.jpg") center center/cover no-repeat;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   background-blend-mode: overlay;
 }
 
@@ -463,11 +516,54 @@
 }
 
 .portfolio__img:nth-child(4) {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: url("../img/15.jpg") center center/cover no-repeat;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/3;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+  text-decoration: none;
+}
+
+.portfolio__img:nth-child(4):hover {
+  -webkit-transition: 1s all;
+  transition: 1s all;
+  background: url("../img/15.jpg") center center/cover no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: overlay;
+}
+
+.portfolio__img:nth-child(4):hover::before {
+  content: "OCCA CUPIDATAT";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 1.4px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.portfolio__img:nth-child(4):hover::after {
+  content: "DESIGN";
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
 }
 
 .portfolio__img:nth-child(5) {
@@ -508,5 +604,13 @@
   -ms-grid-row: 3;
   -ms-grid-row-span: 4;
   grid-row: 3/7;
+}
+
+.wrap_active::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #FCBB08;
+  margin-top: 8px;
 }
 /*# sourceMappingURL=style.min.css.map */
