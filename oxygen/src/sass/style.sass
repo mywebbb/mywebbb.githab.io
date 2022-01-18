@@ -20,13 +20,15 @@
     margin-bottom: 0
   &__list-item
     text-align: center
-    &_active
+    
+    &_active 
       &::after
         content: ""
         display: block
         height: 2px
         background-color: #FCBB08
         margin-top: 10px
+        
 
   &__link
     letter-spacing: 0.6px
@@ -35,13 +37,16 @@
     font-size: 12px
     line-height: 14px
     margin: 0 6px 0 6px
+    &:hover
+      text-decoration: none
+      color: #373A39
     
     
  
 .header
   position: relative
   padding: 1px 0 62px 0
-  height: 752px
+  height: 100vh
   
   background: url('../img/header-bg.jpg') center center/cover no-repeat
   
@@ -219,12 +224,22 @@
   &__header
     display: flex
     justify-content: space-between
+    margin-bottom: 103px
   &__tabs
     width: 566px
     display: flex
     justify-content: space-between
     margin-top: 40px
+    list-style-type: none
   &__tab
+    &_active
+      &::after
+        content: ""
+        display: block
+        height: 2px
+        background-color: #FCBB08
+        margin-top: 8px
+  &__tab-text
     display: block
     font-weight: 600
     font-size: 12px
@@ -233,6 +248,9 @@
     text-transform: uppercase
     color: #333333
     margin: 0 6px 0 6px
+    text-decoration: none
+    cursor: pointer
+    
     &_active
       &::after
         content: ""
@@ -241,175 +259,233 @@
         background-color: #FCBB08
         margin-top: 8px
   &__content
-    display: grid
-    grid-template-columns: repeat(4, minmax(300px, 343px))
+    display: none
+    justify-content: center
+    grid-template-columns: repeat(4, minmax(200px, 343px))
     grid-template-rows: 288px 30px 49px 127px 82px 292px
     column-gap: 22px
     row-gap: 22px
     margin: 0 auto
-    margin-top: 103px
-  &__img
-    &:nth-child(10)
-      display: block
-      background: url('../img/mogo.jpg') center center/cover no-repeat
-      grid-row: 1/5
-      &:hover
-        transition: 1s all
-        background: url('../img/act.jpg') center center/cover no-repeat
-        
-    &:nth-child(1)
-      display: flex
-      flex-direction: column
-      background: url('../img/mogo.jpg') center center/cover no-repeat
-      grid-row: 1/5
-      align-items: center
-      justify-content: center
-      text-transform: uppercase
+    margin-bottom: 22px
+    &_active
+      display: grid
+  &__img_style
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    text-transform: uppercase
+    transition: 1s all
+    text-decoration: none
+    &:hover
       transition: 1s all
+      background-color: rgba(0,0,0, .8)
+      background-blend-mode: overlay
       text-decoration: none
-      &:hover
-        transition: 1s all
-        background: url('../img/mogo.jpg') center center/cover no-repeat
-        background-color: rgba(0,0,0, .8)
-        background-blend-mode: overlay
-        &::before
-          content: "MOGO"
-          font-weight: 500
-          font-size: 14px
-          line-height: 14px
-          letter-spacing: 1.4px
-          color: #FFFFFF
-          margin-bottom: 10px
-        &::after
-          content: "DESIGN"
-          font-weight: 300
-          font-size: 12px
-          line-height: 16px
-          letter-spacing: 1px
-          color: #FFFFFF    
-    &:nth-child(2)
-      display: flex
-      flex-direction: column
-      background: url('../img/mt.jpg') center center/cover no-repeat
-      grid-row: 1/2
-      align-items: center
-      justify-content: center
-      text-transform: uppercase
-      transition: 1s all
-      text-decoration: none
-      &:hover
-        transition: 1s all
-        // background: linear-gradient(0deg, rgba(36, 33, 33, 0.8), rgba(36, 33, 33, 0.8)), #EDEDED
-        // border: 12px solid rgba(255, 255, 255, 0.147164)
-        background: url('../img/mt.jpg') center center/cover no-repeat
-        background-color: rgba(0,0,0, .8)
-        background-blend-mode: overlay
-        &::before
-          content: "MATRIX"
-          font-weight: 500
-          font-size: 14px
-          line-height: 14px
-          letter-spacing: 1.4px
-          color: #FFFFFF
-          margin-bottom: 10px
-        &::after
-          content: "DESIGN"
-          font-weight: 300
-          font-size: 12px
-          line-height: 16px
-          letter-spacing: 1px
-          color: #FFFFFF
-    &:nth-child(3)
-      display: flex
-      flex-direction: column
-      background: url('../img/pl.jpg') center center/cover no-repeat
-      grid-row: 1/4
-      align-items: center
-      justify-content: center
-      text-transform: uppercase
-      transition: 1s all
-      text-decoration: none
-      &:hover
-        transition: 1s all
-        // background: linear-gradient(0deg, rgba(36, 33, 33, 0.8), rgba(36, 33, 33, 0.8)), #EDEDED
-        // border: 12px solid rgba(255, 255, 255, 0.147164)
-        background: url('../img/pl.jpg') center center/cover no-repeat
-        background-color: rgba(0,0,0, .8)
-        background-blend-mode: overlay
-        &::before
-          content: "puls"
-          font-weight: 500
-          font-size: 14px
-          line-height: 14px
-          letter-spacing: 1.4px
-          color: #FFFFFF
-          margin-bottom: 10px
-        &::after
-          content: "DESIGN"
-          font-weight: 300
-          font-size: 12px
-          line-height: 16px
-          letter-spacing: 1px
-          color: #FFFFFF
-    &:nth-child(4)
-      display: flex
-      flex-direction: column
-      background: url('../img/15.jpg') center center/cover no-repeat
-      grid-row: 1/3
-      align-items: center
-      justify-content: center
-      text-transform: uppercase
-      transition: 1s all
-      text-decoration: none
-      &:hover
-        transition: 1s all
-        background: url('../img/15.jpg') center center/cover no-repeat
-        background-color: rgba(0,0,0, .8)
-        background-blend-mode: overlay
-        &::before
-          content: "OCCA CUPIDATAT"
-          font-weight: 500
-          font-size: 14px
-          line-height: 14px
-          letter-spacing: 1.4px
-          color: #FFFFFF
-          margin-bottom: 10px
-        &::after
-          content: "DESIGN"
-          font-weight: 300
-          font-size: 12px
-          line-height: 16px
-          letter-spacing: 1px
-          color: #FFFFFF
-    
-    &:nth-child(5)
-      display: block
-      background: url('../img/15.jpg') center center/cover no-repeat
-      grid-row: 5/7
-    &:nth-child(6)
-      display: block
-      background: url('../img/15.jpg') center center/cover no-repeat
-      grid-row: 2/6
-    &:nth-child(7)
-      display: block
-      background: url('../img/15.jpg') center center/cover no-repeat
-      grid-row: 6/7  
-    &:nth-child(8)
-      display: block
-      background: url('../img/15.jpg') center center/cover no-repeat
-      grid-row: 4/7
-    &:nth-child(9)
-      display: block
-      background: url('../img/15.jpg') center center/cover no-repeat
-      grid-row: 3/7
-.wrap
-  &_active
+      &::before
+        font-weight: 500
+        font-size: 14px
+        line-height: 14px
+        letter-spacing: 1.4px
+        color: #FFFFFF
+        margin-bottom: 10px
       &::after
-        content: ""
-        display: block
-        height: 2px
-        background-color: #FCBB08
-        margin-top: 8px
+        font-weight: 300
+        font-size: 12px
+        line-height: 16px
+        letter-spacing: 1px
+        color: #FFFFFF
+         
+  &__img-1
+    background: url('../img/mogo.jpg') center center/cover no-repeat
+    grid-row: 1/5
+    &:hover
+      background: url('../img/mogo.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "MOGO"
+      &::after
+        content: "DESIGN"
+  &__img-2
+    background: url('../img/mt.jpg') center center/cover no-repeat
+    grid-row: 1/2
+    &:hover
+      background: url('../img/mt.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "MATRIX"
+      &::after
+        content: "DESIGN"
+  &__img-3
+    background: url('../img/pl.jpg') center center/cover no-repeat
+    grid-row: 1/4
+    &:hover  
+      background: url('../img/pl.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "puls"
+      &::after
+        content: "DESIGN"
+  &__img-4
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 1/3
+    &:hover
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__img-5
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 5/7
+    &:hover
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__img-6
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 2/6
+    &:hover
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__img-7
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 6/7
+    &:hover
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__img-8
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 4/7
+    &:hover
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__img-9
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 3/7
+    &:hover
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__img-10
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 1/5
+    &:hover
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__img-11
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 1/2
+    &:hover
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__img-12
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 1/4
+    &:hover  
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__img-13
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 1/3
+    &:hover
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__img-14
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 5/7
+    &:hover
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__img-15
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 2/6
+    &:hover
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__img-16
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 6/7
+    &:hover
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__img-17
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 4/7
+    &:hover
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__img-18
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 3/7
+    &:hover
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__btn
+    font-weight: bold
+    font-size: 14px
+    color: #242121
+    text-transform: uppercase
+    text-align: center
+    margin-top: 114px
+    cursor: pointer
+  
+
   
         
 

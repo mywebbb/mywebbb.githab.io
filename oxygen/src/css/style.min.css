@@ -45,10 +45,15 @@
   margin: 0 6px 0 6px;
 }
 
+.menu__link:hover {
+  text-decoration: none;
+  color: #373A39;
+}
+
 .header {
   position: relative;
   padding: 1px 0 62px 0;
-  height: 752px;
+  height: 100vh;
   background: url("../img/header-bg.jpg") center center/cover no-repeat;
 }
 
@@ -302,6 +307,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 103px;
 }
 
 .portfolio__tabs {
@@ -313,17 +319,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 40px;
-}
-
-.portfolio__tab {
-  display: block;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 12px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #333333;
-  margin: 0 6px 0 6px;
+  list-style-type: none;
 }
 
 .portfolio__tab_active::after {
@@ -334,35 +330,49 @@
   margin-top: 8px;
 }
 
+.portfolio__tab-text {
+  display: block;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #333333;
+  margin: 0 6px 0 6px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.portfolio__tab-text_active::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #FCBB08;
+  margin-top: 8px;
+}
+
 .portfolio__content {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(300px, 343px))[4];
-      grid-template-columns: repeat(4, minmax(300px, 343px));
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (minmax(200px, 343px))[4];
+      grid-template-columns: repeat(4, minmax(200px, 343px));
   -ms-grid-rows: 288px 30px 49px 127px 82px 292px;
       grid-template-rows: 288px 30px 49px 127px 82px 292px;
   -webkit-column-gap: 22px;
           column-gap: 22px;
   row-gap: 22px;
   margin: 0 auto;
-  margin-top: 103px;
+  margin-bottom: 22px;
 }
 
-.portfolio__img:nth-child(10) {
-  display: block;
-  background: url("../img/mogo.jpg") center center/cover no-repeat;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 4;
-  grid-row: 1/5;
+.portfolio__content_active {
+  display: -ms-grid;
+  display: grid;
 }
 
-.portfolio__img:nth-child(10):hover {
-  -webkit-transition: 1s all;
-  transition: 1s all;
-  background: url("../img/act.jpg") center center/cover no-repeat;
-}
-
-.portfolio__img:nth-child(1) {
+.portfolio__img_style {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -370,10 +380,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: url("../img/mogo.jpg") center center/cover no-repeat;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 4;
-  grid-row: 1/5;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -386,16 +392,15 @@
   text-decoration: none;
 }
 
-.portfolio__img:nth-child(1):hover {
+.portfolio__img_style:hover {
   -webkit-transition: 1s all;
   transition: 1s all;
-  background: url("../img/mogo.jpg") center center/cover no-repeat;
   background-color: rgba(0, 0, 0, 0.8);
   background-blend-mode: overlay;
+  text-decoration: none;
 }
 
-.portfolio__img:nth-child(1):hover::before {
-  content: "MOGO";
+.portfolio__img_style:hover::before {
   font-weight: 500;
   font-size: 14px;
   line-height: 14px;
@@ -404,8 +409,7 @@
   margin-bottom: 10px;
 }
 
-.portfolio__img:nth-child(1):hover::after {
-  content: "DESIGN";
+.portfolio__img_style:hover::after {
   font-weight: 300;
   font-size: 12px;
   line-height: 16px;
@@ -413,204 +417,373 @@
   color: #FFFFFF;
 }
 
-.portfolio__img:nth-child(2) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.portfolio__img-1 {
+  background: url("../img/mogo.jpg") center center/cover no-repeat;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  grid-row: 1/5;
+}
+
+.portfolio__img-1:hover {
+  background: url("../img/mogo.jpg") center center/cover no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio__img-1:hover::before {
+  content: "MOGO";
+}
+
+.portfolio__img-1:hover::after {
+  content: "DESIGN";
+}
+
+.portfolio__img-2 {
   background: url("../img/mt.jpg") center center/cover no-repeat;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-transform: uppercase;
-  -webkit-transition: 1s all;
-  transition: 1s all;
-  text-decoration: none;
 }
 
-.portfolio__img:nth-child(2):hover {
-  -webkit-transition: 1s all;
-  transition: 1s all;
+.portfolio__img-2:hover {
   background: url("../img/mt.jpg") center center/cover no-repeat;
   background-color: rgba(0, 0, 0, 0.8);
-  background-blend-mode: overlay;
 }
 
-.portfolio__img:nth-child(2):hover::before {
+.portfolio__img-2:hover::before {
   content: "MATRIX";
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: 1.4px;
-  color: #FFFFFF;
-  margin-bottom: 10px;
 }
 
-.portfolio__img:nth-child(2):hover::after {
+.portfolio__img-2:hover::after {
   content: "DESIGN";
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 1px;
-  color: #FFFFFF;
 }
 
-.portfolio__img:nth-child(3) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.portfolio__img-3 {
   background: url("../img/pl.jpg") center center/cover no-repeat;
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   grid-row: 1/4;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-transform: uppercase;
-  -webkit-transition: 1s all;
-  transition: 1s all;
-  text-decoration: none;
 }
 
-.portfolio__img:nth-child(3):hover {
-  -webkit-transition: 1s all;
-  transition: 1s all;
+.portfolio__img-3:hover {
   background: url("../img/pl.jpg") center center/cover no-repeat;
   background-color: rgba(0, 0, 0, 0.8);
-  background-blend-mode: overlay;
 }
 
-.portfolio__img:nth-child(3):hover::before {
+.portfolio__img-3:hover::before {
   content: "puls";
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: 1.4px;
-  color: #FFFFFF;
-  margin-bottom: 10px;
 }
 
-.portfolio__img:nth-child(3):hover::after {
+.portfolio__img-3:hover::after {
   content: "DESIGN";
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 1px;
-  color: #FFFFFF;
 }
 
-.portfolio__img:nth-child(4) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.portfolio__img-4 {
   background: url("../img/15.jpg") center center/cover no-repeat;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/3;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-transform: uppercase;
-  -webkit-transition: 1s all;
-  transition: 1s all;
-  text-decoration: none;
 }
 
-.portfolio__img:nth-child(4):hover {
-  -webkit-transition: 1s all;
-  transition: 1s all;
+.portfolio__img-4:hover {
   background: url("../img/15.jpg") center center/cover no-repeat;
   background-color: rgba(0, 0, 0, 0.8);
-  background-blend-mode: overlay;
 }
 
-.portfolio__img:nth-child(4):hover::before {
+.portfolio__img-4:hover::before {
   content: "OCCA CUPIDATAT";
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 14px;
-  letter-spacing: 1.4px;
-  color: #FFFFFF;
-  margin-bottom: 10px;
 }
 
-.portfolio__img:nth-child(4):hover::after {
+.portfolio__img-4:hover::after {
   content: "DESIGN";
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 1px;
-  color: #FFFFFF;
 }
 
-.portfolio__img:nth-child(5) {
-  display: block;
+.portfolio__img-5 {
   background: url("../img/15.jpg") center center/cover no-repeat;
   -ms-grid-row: 5;
   -ms-grid-row-span: 2;
   grid-row: 5/7;
 }
 
-.portfolio__img:nth-child(6) {
-  display: block;
+.portfolio__img-5:hover {
+  background: url("../img/15.jpg") center center/cover no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio__img-5:hover::before {
+  content: "OCCA CUPIDATAT";
+}
+
+.portfolio__img-5:hover::after {
+  content: "DESIGN";
+}
+
+.portfolio__img-6 {
   background: url("../img/15.jpg") center center/cover no-repeat;
   -ms-grid-row: 2;
   -ms-grid-row-span: 4;
   grid-row: 2/6;
 }
 
-.portfolio__img:nth-child(7) {
-  display: block;
+.portfolio__img-6:hover {
+  background: url("../img/15.jpg") center center/cover no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio__img-6:hover::before {
+  content: "OCCA CUPIDATAT";
+}
+
+.portfolio__img-6:hover::after {
+  content: "DESIGN";
+}
+
+.portfolio__img-7 {
   background: url("../img/15.jpg") center center/cover no-repeat;
   -ms-grid-row: 6;
   -ms-grid-row-span: 1;
   grid-row: 6/7;
 }
 
-.portfolio__img:nth-child(8) {
-  display: block;
+.portfolio__img-7:hover {
+  background: url("../img/15.jpg") center center/cover no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio__img-7:hover::before {
+  content: "OCCA CUPIDATAT";
+}
+
+.portfolio__img-7:hover::after {
+  content: "DESIGN";
+}
+
+.portfolio__img-8 {
   background: url("../img/15.jpg") center center/cover no-repeat;
   -ms-grid-row: 4;
   -ms-grid-row-span: 3;
   grid-row: 4/7;
 }
 
-.portfolio__img:nth-child(9) {
-  display: block;
+.portfolio__img-8:hover {
+  background: url("../img/15.jpg") center center/cover no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio__img-8:hover::before {
+  content: "OCCA CUPIDATAT";
+}
+
+.portfolio__img-8:hover::after {
+  content: "DESIGN";
+}
+
+.portfolio__img-9 {
   background: url("../img/15.jpg") center center/cover no-repeat;
   -ms-grid-row: 3;
   -ms-grid-row-span: 4;
   grid-row: 3/7;
 }
 
-.wrap_active::after {
-  content: "";
-  display: block;
-  height: 2px;
-  background-color: #FCBB08;
-  margin-top: 8px;
+.portfolio__img-9:hover {
+  background: url("../img/15.jpg") center center/cover no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio__img-9:hover::before {
+  content: "OCCA CUPIDATAT";
+}
+
+.portfolio__img-9:hover::after {
+  content: "DESIGN";
+}
+
+.portfolio__img-10 {
+  background: url("../img/15.jpg") center center/cover no-repeat;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  grid-row: 1/5;
+}
+
+.portfolio__img-10:hover {
+  background: url("../img/15.jpg") center center/cover no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio__img-10:hover::before {
+  content: "OCCA CUPIDATAT";
+}
+
+.portfolio__img-10:hover::after {
+  content: "DESIGN";
+}
+
+.portfolio__img-11 {
+  background: url("../img/15.jpg") center center/cover no-repeat;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.portfolio__img-11:hover {
+  background: url("../img/15.jpg") center center/cover no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio__img-11:hover::before {
+  content: "OCCA CUPIDATAT";
+}
+
+.portfolio__img-11:hover::after {
+  content: "DESIGN";
+}
+
+.portfolio__img-12 {
+  background: url("../img/15.jpg") center center/cover no-repeat;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
+}
+
+.portfolio__img-12:hover {
+  background: url("../img/15.jpg") center center/cover no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio__img-12:hover::before {
+  content: "OCCA CUPIDATAT";
+}
+
+.portfolio__img-12:hover::after {
+  content: "DESIGN";
+}
+
+.portfolio__img-13 {
+  background: url("../img/15.jpg") center center/cover no-repeat;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+.portfolio__img-13:hover {
+  background: url("../img/15.jpg") center center/cover no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio__img-13:hover::before {
+  content: "OCCA CUPIDATAT";
+}
+
+.portfolio__img-13:hover::after {
+  content: "DESIGN";
+}
+
+.portfolio__img-14 {
+  background: url("../img/15.jpg") center center/cover no-repeat;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  grid-row: 5/7;
+}
+
+.portfolio__img-14:hover {
+  background: url("../img/15.jpg") center center/cover no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio__img-14:hover::before {
+  content: "OCCA CUPIDATAT";
+}
+
+.portfolio__img-14:hover::after {
+  content: "DESIGN";
+}
+
+.portfolio__img-15 {
+  background: url("../img/15.jpg") center center/cover no-repeat;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  grid-row: 2/6;
+}
+
+.portfolio__img-15:hover {
+  background: url("../img/15.jpg") center center/cover no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio__img-15:hover::before {
+  content: "OCCA CUPIDATAT";
+}
+
+.portfolio__img-15:hover::after {
+  content: "DESIGN";
+}
+
+.portfolio__img-16 {
+  background: url("../img/15.jpg") center center/cover no-repeat;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  grid-row: 6/7;
+}
+
+.portfolio__img-16:hover {
+  background: url("../img/15.jpg") center center/cover no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio__img-16:hover::before {
+  content: "OCCA CUPIDATAT";
+}
+
+.portfolio__img-16:hover::after {
+  content: "DESIGN";
+}
+
+.portfolio__img-17 {
+  background: url("../img/15.jpg") center center/cover no-repeat;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 3;
+  grid-row: 4/7;
+}
+
+.portfolio__img-17:hover {
+  background: url("../img/15.jpg") center center/cover no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio__img-17:hover::before {
+  content: "OCCA CUPIDATAT";
+}
+
+.portfolio__img-17:hover::after {
+  content: "DESIGN";
+}
+
+.portfolio__img-18 {
+  background: url("../img/15.jpg") center center/cover no-repeat;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 4;
+  grid-row: 3/7;
+}
+
+.portfolio__img-18:hover {
+  background: url("../img/15.jpg") center center/cover no-repeat;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio__img-18:hover::before {
+  content: "OCCA CUPIDATAT";
+}
+
+.portfolio__img-18:hover::after {
+  content: "DESIGN";
+}
+
+.portfolio__btn {
+  font-weight: bold;
+  font-size: 14px;
+  color: #242121;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 114px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.min.css.map */
