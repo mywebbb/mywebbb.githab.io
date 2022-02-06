@@ -202,8 +202,12 @@
 
 .magic
   height: 840px
-  background: url('../img/man.jpg') left no-repeat
+  
   background-color: #F6F8FA
+  &__container
+    margin: 0 auto
+    max-width: 1440px
+    background: url('../img/man.jpg') left no-repeat
   &__wrapper
     display: flex
     justify-content: right
@@ -477,13 +481,109 @@
       &::after
         content: "DESIGN"
   &__btn
+    display: block
+    margin: 0 auto
     font-weight: bold
     font-size: 14px
     color: #242121
     text-transform: uppercase
-    text-align: center
     margin-top: 114px
-    cursor: pointer
+    border: none
+    background-color: #fff
+.video
+  padding: 130px 0 0 0
+  &__quote
+    margin: 0 auto
+    width: 540px
+    font-family: Merriweather
+    font-style: italic
+    font-weight: 300
+    font-size: 18px
+    line-height: 36px
+    text-align: center
+    color: #242121
+  &__quote-author
+    font-family: Merriweather
+    font-style: italic
+    font-weight: 300
+    font-size: 14px
+    line-height: 32px
+    text-align: center
+    color: #9E9E9E
+    margin-top: 51px
+  &__content
+    display: block
+    margin: 0 auto
+    margin-top: 148px
+    width: 1300px
+    height: 324px
+    background: url('../img/video.jpg') center center/cover no-repeat
+.counters
+  padding: 164px 0 166px 0
+  &__wrapper
+    display: flex
+    justify-content: space-around
+  &__num
+    font-family: Montserrat
+    font-weight: bold
+    font-size: 60px
+    line-height: 60px
+    color: #242121
+  &__descr
+    font-family: Open Sans
+    font-size: 14px
+    line-height: 14px
+    color: #00B2A0
+    margin-top: 20px
+.slider
+  &__items
+    width: 1200px
+    padding-left: 50px
+
+    
+    
+  &__item-title
+    width: 750px
+    font-family: Montserrat
+    font-weight: bold
+    font-size: 40px
+    line-height: 52px
+    color: #242121
+  &__item-text
+    width: 500px
+    font-family: Open Sans
+    font-weight: 300
+    font-size: 14px
+    line-height: 24px
+    color: #777777
+    margin-top: 32px
+.slick-dots
+  display: flex
+  button
+    visibility: hidden
+  
+.slick-prev
+  position: absolute
+  left: -30px
+  top: 44%
+  border: none
+  background-color: transparent
+  z-index: 10
+  cursor: pointer
+.slick-next
+  position: absolute
+  right: -30px
+  top: 44%
+  border: none
+  background-color: transparent
+  z-index: 10
+  cursor: pointer
+.slick-active
+  .dot-trumb
+    width: 20px
+
+  
+
   
 
   
