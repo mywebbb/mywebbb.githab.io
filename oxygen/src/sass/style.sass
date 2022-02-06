@@ -1,0 +1,598 @@
+*
+  box-sizing: border-box
+  font-family: "Montserrat", sans-serif
+  font-size: 14px
+  color: #373A39
+.container
+  max-width: 1190px
+  padding: 0 10px 0 10px
+  margin: 0 auto
+
+.logo
+.menu
+  
+  
+  &__list
+    width: 590px
+    display: flex
+    justify-content: space-between
+    list-style-type: none
+    margin-bottom: 0
+  &__list-item
+    text-align: center
+    
+    &_active 
+      &::after
+        content: ""
+        display: block
+        height: 2px
+        background-color: #FCBB08
+        margin-top: 10px
+        
+
+  &__link
+    letter-spacing: 0.6px
+    color: #373A39
+    font-weight: bold
+    font-size: 12px
+    line-height: 14px
+    margin: 0 6px 0 6px
+    &:hover
+      text-decoration: none
+      color: #373A39
+    
+    
+ 
+.header
+  position: relative
+  padding: 1px 0 62px 0
+  height: 100vh
+  
+  background: url('../img/header-bg.jpg') center center/cover no-repeat
+  
+    
+  &__top
+    display: block
+    position: fixed
+    top: 1px
+    height: 94px
+    width: 100%
+    background-color: #fff
+  &__wrapper
+    margin: 0 auto
+    height: 94px
+    padding: 0 52px 0 52px
+    max-width: 1440px
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__title
+    font-weight: bold
+    font-size: 100px
+    line-height: 122px
+    text-align: center
+    color: #FFFFFF
+    margin-top: 307px
+  &__text
+    font-weight: bold
+    font-size: 16px
+    line-height: 20px
+    text-align: center
+    letter-spacing: 2.74286px
+    color: #FCBB08
+    margin-top: 15px
+  &__item
+    position: relative
+    width: 26px
+    height: 43px
+    border-radius: 15px
+    border: 2px solid #fff
+    margin: 0 auto
+    margin-top: 178px
+    &::before
+      position: absolute
+      top: 5px
+      right: 8px
+      content: ""
+      width: 6px
+      height: 6px
+      border-radius: 100%
+      background-color: #fff
+.title
+  
+  font-style: normal
+  font-weight: bold
+  font-size: 48px
+  line-height: 48px
+  letter-spacing: -1.65px
+  color: #242121
+  &__line
+    width: 60px
+    height: 4px
+    background: #FCBB08
+    margin-top: 10px
+.title-big
+  font-size: 60px
+  line-height: 75px
+
+
+
+
+.about
+  min-height: 491px
+  padding: 152px 0 152px 0
+  background-color: #F6F8FA
+
+  &__inner
+    display: flex
+    justify-content: space-between
+  &__text
+    max-width: 790px
+    font-weight: 300
+    font-size: 14px
+    line-height: 24px
+    color: #373A39
+    padding-left: 20px
+
+.expertise
+  
+  min-height: 877px
+  background-color: #fff
+  padding: 143px 0 164px 0
+  
+  &__inner
+    display: flex
+    justify-content: space-between
+    margin-top: 90px
+  &__progress
+  &__progress-item
+    height: 2px
+    width: 370px
+  &__progress-bar
+    background-color: #1D1D1D
+  &__progress-content
+    width: 370px
+    display: flex
+    justify-content: space-between
+    margin-top: 5px
+    margin-bottom: 30px
+    margin-right: 15px
+    span
+      display: inline-block
+      font-size: 11px
+      letter-spacing: 1px
+      color: #1D1D1D
+      text-transform: uppercase
+  &__progress-content-1
+      padding-right: 16px
+  &__progress-content-2
+      padding-right: 54px
+  &__progress-content-3
+      padding-right: 36px
+
+   
+  
+  
+  
+  &__progress-text
+    max-width: 770px
+  &__items
+    display: flex
+    justify-content: space-between
+    margin-top: 117px
+  &__item
+    display: flex
+  &__img
+    
+  &__descr
+    max-width: 285px
+    margin-left: 30px
+  &__descr-title
+    font-weight: bold
+    font-size: 14px
+    line-height: 20px
+    letter-spacing: 4.29px
+    color: #333333
+  &__descr-text
+    font-weight: 300
+    font-size: 14px
+    line-height: 24px
+    color: #777777
+    margin-top: 18px
+
+.magic
+  height: 840px
+  
+  background-color: #F6F8FA
+  &__container
+    margin: 0 auto
+    max-width: 1440px
+    background: url('../img/man.jpg') left no-repeat
+  &__wrapper
+    display: flex
+    justify-content: right
+  &__content
+    width: 470px
+    margin: 0 right
+    padding-top: 100px
+  &__text
+    font-weight: 300
+    font-size: 14px
+    line-height: 24px
+    color: #373A39
+    margin-top: 67px
+
+.portfolio
+  min-height: 1420px
+  padding: 139px 0 41px 0
+  &__header
+    display: flex
+    justify-content: space-between
+    margin-bottom: 103px
+  &__tabs
+    width: 566px
+    display: flex
+    justify-content: space-between
+    margin-top: 40px
+    list-style-type: none
+  &__tab
+    &_active
+      &::after
+        content: ""
+        display: block
+        height: 2px
+        background-color: #FCBB08
+        margin-top: 8px
+  &__tab-text
+    display: block
+    font-weight: 600
+    font-size: 12px
+    line-height: 12px
+    letter-spacing: 2px
+    text-transform: uppercase
+    color: #333333
+    margin: 0 6px 0 6px
+    text-decoration: none
+    cursor: pointer
+    
+    &_active
+      &::after
+        content: ""
+        display: block
+        height: 2px
+        background-color: #FCBB08
+        margin-top: 8px
+  &__content
+    display: none
+    justify-content: center
+    grid-template-columns: repeat(4, minmax(200px, 343px))
+    grid-template-rows: 288px 30px 49px 127px 82px 292px
+    column-gap: 22px
+    row-gap: 22px
+    margin: 0 auto
+    margin-bottom: 22px
+    &_active
+      display: grid
+  &__img_style
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    text-transform: uppercase
+    transition: 1s all
+    text-decoration: none
+    &:hover
+      transition: 1s all
+      background-color: rgba(0,0,0, .8)
+      background-blend-mode: overlay
+      text-decoration: none
+      &::before
+        font-weight: 500
+        font-size: 14px
+        line-height: 14px
+        letter-spacing: 1.4px
+        color: #FFFFFF
+        margin-bottom: 10px
+      &::after
+        font-weight: 300
+        font-size: 12px
+        line-height: 16px
+        letter-spacing: 1px
+        color: #FFFFFF
+         
+  &__img-1
+    background: url('../img/mogo.jpg') center center/cover no-repeat
+    grid-row: 1/5
+    &:hover
+      background: url('../img/mogo.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "MOGO"
+      &::after
+        content: "DESIGN"
+  &__img-2
+    background: url('../img/mt.jpg') center center/cover no-repeat
+    grid-row: 1/2
+    &:hover
+      background: url('../img/mt.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "MATRIX"
+      &::after
+        content: "DESIGN"
+  &__img-3
+    background: url('../img/pl.jpg') center center/cover no-repeat
+    grid-row: 1/4
+    &:hover  
+      background: url('../img/pl.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "puls"
+      &::after
+        content: "DESIGN"
+  &__img-4
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 1/3
+    &:hover
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__img-5
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 5/7
+    &:hover
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__img-6
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 2/6
+    &:hover
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__img-7
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 6/7
+    &:hover
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__img-8
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 4/7
+    &:hover
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__img-9
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 3/7
+    &:hover
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__img-10
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 1/5
+    &:hover
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__img-11
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 1/2
+    &:hover
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__img-12
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 1/4
+    &:hover  
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__img-13
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 1/3
+    &:hover
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__img-14
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 5/7
+    &:hover
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__img-15
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 2/6
+    &:hover
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__img-16
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 6/7
+    &:hover
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__img-17
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 4/7
+    &:hover
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__img-18
+    background: url('../img/15.jpg') center center/cover no-repeat
+    grid-row: 3/7
+    &:hover
+      background: url('../img/15.jpg') center center/cover no-repeat
+      background-color: rgba(0,0,0, .8)
+      &::before
+        content: "OCCA CUPIDATAT"
+      &::after
+        content: "DESIGN"
+  &__btn
+    display: block
+    margin: 0 auto
+    font-weight: bold
+    font-size: 14px
+    color: #242121
+    text-transform: uppercase
+    margin-top: 114px
+    border: none
+    background-color: #fff
+.video
+  padding: 130px 0 0 0
+  &__quote
+    margin: 0 auto
+    width: 540px
+    font-family: Merriweather
+    font-style: italic
+    font-weight: 300
+    font-size: 18px
+    line-height: 36px
+    text-align: center
+    color: #242121
+  &__quote-author
+    font-family: Merriweather
+    font-style: italic
+    font-weight: 300
+    font-size: 14px
+    line-height: 32px
+    text-align: center
+    color: #9E9E9E
+    margin-top: 51px
+  &__content
+    display: block
+    margin: 0 auto
+    margin-top: 148px
+    width: 1300px
+    height: 324px
+    background: url('../img/video.jpg') center center/cover no-repeat
+.counters
+  padding: 164px 0 166px 0
+  &__wrapper
+    display: flex
+    justify-content: space-around
+  &__num
+    font-family: Montserrat
+    font-weight: bold
+    font-size: 60px
+    line-height: 60px
+    color: #242121
+  &__descr
+    font-family: Open Sans
+    font-size: 14px
+    line-height: 14px
+    color: #00B2A0
+    margin-top: 20px
+.slider
+  &__items
+    width: 1200px
+    padding-left: 50px
+
+    
+    
+  &__item-title
+    width: 750px
+    font-family: Montserrat
+    font-weight: bold
+    font-size: 40px
+    line-height: 52px
+    color: #242121
+  &__item-text
+    width: 500px
+    font-family: Open Sans
+    font-weight: 300
+    font-size: 14px
+    line-height: 24px
+    color: #777777
+    margin-top: 32px
+.slick-dots
+  display: flex
+  button
+    visibility: hidden
+  
+.slick-prev
+  position: absolute
+  left: -30px
+  top: 44%
+  border: none
+  background-color: transparent
+  z-index: 10
+  cursor: pointer
+.slick-next
+  position: absolute
+  right: -30px
+  top: 44%
+  border: none
+  background-color: transparent
+  z-index: 10
+  cursor: pointer
+.slick-active
+  .dot-trumb
+    width: 20px
+
+  
+
+  
+
+  
+        
+
+    
+
+
+  
+  
+    
+    
