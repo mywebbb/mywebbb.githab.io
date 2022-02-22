@@ -138,7 +138,7 @@
 }
 
 .header {
-  min-height: 880px;
+  min-height: 100vh;
   background: url("../img/bg/main_bg.jpg") center center/cover no-repeat;
   padding-top: 1px;
 }
