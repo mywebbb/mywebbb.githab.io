@@ -602,6 +602,7 @@
   &__wrapper
     display: flex
     justify-content: space-around
+    margin-top: 90px
   &__item
     width: 370px
     height: 583px
@@ -612,15 +613,24 @@
     font-size: 16px
     line-height: 16px
     color: #242121
+    margin-left: 25px
   &__item-rate
     text-align: center
     font-family: 'Open Sans'
     font-weight: 300
     font-size: 80px
-    line-height: 80px
+    line-height: 64px
     color: #242121
-    &::before
-     content: "$" 
+    margin-top: 30px
+    /* &::before
+     content: "$"
+     font-family: 'Open Sans'
+     font-weight: 300
+     font-size: 40px
+     line-height: 40px
+     color: #242121
+     vertical-align: top */
+
     span
       font-family: 'Open Sans'
       font-weight: 300
@@ -628,7 +638,35 @@
       line-height: 20px
       color: #242121
     sup
+      padding-right: 5px
       font-size: 40px
+      font-family: 'Open Sans'
+      font-weight: 300
+      font-size: 40px
+      line-height: 40px
+      color: #242121
+  &__list
+    
+    height: 320px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    list-style-type: none
+    padding-left: 0px
+    margin-top: 74px
+    margin-bottom: 0px
+  &__list-item
+    display: block
+    margin: 0 auto
+    font-family: 'Open Sans'
+    font-weight: 300
+    font-size: 16px
+    line-height: 16px
+    text-align: center
+    color: #242121
+
+
 
 
 
