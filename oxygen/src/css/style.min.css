@@ -957,8 +957,9 @@
 
 .pricing__item {
   width: 370px;
-  height: 583px;
+  width-min-height: 583px;
   background-color: #fff;
+  padding: 26px 0 53px 0;
 }
 
 .pricing__item-title {
@@ -1007,7 +1008,7 @@
 }
 
 .pricing__list {
-  height: 320px;
+  height: 230px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1035,6 +1036,17 @@
   font-size: 16px;
   line-height: 16px;
   text-align: center;
+  color: #242121;
+}
+
+.pricing__item-text {
+  text-align: center;
+  margin-top: 70px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1.2px;
   color: #242121;
 }
 /*# sourceMappingURL=style.min.css.map */
