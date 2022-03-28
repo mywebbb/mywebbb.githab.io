@@ -1049,4 +1049,59 @@
   letter-spacing: 1.2px;
   color: #242121;
 }
+
+.contact {
+  padding: 0 0 0 135px;
+}
+
+.contact__title {
+  margin-top: 145px;
+}
+
+.contact__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact__input {
+  width: 569px;
+  height: 38px;
+  margin-bottom: 32px;
+  color: #000;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.contact__textarea {
+  width: 569px;
+  min-height: 156px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 94px;
+}
+
+.contact__form-inner {
+  margin-right: 40px;
+}
+
+.contact__submit {
+  width: 230px;
+  height: 45px;
+  background: #242121;
+}
 /*# sourceMappingURL=style.min.css.map */
