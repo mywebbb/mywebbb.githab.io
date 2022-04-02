@@ -148,10 +148,26 @@
     margin-top: 90px
   &__progress
   &__progress-item
+    display: grid
+    grid-template-columns: 90px 280px
+    grid-template-rows: 2
+    row-gap: 6px
     height: 2px
     width: 370px
   &__progress-bar
-    background-color: #1D1D1D
+    grid-column: 1/3
+    height: 2px
+    width: 370px
+    background-color: #F0F0F0
+    span
+      display: block
+      height: 2px
+      background-color: #1D1D1D
+  &__progress-title
+    grid-column: 1/2
+  &__progress-counter
+    grid-column: 2/3
+
   &__progress-content
     width: 370px
     display: flex
@@ -783,6 +799,18 @@
     font-size: 12px
     line-height: 16px
     color: #CCCCCC
+.proc
+  width: 200px
+  height: 20px
+  background-color: grey
+  border-radius: 14px
+  span
+    display: block
+    height: 20px
+    background-color: #FCBB08
+    border-radius: 14px
+
+
 
 
 
