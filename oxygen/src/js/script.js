@@ -10,12 +10,34 @@ $(document).ready(function(){
   
     });
 
-    $('ul.menu__list').on('click', 'li:not(.menu__list-item_active)', function() {
+    /* $('ul.menu__list').on('click', 'li:not(.menu__list-item_active)', function() {
         $(this)
           .addClass('menu__list-item_active').siblings().removeClass('menu__list-item_active');
           
       
+    }); */
+
+
+    $('ul.menu__list').on('click', 'li:not(.menu__list-item_active)', function() {
+      $(this)
+        .addClass('menu__list-item_active').siblings().removeClass('menu__list-item_active');
+        
+    
     });
+
+
+
+   /* $('ul.menu__list').on('click', 'a:not(.menu__link_active)', function() {
+      $(this)
+        .addClass('menu__link_active').siblings(li).removeClass('menu__link_active');
+        
+    
+    }); */
+ 
+ 
+
+
+
 
     $('ul.portfolio__tabs').on('click', 'li:not(.portfolio__tab_active)', function() {
         $(this)
@@ -23,6 +45,20 @@ $(document).ready(function(){
           .closest('section.portfolio').find('div.portfolio__content').removeClass('portfolio__content_active').eq($(this).index()).addClass('portfolio__content_active');
       
     });
+
+
+
+    // Slow scroll
+
+    $('a[href^="#"').on('click', function() {
+
+      let href = $(this).attr('href');
+  
+      $('html, body').animate({
+          scrollTop: $(href).offset().top
+      });
+      return false;
+  });
 
 
 

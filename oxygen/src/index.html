@@ -18,42 +18,51 @@
 <body>
     <header class="header">
         <div class="header__top">
-            <div class="header__wrapper">
-                <div class="logo">
-                    <a class="logo__link" href="#">
-                        <img class="logo_img" src="img/logo.svg" alt="">
-                    </a>
+            <div class="header__top-wrapper">
+                <div class="header__wrapper">
+                    <div class="logo">
+                        <a class="logo__link" href="#">
+                            <img class="logo_img" src="img/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item menu__list-item_active">
+                                <a class="menu__link menu__link_active" href="#">HOME</a>
+                                
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__link" href="#about">ABOUT US</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__link" href="#portfolio">PORTFOLIO</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__link" href="#team">OUR TEAM</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__link" href="#blog">BLOG</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__link" href="#contact">CONTACT</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__list-item menu__list-item_active">
-                            <a class="menu__link" href="#">HOME</a>
-                            
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__link" href="#about">ABOUT US</a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__link" href="#portfolio">PORTFOLIO</a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__link" href="#team">OUR TEAM</a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__link" href="#blog">BLOG</a>
-                        </li>
-                        <li class="menu__list-item">
-                            <a class="menu__link" href="#contact">CONTACT</a>
-                        </li>
-                    </ul>
-                </nav>
             </div>
 
         </div>
         <div class="header__content">
-            <div class="header__title">OXYGEN</div>
-            <div class="header__text">STARTER UI KIT</div>
-            <div class="header__item"></div>
+            <div class="header__content-inner">
+                <div class="header__title">OXYGEN</div>
+                <div class="header__text">STARTER UI KIT</div>  
+            </div>
+
+            <div class="header__content-inner">
+                <div class="header__item"></div>
+            </div>
+            
+            
         </div>      
     </header>
 
@@ -71,6 +80,8 @@
                     <p>Sunt fugiat veniam consectetur soluta quia ex tempora quaerat, perferendis! Itaque a praesentium saepe ex distinctio aliquid quis laborum sit, porro dolor odio, iste eos laboriosam dolorum maiores harum reiciendis vitae doloribus illum voluptatibus nobis maxime assumenda ipsam tempora fugiat. Perspiciatis quibusdam hic cum tempore.</p>
                 </div>
             </div>
+            
+
         </div>
     </section>
 
@@ -188,7 +199,7 @@
         <div class="portfolio__content portfolio__content_active">
             <a class="portfolio__img-1 portfolio__img_style" href="#"></a>
             <a class="portfolio__img-2 portfolio__img_style" href="#"></a>
-            <a class="portfolio__img-3 portfolio__img_style" href="https://mywebbb.github.io/pulse"></a>
+            <a class="portfolio__img-3 portfolio__img_style" href="https://mywebbb.github.io/pulse/src"></a>
             <a class="portfolio__img-4 portfolio__img_style" href="#"></a>
             <a class="portfolio__img-5 portfolio__img_style" href="#"></a>
             <a class="portfolio__img-6 portfolio__img_style" href="#"></a>
@@ -211,9 +222,11 @@
         <button class="portfolio__btn">VIEW MORE PROJECTS</button>
     </section>
     <section class="video">
-        <div class="video__quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-        <div class="video__quote-author">Gilbert Hammond</div>
-        <video class="video__content" src=""></video>
+        <div class="container">
+            <div class="video__quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+            <div class="video__quote-author">Gilbert Hammond</div>
+            <video class="video__content" src=""></video>
+        </div>
     </section>
     <section class="counters">
         <div class="container">
@@ -245,6 +258,7 @@
                        
                         <div class="slider__item-title">Then they show that show to the<br> 
                             people who make shows</div>
+                            
                         <div class="slider__item-text">The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother’s.</div>
                     </div>
                 
@@ -363,7 +377,7 @@
 
         </div>
 
-        <div class="proc"><span style="width: 70%"></span></div>
+        
 
     </section>
 
@@ -382,7 +396,7 @@
                     </form>
                 </div>
                 <div class="contact__map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d5297.484718044528!2d35.0435772!3d48.4038907!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1647882776031!5m2!1sru!2sru" width="590" height="896" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d5297.484718044528!2d35.0435772!3d48.4038907!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1647882776031!5m2!1sru!2sru" width="490" height="896" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
             
