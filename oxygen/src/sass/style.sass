@@ -72,15 +72,16 @@
     background-color: #fff
     z-index: 10
   &__top-wrapper
-    max-width: 1335px
+    // max-width: 1335px
     // padding: 0 40px 0 40px
-    margin: 0 auto
+    // margin: 0 auto
 
-  &__wrapper 
+  &__wrapper
+    max-width: 1335px
     margin: 0 auto
     height: 94px
     padding: 0 40px 0 40px
-    width: 100%
+    // width: 100%
     display: flex
     justify-content: space-between
     align-items: center
@@ -298,6 +299,7 @@
     text-decoration: none
     cursor: pointer
     
+    
     &_active
       &::after
         content: ""
@@ -308,7 +310,7 @@
   &__content
     display: none
     justify-content: center
-    grid-template-columns: repeat(4, minmax(110px, 343px))
+    grid-template-columns: repeat(4, minmax(70px, 343px))
     grid-template-rows: 288px 30px 49px 127px 82px 292px
     column-gap: 22px
     row-gap: 22px

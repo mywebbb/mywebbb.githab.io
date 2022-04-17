@@ -2,9 +2,23 @@ $(document).ready(function(){
     $('.slider__items').slick({
       prevArrow: '<button type="button" class="slick-prev"><img class="slick-prev__img" src="icons/arrow-left.svg" alt=""></button>',
       nextArrow: '<button type="button" class="slick-next"><img class="slick-next__img" src="icons/arrow-right.svg" alt=""></button>',
-      speed: 1200,
-      dots: true,
-      autoplay: true,
+          speed: 1200,
+          dots: true,
+          autoplay: true,
+      responsive: [
+        {
+          breakpoint: 576,
+          settings: {
+            speed: 1200,
+            dots: true,
+            autoplay: true,
+            arrows: false
+          }
+          
+        }
+      ]
+      
+      
 
       
   
@@ -50,7 +64,7 @@ $(document).ready(function(){
 
     // Slow scroll
 
-    $('a[href^="#"').on('click', function() {
+    /* $('a[href^="#"').on('click', function() {
 
       let href = $(this).attr('href');
   
@@ -58,14 +72,25 @@ $(document).ready(function(){
           scrollTop: $(href).offset().top
       });
       return false;
-  });
-
-
-
-
-
-
-
-
+    }); */
 
 });
+
+
+window.addEventListener('DOMContentLoaded', () => {
+  const menu = document.querySelector('.header__wrapper'),
+  menuItem = document.querySelectorAll('.menu__list-item'),
+  hamburger = document.querySelector('.hamburger');
+
+  hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('hamburger_active');
+      menu.classList.toggle('header__wrapper_active');
+  });
+
+  menuItem.forEach(item => {
+      item.addEventListener('click', () => {
+          hamburger.classList.toggle('hamburger_active');
+          menu.classList.toggle('header__wrapper_active');
+      })
+  })
+})
