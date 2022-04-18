@@ -353,7 +353,7 @@
 }
 
 .portfolio {
-  padding: 139px 0 41px 0;
+  padding: 30px 0 41px 0;
 }
 
 .portfolio__header {
@@ -863,6 +863,7 @@
 }
 
 .video__quote-author {
+  margin-bottom: 140px;
   font-family: Merriweather;
   font-style: italic;
   font-weight: 300;
@@ -992,7 +993,7 @@
 }
 
 .team {
-  padding: 120px 0 192px 0;
+  padding: 30px 0 192px 0;
 }
 
 .team__wrapper {
@@ -1512,6 +1513,9 @@
   }
   .team__wrapper {
     margin-top: 60px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .team__item-img {
     width: 160px;
@@ -1669,6 +1673,9 @@
   .about {
     padding-top: 30px;
   }
+  .about__text {
+    text-align: justify;
+  }
   .expertise__progress-item {
     -ms-grid-columns: 100px 200px;
         grid-template-columns: 100px 200px;
@@ -1687,6 +1694,7 @@
     padding-left: 150px;
   }
   .expertise__progress-text {
+    text-align: justify;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1703,8 +1711,11 @@
   .expertise__descr-title {
     text-align: center;
   }
+  .magic__text {
+    text-align: justify;
+  }
   .portfolio {
-    padding-top: 20px;
+    padding-top: 30px;
   }
   .portfolio__tabs {
     padding-left: 40px;
