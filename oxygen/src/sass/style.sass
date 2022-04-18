@@ -8,29 +8,23 @@
   max-width: 1170px
   padding: 0 10px 0 10px
   margin: 0 auto
-
 .logo
 .menu
-  
   z-index: 10
   
+  width: 590px
+  display: flex
+  justify-content: space-between
+  list-style-type: none
+  margin-bottom: 0
   &__list
-    width: 590px
-    display: flex
-    justify-content: space-between
-    list-style-type: none
-    margin-bottom: 0
-  &__list-item
     text-align: center
-    
     &_active 
       &::after
         content: ""
         display: block
         height: 2px
         background-color: #FCBB08
-        
-
   &__link
     display: block
     height: 24px
@@ -44,48 +38,29 @@
     &:hover
       text-decoration: none
       color: #373A39
-
-    /* &_active 
-      &::after
-        content: ""
-        display: block
-        height: 2px
-        background-color: #FCBB08
-        margin-top: 10px */
-    
-    
- 
-.header
-  position: relative
-  padding: 310px 0 62px 0
-  height: 100vh
-  
-  background: url('../img/header-bg.jpg') center center/cover no-repeat
-  
-    
-  &__top
-    
-    position: fixed
-    top: 0px
-    // height: 94px
-    width: 100%
-    background-color: #fff
-    z-index: 10
-  &__top-wrapper
-    // max-width: 1335px
-    // padding: 0 40px 0 40px
-    // margin: 0 auto
-
+.nav
+  position: fixed
+  top: 0px
+  width: 100%
+  background-color: #fff
+  z-index: 10
   &__wrapper
     max-width: 1335px
     margin: 0 auto
     height: 94px
     padding: 0 40px 0 40px
-    // width: 100%
     display: flex
     justify-content: space-between
     align-items: center
     z-index: 10
+.header
+  position: relative
+  padding: 310px 0 62px 0
+  height: 100vh
+  background: url('../img/header-bg.jpg') center center/cover no-repeat
+  
+    
+  
   &__content
     display: flex
     flex-direction: column
@@ -146,7 +121,7 @@
 
 .about
   
-  padding: 152px 0 152px 0
+  padding: 100px 0 152px 0
   background-color: #F6F8FA
 
   &__inner
@@ -270,7 +245,7 @@
 
 .portfolio
   
-  padding: 30px 0 41px 0
+  padding: 100px 0 41px 0
   &__header
     display: flex
     justify-content: space-between
@@ -655,7 +630,7 @@
 
 .team
   // min-height: 1000px
-  padding: 30px 0 192px 0
+  padding: 100px 0 192px 0
   &__wrapper
     display: flex
     justify-content: space-between

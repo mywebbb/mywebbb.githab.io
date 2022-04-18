@@ -32,9 +32,9 @@ $(document).ready(function(){
     }); */
 
 
-    $('ul.menu__list').on('click', 'li:not(.menu__list-item_active)', function() {
+    $('ul.menu').on('click', 'li:not(.menu__list_active)', function() {
       $(this)
-        .addClass('menu__list-item_active').siblings().removeClass('menu__list-item_active');
+        .addClass('menu__list_active').siblings().removeClass('menu__list_active');
         
     
     });
@@ -78,19 +78,19 @@ $(document).ready(function(){
 
 
 window.addEventListener('DOMContentLoaded', () => {
-  const menu = document.querySelector('.header__wrapper'),
-  menuItem = document.querySelectorAll('.menu__list-item'),
+  const menu = document.querySelector('.nav__wrapper'),
+  menuItem = document.querySelectorAll('.menu__list'),
   hamburger = document.querySelector('.hamburger');
 
   hamburger.addEventListener('click', () => {
       hamburger.classList.toggle('hamburger_active');
-      menu.classList.toggle('header__wrapper_active');
+      menu.classList.toggle('nav__wrapper_active');
   });
 
   menuItem.forEach(item => {
       item.addEventListener('click', () => {
           hamburger.classList.toggle('hamburger_active');
-          menu.classList.toggle('header__wrapper_active');
+          menu.classList.toggle('nav__wrapper_active');
       })
   })
 })
