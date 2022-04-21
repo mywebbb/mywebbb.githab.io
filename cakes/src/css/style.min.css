@@ -95,6 +95,7 @@
   height: 23px;
   width: 17px;
   left: -25px;
+  top: -7px;
 }
 
 .header__phone-link {
@@ -172,6 +173,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 40px;
 }
 
 .header__btn {
@@ -179,7 +181,8 @@
   height: 88px;
   background: #FFC700;
   border-radius: 8px;
-  margin-top: 40px;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .header__btn-text {
@@ -194,5 +197,227 @@
   color: #2E363E;
   width: 155px;
   margin-left: 20px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -1px;
+  color: #2E363E;
+  text-align: center;
+}
+
+.catalog {
+  padding: 20px 0 100px 0;
+}
+
+.catalog__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (380px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 380px);
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 80px;
+}
+
+.catalog__card {
+  padding-bottom: 50px;
+  width: 380px;
+  -webkit-filter: drop-shadow(2px 8px 16px rgba(194, 198, 208, 0.06));
+          filter: drop-shadow(2px 8px 16px rgba(194, 198, 208, 0.06));
+}
+
+.catalog__title {
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 50px;
+  margin-left: 44px;
+}
+
+.catalog__descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 12px;
+  margin-left: 44px;
+}
+
+.catalog__price {
+  font-weight: 500;
+  font-size: 24px;
+  margin-top: 24px;
+  margin-left: 44px;
+}
+
+.catalog__btn {
+  width: 163px;
+  height: 68px;
+  background: #FFC700;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 16px;
+  margin-left: 44px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.download {
+  height: 1200px;
+  padding-top: 365px;
+  background: url("../img/bg2.jpg") center center/cover no-repeat;
+}
+
+.download__inner {
+  width: 479px;
+  margin-right: 80px;
+}
+
+.download__element {
+  width: 230px;
+  height: 37px;
+  background: #F2F6FA;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+.download__title {
+  color: #F2F6FA;
+  text-align: left;
+}
+
+.download__descr {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 143%;
+  letter-spacing: -0.2px;
+  color: #F2F6FA;
+  margin-top: 24px;
+  max-width: 436px;
+}
+
+.download__btn {
+  width: 320px;
+  height: 88px;
+  background: #FFC700;
+  border-radius: 8px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.woman {
+  height: 765px;
+  padding-top: 64px;
+  background: url("../img/woman2.jpg") center center/cover no-repeat;
+}
+
+.woman__inner {
+  width: 479px;
+}
+
+.woman__element {
+  width: 191px;
+  height: 37px;
+  background: #F2F6FA;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+.woman__title {
+  color: #2E363E;
+  text-align: left;
+}
+
+.woman__descr {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: -0.2px;
+  color: #2E363E;
+  margin-top: 36px;
+  max-width: 436px;
+  margin-left: 22px;
+}
+
+.woman__descr p {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.woman__descr p::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #565E66;
+  top: 8px;
+  left: -20px;
+}
+
+.woman__btn {
+  width: 308px;
+  height: 88px;
+  background: #FFC700;
+  border-radius: 8px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+  color: #2E363E;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 152%;
+}
+
+@media (max-width: 1400px) {
+  .header__content {
+    margin-top: 25px;
+  }
 }
 /*# sourceMappingURL=style.min.css.map */

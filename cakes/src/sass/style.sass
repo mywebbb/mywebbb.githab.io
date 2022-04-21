@@ -18,6 +18,7 @@
     line-height: 143%
     color: #F2F6FA
     margin-left: 20px
+
 .header
   height: 100vh
   background: url('../img/main-bg.jpg') center center/cover no-repeat
@@ -54,6 +55,7 @@
     font-size: 12px
     line-height: 150%
     color: #F2F6FA
+
     &::before
       content: ""
       position: absolute
@@ -62,6 +64,7 @@
       height: 23px
       width: 17px
       left: -25px
+      top: -7px
   &__phone-link
     position: relative
     display: block
@@ -87,6 +90,7 @@
   &__content
     width: 630px
     margin-top: 113px
+
   &__element
     display: flex
     width: 132px
@@ -115,13 +119,15 @@
     margin-top: 24px
   &__wrapper
     display: flex
-    
+    margin-top: 40px
   &__btn
     width: 277px
     height: 88px
     background: #FFC700
     border-radius: 8px
-    margin-top: 40px
+
+    font-weight: 500
+    font-size: 18px
   &__btn-text
     font-weight: 500
     font-size: 18px
@@ -130,47 +136,157 @@
     color: #2E363E
     width: 155px
     margin-left: 20px
+.title
+  font-weight: 500
+  font-size: 48px
+  line-height: 60px
+  letter-spacing: -1px
+  color: #2E363E
+  text-align: center
+.catalog
+  padding: 20px 0 100px 0
+  &__content
+    display: grid
+    grid-template-columns: repeat(auto-fill, 380px)
+    // justify-content: center
+    // flex-wrap: wrap
+    column-gap: 20px
+    justify-content: center
+    margin-top: 80px
+  &__card
+    padding-bottom: 50px
+    // margin-right: 6px
+    // margin-left: 6px
+    width: 380px
+    filter: drop-shadow(2px 8px 16px rgba(194, 198, 208, 0.06))
+  &__title
+    font-weight: 700
+    font-size: 24px
+    margin-top: 50px
+    margin-left: 44px
+  &__descr
+    font-weight: 400
+    font-size: 16px
+    line-height: 150%
+    margin-top: 12px
+    margin-left: 44px
+  &__price
+    font-weight: 500
+    font-size: 24px
+    margin-top: 24px
+    margin-left: 44px
+  &__btn
+    width: 163px
+    height: 68px
+    background: #FFC700
+    border-radius: 8px
+    font-weight: 500
+    font-size: 18px
+    margin-top: 16px
+    margin-left: 44px
+    text-align: center
+    align-items: center
+.download
+  height: 1200px
+  padding-top: 365px
+  background: url('../img/bg2.jpg') center center/cover no-repeat
+  &__inner
+    width: 479px
+    margin-right: 80px
+  &__element
+    width: 230px
+    height: 37px
+    background: #F2F6FA
+    border-radius: 5px
+    font-weight: 400
+    font-size: 11px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 24px
+  &__title
+    color: #F2F6FA
+    text-align: left
 
+  &__descr
+    font-weight: 400
+    font-size: 21px
+    line-height: 143%
+    letter-spacing: -0.2px
+    color: #F2F6FA
+    margin-top: 24px
+    max-width: 436px
+  &__btn
+    width: 320px
+    height: 88px
+    background: #FFC700
+    border-radius: 8px
+    text-align: center
+    align-items: center
+    margin-top: 40px
+    font-weight: 500
+    font-size: 18px
+    
+.flex
+  display: flex
+  justify-content: end
 
+.woman
+  height: 765px
+  padding-top: 64px
+  background: url('../img/woman2.jpg') center center/cover no-repeat
+  &__inner
+    width: 479px
+    // margin-right: 80px
+  &__element
+    width: 191px
+    height: 37px
+    background: #F2F6FA
+    border-radius: 5px
+    font-weight: 400
+    font-size: 11px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 24px
+  &__title
+    color: #2E363E
+    text-align: left
 
+  &__descr
+    font-weight: 400
+    font-size: 18px
+    line-height: 150%
+    letter-spacing: -0.2px
+    color: #2E363E
+    margin-top: 36px
+    max-width: 436px
+    margin-left: 22px
+    p
+      position: relative
+      margin-bottom: 22px
+      &::before
+        content: ""
+        position: absolute
+        display: block
+        width: 10px
+        height: 10px
+        border-radius: 100%
+        background-color: #565E66
+        top: 8px
+        left: -20px
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+  &__btn
+    width: 308px
+    height: 88px
+    background: #FFC700
+    border-radius: 8px
+    text-align: center
+    align-items: center
+    margin-top: 50px
+    color: #2E363E
+    font-weight: 500
+    font-size: 18px
+    line-height: 152%
 
 @import "media"
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
-  
-        
-
-    
-
-
-  
-  
-    
-    
