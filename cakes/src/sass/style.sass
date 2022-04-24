@@ -18,6 +18,14 @@
     line-height: 143%
     color: #F2F6FA
     margin-left: 20px
+.btn
+  background: #FFC700
+  border-radius: 8px
+  text-align: center
+  align-items: center
+  font-weight: 500
+  font-size: 18px
+  border-style: none
 
 .header
   height: 100vh
@@ -123,19 +131,15 @@
   &__btn
     width: 277px
     height: 88px
-    background: #FFC700
-    border-radius: 8px
-
-    font-weight: 500
-    font-size: 18px
   &__btn-text
-    font-weight: 500
-    font-size: 18px
     display: flex
     align-items: center
-    color: #2E363E
     width: 155px
     margin-left: 20px
+    font-weight: 400
+    font-size: 15px
+    line-height: 160%
+    color: #FFFFFF
 .title
   font-weight: 500
   font-size: 48px
@@ -178,14 +182,8 @@
   &__btn
     width: 163px
     height: 68px
-    background: #FFC700
-    border-radius: 8px
-    font-weight: 500
-    font-size: 18px
     margin-top: 16px
     margin-left: 44px
-    text-align: center
-    align-items: center
 .download
   height: 1200px
   padding-top: 365px
@@ -219,14 +217,7 @@
   &__btn
     width: 320px
     height: 88px
-    background: #FFC700
-    border-radius: 8px
-    text-align: center
-    align-items: center
     margin-top: 40px
-    font-weight: 500
-    font-size: 18px
-    
 .flex
   display: flex
   justify-content: end
@@ -234,7 +225,9 @@
 .woman
   height: 765px
   padding-top: 64px
+
   background: url('../img/woman2.jpg') center center/cover no-repeat
+
   &__inner
     width: 479px
     // margin-right: 80px
@@ -279,14 +272,229 @@
   &__btn
     width: 308px
     height: 88px
-    background: #FFC700
-    border-radius: 8px
-    text-align: center
-    align-items: center
     margin-top: 50px
     color: #2E363E
+.slider
+  position: relative
+  padding-top: 320px
+
+  height: 1300px
+  background: url('../img/end-bg.jpg') center center/cover no-repeat
+  &__title
+    font-weight: 700
+    font-size: 36px
+    text-align: center
+    color: #F2F6FA
+  &__items
+
+    margin-top: 60px
+    // margin: 0 auto
+    // width: 100%
+    // display: flex
+    // align-items: center
+  &__item
+
+    width: 933px
+    height: 485px
+    margin-left: 25px
+    margin-right: 25px
+    background: #FFF
+    opacity: 0.4
+    margin-top: 75px
+    transition: all 0.3s ease 0s
+
+    // display: flex
+    // justify-content: center
+    align-items: center
+  &__content
+    width: 706px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: #fff
+    margin: 0 auto
+    margin-top: 70px
+
+  &__text
+    width: 360px
+  &__text-title
+    position: relative
     font-weight: 500
-    font-size: 18px
-    line-height: 152%
+    font-size: 23.7458px
+    line-height: 143%
+
+    &::before
+      content: ""
+      position: absolute
+      width: 32px
+      height: 32px
+      top: -63px
+      left: 1px
+      background: url('../icons/cc.svg') center center/cover no-repeat
+
+  &__text-descr
+    font-weight: 400
+    font-size: 12px
+    line-height: 170%
+    margin-top: 19px
+    margin-bottom: 19px
+  &__text-link
+
+    font-weight: 400
+    font-size: 11px
+    line-height: 150%
+    color: #4A94FF
+
+    border-bottom: 1px dashed
+    text-decoration: none
+  &__pict
+    span
+      display: block
+      text-align: center
+      font-weight: 400
+      font-size: 13px
+      line-height: 170%
+      text-align: center
+      color: #A6AEB6
+      margin-top: 6px
+  &__img
+    max-width: 300px
+    max-height: 300px
+  &__img-descr
+    font-weight: 500
+    font-size: 16px
+    line-height: 143%
+    text-align: center
+    margin-top: 24px
+
+// .slick-center
+  // width: 1180px
+  // height: 615px
+  // opacity: 1
+  // zoom: 1
+  // margin-top: 0px
+  // text-align: center
+  // display: inline-block
+.slick-slide
+  padding-top: 20px
+.slick-center
+  width: 1180px
+  height: 615px
+  background: #FFF
+  opacity: 1
+  margin-top: 0px
+  padding-top: 0px
+  .slider
+    &__text
+      width: 460px
+    &__text-title
+      font-size: 30px
+    &__content
+      width: 894px
+      // padding-top: 70px
+    &__text-descr
+      font-size: 15px
+      line-height: 170%
+    &__img
+      width: 380px
+      height: 380px
+    &__img-descr
+      margin-top: 30px
+
+.slick-prev
+  position: absolute
+  background-color: transparent
+  border: none
+  top: 683px
+  left: 850px
+  z-index: 1
+  cursor: pointer
+  img
+    width: 66px
+    height: 66px
+.slick-next
+  position: absolute
+  background-color: transparent
+  border: none
+  top: 683px
+  left: 950px
+  z-index: 1
+  cursor: pointer
+  img
+    width: 66px
+    height: 66px
+.orders
+  padding-top: 132px
+  &__subtitle
+    font-weight: 400
+    font-size: 24px
+    line-height: 143%
+    text-align: center
+    margin-top: 15px
+  &__content
+    max-width: 1920px
+    margin: 0 auto
+    margin-top: 80px
+    display: grid
+    grid-template-columns: repeat(auto-fill, 634px)
+    column-gap: 9px
+    row-gap: 9px
+    justify-content: center
+  &__content-img
+.footer
+  padding: 290px 0 80px 0
+  background: url('../img/footer-bg.jpg') center center/cover no-repeat
+  &__inner
+    padding-top: 70px
+    width: 1180px
+    height: 394px
+    background: #FFFFFF
+    border-radius: 8px
+    margin: 0 auto
+  &__title
+    font-weight: 700
+    font-size: 36px
+    line-height: 133%
+    text-align: center
+  &__descr
+    font-weight: 400
+    font-size: 21px
+    line-height: 143%
+    text-align: center
+    letter-spacing: -0.2px
+    margin-top: 12px
+
+  &__form
+    margin-top: 36px
+  &__form-wrap
+    width: 740px
+    display: flex
+    justify-content: space-between
+    margin: 0 auto
+  &__frame
+    width: 360px
+    height: 85px
+    background: #F2F6FA
+    border-radius: 8px
+    display: flex
+    justify-content: center
+    align-items: center
+  &__submit
+    width: 360px
+    height: 85px
+    border-radius: 8px
+  &__check-wrap
+    display: flex
+    justify-content: center
+    margin-top: 26px
+  &__check-text, &__check-link
+    font-weight: 400
+    font-size: 11px
+    line-height: 130%
+    color: #7E868E
+    margin-left: 7px
+  &__check-link
+    cursor: pointer
+
 
 @import "media"

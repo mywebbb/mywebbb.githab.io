@@ -1,5 +1,65 @@
 $(document).ready(function(){
-    $('.slider__items').slick({
+  $('.slider__items').slick({
+    prevArrow: '<button type="button" class="slick-prev"><img class="slick-prev__img" src="icons/arrow-left.svg" alt=""></button>',
+    nextArrow: '<button type="button" class="slick-next"><img class="slick-next__img" src="icons/arrow-right.svg" alt=""></button>',
+    // variableWidth: true,
+    centerMode: true,
+    centerPadding: '400px',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          centerPadding: '190px',
+          // arrows: false,
+          centerMode: true,
+          
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 1780,
+        settings: {
+          centerPadding: '190px',
+          // arrows: false,
+          centerMode: true,
+          
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* $('.slider__items').slick({
       prevArrow: '<button type="button" class="slick-prev"><img class="slick-prev__img" src="icons/arrow-left.svg" alt=""></button>',
       nextArrow: '<button type="button" class="slick-next"><img class="slick-next__img" src="icons/arrow-right.svg" alt=""></button>',
           speed: 1200,
@@ -17,12 +77,8 @@ $(document).ready(function(){
           
         }
       ]
-      
-      
-
-      
-  
-    });
+    
+    }); */
 
     /* $('ul.menu__list').on('click', 'li:not(.menu__list-item_active)', function() {
         $(this)
