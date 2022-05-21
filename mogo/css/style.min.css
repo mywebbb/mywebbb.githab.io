@@ -470,8 +470,37 @@ header .learn {
   margin-top: 102px;
 }
 
-.some .k {
+.some img {
   width: 335px;
+  
+}
+.some .k1 {
+  position: relative;
+  width: 335px;
+  height: 275px;
+  background: url('../img/some/1.jpg') center center/cover no-repeat;
+  
+}
+.some .k1:hover {
+  /* background: url('../img/some/1.jpg') center center/cover no-repeat; */
+  /* background-color: rgba(0, 0, 0, 0.9); */
+  /* background-color: rgba(252, 92, 101,0.9); */
+  background: linear-gradient(rgba(222, 120, 121,0.9), rgba(230, 207, 129,0.9)), url('../img/some/1.jpg') center center/cover no-repeat;
+  /* background: url('../img/some/1.jpg') center center/cover no-repeat, rgba(0, 0, 0, 0.6); */
+
+  
+}
+.some .k1:hover::before {
+  /* content: "creatively designed"; */
+  content: "";
+  position: absolute;
+  color: #ffffff;
+  background: url(../icons/what_we/1.png) center center/cover no-repeat;
+  width: 30px;
+  height: 30px;
+  top: 120px;
+  left: 120px;
+
 }
 
 .say {
