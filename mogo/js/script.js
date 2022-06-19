@@ -1,8 +1,70 @@
 $(document).ready(function(){
     $( function() {
         $( "#accordion" ).accordion();
-      } );
+    } );
 
+
+   
+
+    /* $('div.img11').mouseover(function() {
+        $('.meet_tabs')
+        .addClass('meet_tabs_active'); 
+    })
+    .mouseout(function() {
+        $('.meet_tabs')
+        .removeClass('meet_tabs_active')
+    }); */
+ 
+    $('div.img11-1').mouseover(function() {
+        $('.mt1')
+        .addClass('meet_tabs_active'); 
+    })
+    .mouseout(function() {
+        $('.mt1')
+        .removeClass('meet_tabs_active')
+    });
+
+    $('div.bg2').mouseover(function() {
+        $('.mt2')
+        .addClass('meet_tabs_active'); 
+    })
+    .mouseout(function() {
+        $('.mt2')
+        .removeClass('meet_tabs_active')
+    });
+
+    $('div.bg3').mouseover(function() {
+        $('.mt3')
+        .addClass('meet_tabs_active'); 
+    })
+    .mouseout(function() {
+        $('.mt3')
+        .removeClass('meet_tabs_active')
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+    
 
 
 
