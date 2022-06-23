@@ -1,1 +1,3 @@
-console.log(1);
+let number = 4.6;
+
+console.log( );
