@@ -5,6 +5,38 @@
   font-size: 40px
   color: #090909
 
+.main
+  position: relative
+  width: 1148px
+  margin: 0 auto
+
+.tabs
+  top: 276px
+  right: 1px
+  position: absolute
+
+  &__list
+    position: relative
+    font-size: 20px
+    font-weight: 700
+    line-htight: 24px
+    color: #6A6A6A
+    list-style-type: none
+    &:before
+      position: absolute
+      content: ""
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      top: 8px
+      right: 30px
+
+      background-color: #6A6A6A
+  &__list--active
+    color: #5337FF
+
+
+
 h1
   font-size: 40px
   line-height: 44px
@@ -17,30 +49,12 @@ h1
   padding: 48px 10px 32px 10px
   margin: 0 auto
 
-.slide-1
-  max-width: 1440px
-  height: 800px
-  background: url('../img/woman3.jpg') center center/cover no-repeat
-  &__inner
-    height: 93%
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    
-  &__wrapper
-    // width: 1128px
-    margin-top: 33px
-    display: flex
-    justify-content: space-between
-
-  &__descr
-    position: relative
-    width: 413px
-    margin-top: 142px
-
-  &__descr-label
+.links-store
+  position: relative
+  margin-top: 61px
+  &__label
     position: absolute
-    top: 184px
+    top: -10px
     right: 155px
     display: flex
     justify-content: center
@@ -55,24 +69,42 @@ h1
     color: #fff
     font-stretch: 151
     font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738
-    
-
-  &__links
-    margin-top: 61px
 
   &__app
     width: 179px
     height: 64px
     margin-right: 24px
 
-  &__app-img
-
   &__goo
     width: 200px
     height: 64px
 
-  &__goo-img
 
+
+
+.slide-1
+  max-width: 1440px
+  height: 800px
+  background: url('../img/woman3.jpg') center center/cover no-repeat
+  margin: 0 auto
+  &__inner
+    height: 93%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    
+  &__wrapper
+    // width: 1128px
+    margin-top: 33px
+    display: flex
+    justify-content: space-between
+
+  &__descr
+    // position: relative
+    width: 413px
+    margin-top: 142px
+
+  
   &__img
     width: 264px
     height: 534px
