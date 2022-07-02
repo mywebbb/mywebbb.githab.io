@@ -16,28 +16,47 @@
   position: absolute
 
   &__list
+    display: block
     position: relative
     font-size: 20px
     font-weight: 700
     line-htight: 24px
-    color: #6A6A6A
+    color: #fff
     list-style-type: none
     &:before
       position: absolute
       content: ""
-      width: 10px
-      height: 10px
+      width: 11px
+      height: 11px
       border-radius: 50%
-      top: 8px
-      right: 30px
-
+      top: 7px
+      right: 34px
       background-color: #6A6A6A
+
   &__list--active
     color: #5337FF
+    &:before
 
+      position: absolute
+      content: ""
+      width: 11px
+      height: 11px
+      border-radius: 50%
+      top: 7px
+      right: 34px
+      background-color: #5337FF
 
+    &:after
+      position: absolute
+      content: ""
+      width: 15px
+      height: 15px
+      top: 4px
+      right: 31px
+      border-radius: 50%
+      border: 1px solid #5337FF
 
-h1
+.title
   font-size: 40px
   line-height: 44px
   letter-spacing: -0.5px
@@ -48,11 +67,57 @@ h1
   height: 100%
   padding: 48px 10px 32px 10px
   margin: 0 auto
+.label-orng
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 144px
+  height: 32px
+  background-color: #FF6700
+  border-radius: 8px
+  font-size: 14px
+  font-weight: 500
+  color: #fff
+  font-stretch: 151
+  font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738
+
 
 .links-store
   position: relative
   margin-top: 61px
-  &__label
+
+  &__app
+    width: 179px
+    height: 64px
+    margin-right: 24px
+
+  &__goo
+    width: 200px
+    height: 64px
+
+.slide-1
+  display: none
+  max-width: 1440px
+  height: 800px
+  background: url('../img/woman3.jpg') center center/cover no-repeat
+  margin: 0 auto
+  &__inner
+    height: 93%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+  &__wrapper
+    // width: 1128px
+    margin-top: 33px
+    display: flex
+    justify-content: space-between
+
+  &__descr
+    // position: relative
+    width: 413px
+    margin-top: 142px
+  &__label-orng
     position: absolute
     top: -10px
     right: 155px
@@ -70,41 +135,6 @@ h1
     font-stretch: 151
     font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738
 
-  &__app
-    width: 179px
-    height: 64px
-    margin-right: 24px
-
-  &__goo
-    width: 200px
-    height: 64px
-
-
-
-
-.slide-1
-  max-width: 1440px
-  height: 800px
-  background: url('../img/woman3.jpg') center center/cover no-repeat
-  margin: 0 auto
-  &__inner
-    height: 93%
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    
-  &__wrapper
-    // width: 1128px
-    margin-top: 33px
-    display: flex
-    justify-content: space-between
-
-  &__descr
-    // position: relative
-    width: 413px
-    margin-top: 142px
-
-  
   &__img
     width: 264px
     height: 534px
@@ -115,7 +145,7 @@ h1
     display: flex
     justify-content: center
     align-items: center
-    
+
     font-weight: 500
     font-size: 14px
     line-height: 20px
@@ -127,5 +157,32 @@ h1
     width: 24px
     height: 24px
     margin-right: 8px
+
+.logo-top
+  display: flex
+  justify-content: space-between
+  &__labels
+    display: flex
+    // justify-content: space-between
+    align-items: center
+    width: 328px
+
+
+
+.label-orng
+
+.label-app
+  display: block
+  width: 80px
+  height: 40px
+  margin-left: 16px
+
+.label-g-pl
+  display: block
+  width: 80px
+  height: 40px
+  margin-left: 8px
+
+
 
 @import "media"
