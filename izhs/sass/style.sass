@@ -23,6 +23,7 @@
     line-htight: 24px
     color: #fff
     list-style-type: none
+    cursor: pointer
     &:before
       position: absolute
       content: ""
@@ -55,18 +56,26 @@
       right: 31px
       border-radius: 50%
       border: 1px solid #5337FF
-
+.logo
+  margin: 4px 0 4px 0
 .title
+
   font-size: 40px
   line-height: 44px
   letter-spacing: -0.5px
   font-stretch: 151
   font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738
+
 .container
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  // align-items: stretch
   max-width: 1148px
-  height: 100%
+  height: 800px
   padding: 48px 10px 32px 10px
   margin: 0 auto
+
 .label-orng
   display: flex
   justify-content: center
@@ -81,7 +90,6 @@
   font-stretch: 151
   font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738
 
-
 .links-store
   position: relative
   margin-top: 61px
@@ -94,8 +102,27 @@
   &__goo
     width: 200px
     height: 64px
+.label
 
-.slide-1
+.wrapper
+
+.down-link
+  display: flex
+  justify-content: center
+  align-items: center
+
+  font-weight: 500
+  font-size: 14px
+  line-height: 20px
+  letter-spacing: 0.25px
+  text-decoration: none
+  cursor: pointer
+  &__img
+    width: 24px
+    height: 24px
+    margin-right: 8px
+
+.screen-1
   display: none
   max-width: 1440px
   height: 800px
@@ -141,23 +168,6 @@
     display: block
     margin-right: 96px
 
-  &__down-link
-    display: flex
-    justify-content: center
-    align-items: center
-
-    font-weight: 500
-    font-size: 14px
-    line-height: 20px
-    letter-spacing: 0.25px
-    text-decoration: none
-    cursor: pointer
-
-  &__down-link-img
-    width: 24px
-    height: 24px
-    margin-right: 8px
-
 .logo-top
   display: flex
   justify-content: space-between
@@ -166,8 +176,6 @@
     // justify-content: space-between
     align-items: center
     width: 328px
-
-
 
 .label-orng
 
@@ -183,6 +191,124 @@
   height: 40px
   margin-left: 8px
 
+.title-mt-58px
+  margin-top: 58px
 
+.screen-2
+  display: none
+  &__cards
+    display: flex
+    justify-content: space-between
+    width: 984px
+    height: 432px
+    margin-top: 48px
+
+  &__card
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 312px
+    height: 432px
+    background: #5337FF
+    border-radius: 24px
+
+  &__card-2
+    background-color: #56ABFF
+
+  &__card-3
+    background-color: #883FFF
+
+  &__card-inner
+    padding-top: 24px
+    margin-left: 24px
+
+  &__card-numb
+    font-weight: 700
+    font-size: 64px
+    line-height: 64px
+
+    letter-spacing: -0.5px
+    color: #FFFFFF
+
+  &__card-descr
+    width: 264px
+    height: 56px
+    font-weight: 700
+    font-size: 20px
+    line-height: 28px
+    color: #FFFFFF
+    margin-top: 16px
+
+  &__card-pict
+    display: flex
+    justify-content: space-between
+    width: 312px
+    height: 196px
+    border-radius: 24px
+    background: url('../img/cards/1-1.jpg') center center/cover no-repeat
+    margin-bottom: 24px
+    padding: 24px 24px 0 24px
+
+  &__img3
+    width: 258px
+    height: 256px
+    margin-left: 27px
+
+.card-title
+  font-weight: 750
+  font-size: 20px
+  line-height: 24px
+  color: #FFFFFF
+
+.label-white
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 149px
+  height: 32px
+  background: #fff
+  border-radius: 8px
+  font-style: normal
+  font-weight: 750
+  font-size: 14px
+  line-height: 20px
+  color: #090909
+  font-stretch: 151
+
+.slide--active
+  display: block
+
+.screen-3
+  &__slider-wrapper
+    width: 1034px
+    height: 588px
+  &__title
+
+  &__slider
+    height: 588px
+
+.slide-1
+
+  background: url('../img/cards/4.png') center center/cover no-repeat
+
+.slide
+  display: flex
+  justify-content: space-between
+  width: 456px
+  height: 288px
+  padding: 24px 24px 0 24px
+
+.slide-2
+
+  background: url('../img/cards/5.png') center center/cover no-repeat
+
+.slide-3
+  background: url('../img/cards/6.png') center center/cover no-repeat
+
+.slide-4
+  background: url('../img/cards/7.png') center center/cover no-repeat
+
+.slide-5
+  background: url('../img/cards/8.png') center center/cover no-repeat
 
 @import "media"

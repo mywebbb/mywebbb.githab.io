@@ -1,3 +1,9 @@
 {
-    "emmet.optimizeStylesheetParsing": true
+    "emmet.optimizeStylesheetParsing": true,
+    "emmet.showExpandedAbbreviation": "always",
+    "editor.quickSuggestions": {
+        "other": "on",
+        "comments": "off",
+        "strings": "off"
+    }
 }

@@ -11,6 +11,9 @@
         href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,500;8..144,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+ <!-- Add the new slick-theme.css if you want the default styling -->
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
     <title>Document</title>
 </head>
 
@@ -29,19 +32,16 @@
             <li class="tabs__list">09</li>
         </ul>
 
-        <section class="slide-1">
+        <section class="screen-1 slide--active">
             <div class="container">
-                <img src="icons/logo.svg" alt="" class="logo">
-
-                
-                
-                <div class="slide-1__inner">
-                    <div class="slide-1__wrapper">
-                        <div class="slide-1__descr">
+                <div class="wrapper">
+                    <img src="icons/logo.svg" alt="" class="logo">
+                    <div class="screen-1__wrapper">
+                        <div class="screen-1__descr">
                             <h1 class="title">Постройте дом быстрее и легче через приложение</h1>
 
                             <div class="links-store">
-                                <div class="slide-1__label-orng">Скоро запуск</div>
+                                <div class="screen-1__label-orng">Скоро запуск</div>
 
                                 <a href="#" class="links-store__app"><img src="icons/app.svg" alt=""
                                         class="links-store__app-img"></a>
@@ -49,23 +49,77 @@
                                         class="links-store__goo-img"></a>
                             </div>
                         </div>
-                        <img src="img/mobile.png" alt="" class="slide-1__img">
+                        <img src="img/mobile.png" alt="" class="screen-1__img">
                     </div>
-                   
-                    <a href="#" class="slide-1__down-link">
-                        <img src="icons/arrow-1.svg" alt="arrow" class="slide-1__down-link-img">
-                        Как это работает?
-                    </a>
-                    
-
                 </div>
 
+                <a href="#" class="down-link">
+                    <img src="icons/arrow-1.svg" alt="arrow" class="down-link__img">
+                    Как это работает?
+                </a>
+
+
+            </div>
+
+        </section>
+    
 
 
 
 
 
-
+        <section class="screen-2">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="logo-top">
+                        <img src="icons/logo.svg" alt="" class="logo">
+                        <div class="logo-top__labels">
+                            <div class="label-orng">Скоро запуск</div>
+                            <a href="#" class="label-app"><img src="/icons/app-min.svg" alt=""></a>
+                            <a href="#" class="label-g-pl"><img src="/icons/g-pl-min.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <h2 class="title title-mt-58px">Как это работает?</h2>
+        
+                    <div class="screen-2__cards">
+                        <div class="screen-2__card">
+                            <div class="screen-2__card-inner">
+                                <div class="screen-2__card-numb">1</div>
+                                <div class="screen-2__card-descr">Выберите проект дома и застройщика</div>
+                            </div>
+        
+                            <div class="screen-2__card-pict">
+                                <h3 class="card-title">Forest</h3>
+                                <div class="label-white">Новый проект</div>
+                            </div>
+                        </div>
+        
+                        <div class="screen-2__card screen-2__card-2">
+                            <div class="screen-2__card-inner">
+                                <div class="screen-2__card-numb">2</div>
+                                <div class="screen-2__card-descr">Начните строительство</div>
+                            </div>
+        
+                            <img src="img/cards/2.png" alt="" class="screen-2__im">
+                        </div>
+        
+                        <div class="screen-2__card screen-2__card-3">
+                            <div class="screen-2__card-inner">
+                                <div class="screen-2__card-numb">3</div>
+                                <div class="screen-2__card-descr">Наблюдайте стройку в приложении</div>
+                            </div>
+        
+                            <img src="img/cards/3.png" alt="" class="screen-2__img3">
+                        </div>
+                    </div>
+        
+                </div>
+        
+                <a href="#" class="down-link">
+                    <img src="icons/arrow-1.svg" alt="arrow" class="down-link__img">
+                    Архитектура
+                </a>
+        
             </div>
         </section>
 
@@ -73,39 +127,69 @@
 
 
 
-        <section class="slide-2">
+        <section class="screen-3">
             <div class="container">
-                <div class="logo-top">
-                    <img src="icons/logo.svg" alt="" class="logo">
-                    <div class="logo-top__labels">
-                        <div class="label-orng">Скоро запуск</div>
-                        <a href="#" class="label-app"><img src="/icons/app-min.svg" alt=""></a>
-                        <a href="#" class="label-g-pl"><img src="/icons/g-pl-min.svg" alt=""></a>
+                <div class="wrapper">
+                    <div class="logo-top">
+                        <img src="icons/logo.svg" alt="" class="logo">
+                        <div class="logo-top__labels">
+                            <div class="label-orng">Скоро запуск</div>
+                            <a href="#" class="label-app"><img src="/icons/app-min.svg" alt=""></a>
+                            <a href="#" class="label-g-pl"><img src="/icons/g-pl-min.svg" alt=""></a>
+                        </div>
                     </div>
+                    <h2 class="title screen-3__title">Будьте в тренде, найдите проект дома в каталоге всех стран</h2>
+
+                    <div class="screen-3__slider-wrapper">
+                        <div class="screen-3__slider">
+                    
+                            <div class="slide slide-1">
+                                <h3 class="card-title">Forest</h3>
+                                <div class="label-white">Новый проект</div>
+                            </div>
+                    
+                            <div class="slide slide-2">
+                                <h3 class="card-title">Man’s Land</h3>
+                                <div class="label-white">Новый проект</div>
+                            </div>
+                    
+                            <div class="slide slide-3">
+                                <h3 class="card-title">Ger House</h3>
+                                <div class="label-white">Новый проект</div>
+                            </div>
+                    
+                            <div class="slide slide-4">
+                                <h3 class="card-title">Baker</h3>
+                                <div class="label-white">Новый проект</div>
+                            </div>
+                    
+                            <div class="slide slide-5">
+                                <h3 class="card-title">Geneva</h3>
+                                <div class="label-white">Новый проект</div>
+                            </div>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    
+        
                 </div>
                 
-                <h2 class="title">Как это работает?</h2>
-                <div class="slide-2__inner">
-                    
-                    
-                    
-                    <a href="#" class="slide-1__down-link">
-                        <img src="icons/arrow-1.svg" alt="arrow" class="slide-1__down-link-img">
-                        Архитектура
-                    </a>
-
-                </div>
-
-
-
-
-
-
-
+        
+                <a href="#" class="down-link">
+                    <img src="icons/arrow-1.svg" alt="arrow" class="down-link__img">
+                    ИЖС Стандарт
+                </a>
+        
             </div>
         </section>
     </div>
-
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
