@@ -9,6 +9,7 @@
   position: relative
   width: 1148px
   margin: 0 auto
+  
 
 .tabs
   top: 276px
@@ -128,6 +129,7 @@
   height: 800px
   background: url('../img/woman3.jpg') center center/cover no-repeat
   margin: 0 auto
+  background-color: #E5E5E5
   &__inner
     height: 93%
     display: flex
@@ -275,17 +277,14 @@
   color: #090909
   font-stretch: 151
 
-.label-app
-  img
-    width: 80px
-    height: 40px
-.label-g-pl
-  img
-    width: 80px
-    height: 40px
- 
-
-
+/* .label-app
+ img
+ width: 80px
+ height: 40px */
+/* .label-g-pl
+ img
+ width: 80px
+ height: 40px  */
 
 .screen-3
   display: none
@@ -353,16 +352,97 @@
 .slide-5
   background: url('../img/cards/8.png') center center/cover no-repeat
 
-
 .screen-4
+  background-color: #F5F5F5
   &__title
     width: 800px
     margin-top: 74px
+  &__cards
+    // position: revative
+    display: flex
+    justify-content: space-between
+    width: 503px
+    margin-top: 88px
+    z-index: 1
+  &__card
+    display: block
+    // position: revative
+    width: 167px
+    height: 257px
+    background-color: #FFF
+    border-radius: 16px
+    padding: 16px 0 0 16px
+    // z-index: 10
+
+  &__card-top
+    display: flex
+    align-items: center
+    span
+      font-weight: 700
+      font-size: 12px
+      line-height: 0px
+      margin-left: 8px
+
+  &__card-icon
+    text-align: center
+    width: 80px
+    height: 80px
+    background: #E0E0E0
+    border-radius: 100%
+    padding: 15px 0 0 14px
+    margin-top: 85px
+
+  &__card-icon-2
+    display: flex
+    justify-content: center
+    align-items: center
+
+    background-color: #EFB178
+    padding: 0
+  
+  &__card-ring
+    width: 49px
+    height: 49px
+    border-radius: 100%
+    background-color: #EFB178
+
+    border: 2.27151px solid #955B32
+
+  &__card-icon-3
+    
+    background-color: #C50002
+    padding: 13.79px 
+
+  &__card-img
+    display: block
+    position: absolute
+    // top: 390px
+    // left: 370px
+    z-index: 5
+    top: 8px
+    left: 23px
+    
+
+  &__card-title
+    font-size: 14px
+    font-weight: 700
+    line-height: 130%
+    color: #090909
+    margin-top: 8px
+.ggg
+  display: block
+  position: relative
+  background: url('../img/cards/8.png') center center/cover no-repeat
+  // background-color: #FFF
+  z-index: 7
+  top: 0px
+
 
 
 
 
 
 .slide--active
+  
   display: block
 @import "media"
