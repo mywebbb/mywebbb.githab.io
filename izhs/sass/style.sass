@@ -9,12 +9,14 @@
   position: relative
   width: 1148px
   margin: 0 auto
+  z-index: 5
   
 
 .tabs
   top: 276px
   right: 1px
   position: absolute
+  z-index: 6
 
   &__list
     display: block
@@ -22,7 +24,7 @@
     font-size: 20px
     font-weight: 700
     line-htight: 24px
-    color: #fff
+    color: #F5F5F5
     list-style-type: none
     cursor: pointer
     &:before
@@ -34,7 +36,8 @@
       top: 7px
       right: 34px
       background-color: #6A6A6A
-
+      
+    
   &__list--active
     color: #5337FF
     &:before
@@ -127,9 +130,9 @@
   display: none
   max-width: 1440px
   height: 800px
-  background: url('../img/woman3.jpg') center center/cover no-repeat
+  background: url('../img/woman.jpg') center center/cover no-repeat
   margin: 0 auto
-  background-color: #E5E5E5
+  background-color: #F5F5F5
   &__inner
     height: 93%
     display: flex
@@ -198,6 +201,7 @@
 
 .screen-2
   display: none
+  background-color: #F5F5F5
   &__cards
     display: flex
     justify-content: space-between
@@ -288,6 +292,7 @@
 
 .screen-3
   display: none
+  background-color: #F5F5F5
   &__slider-wrapper
     position: relative
     width: 1032px
@@ -358,12 +363,12 @@
     width: 800px
     margin-top: 74px
   &__cards
-    // position: revative
+    position: revative
     display: flex
     justify-content: space-between
     width: 503px
     margin-top: 88px
-    z-index: 1
+    z-index: 10
   &__card
     display: block
     // position: revative
@@ -416,11 +421,14 @@
   &__card-img
     display: block
     position: absolute
-    // top: 390px
-    // left: 370px
-    z-index: 5
-    top: 8px
-    left: 23px
+    top: 390px
+    left: 370px
+    z-index: 7
+    // top: 8px
+    // left: 23px
+    width: 167px
+    height: 257px
+    // background-color: #FFF
     
 
   &__card-title
@@ -429,13 +437,15 @@
     line-height: 130%
     color: #090909
     margin-top: 8px
-.ggg
+/* .ggg
   display: block
   position: relative
-  background: url('../img/cards/8.png') center center/cover no-repeat
-  // background-color: #FFF
-  z-index: 7
+  background-color: #FFF
+  z-index: 10
   top: 0px
+  width: 167px
+  height: 257px */
+
 
 
 
