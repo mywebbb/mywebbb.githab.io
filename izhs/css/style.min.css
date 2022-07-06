@@ -384,7 +384,7 @@ body {
 }
 .screen-3__slider-wrapper .slick-prev {
   position: absolute;
-  background-color: #fff;
+  background-color: #F5F5F5;
   border: none;
   top: 325px;
   right: 143px;
@@ -397,16 +397,12 @@ body {
 }
 .screen-3__slider-wrapper .slick-next {
   position: absolute;
-  background-color: #fff;
+  background-color: #F5F5F5;
   border: none;
   top: 325px;
   right: 90px;
   z-index: 1;
   cursor: pointer;
-}
-.screen-3__slider-wrapper .slick-next img {
-  width: 40px;
-  height: 40px;
 }
 .screen-3__title {
   margin-top: 80px;
@@ -661,6 +657,7 @@ body {
   font-weight: 700;
   margin-bottom: 0px;
   margin-top: 30px;
+  ont-weight: 700;
 }
 .screen-6__card-price p {
   font-weight: 500;
@@ -675,6 +672,8 @@ body {
   font-weight: 700;
   margin-bottom: 0px;
   margin-top: 30px;
+  color: #4FEA90;
+  cur
 }
 
 .slide--active {
