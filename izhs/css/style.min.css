@@ -7,6 +7,10 @@
   color: #090909;
 }
 
+body {
+  background-color: #F5F5F5;
+}
+
 .main {
   position: relative;
   width: 1148px;
@@ -445,6 +449,7 @@
 }
 
 .screen-4 {
+  display: none;
   background-color: #F5F5F5;
 }
 .screen-4__title {
@@ -459,7 +464,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 503px;
+  width: 674px;
+  height: 257px;
   margin-top: 88px;
   z-index: 10;
 }
@@ -467,7 +473,7 @@
   display: block;
   width: 167px;
   height: 257px;
-  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 16px;
   padding: 16px 0 0 16px;
 }
@@ -520,9 +526,9 @@
 }
 .screen-4__card-img {
   display: block;
-  position: absolute;
-  top: 390px;
-  left: 370px;
+  position: relative;
+  top: 0px;
+  left: -128px;
   z-index: 7;
   width: 167px;
   height: 257px;
@@ -535,14 +541,15 @@
   margin-top: 8px;
 }
 
-/* .ggg
- * display: block
- * position: relative
- * background-color: #FFF
- * z-index: 10
- * top: 0px
- * width: 167px
- * height: 257px */
+.ggg {
+  display: block;
+  background-color: #fff;
+  z-index: 10;
+  top: 0px;
+  width: 167px;
+  height: 257px;
+}
+
 .slide--active {
   display: block;
 }/*# sourceMappingURL=style.min.css.map */
