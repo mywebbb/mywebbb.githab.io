@@ -13,8 +13,6 @@ body
   width: 1148px
   margin: 0 auto
   z-index: 5
-  
-  
 
 .tabs
   top: 276px
@@ -28,6 +26,8 @@ body
     font-size: 20px
     font-weight: 700
     line-htight: 24px
+    width: 20px
+    height: 24px
     color: #F5F5F5
     list-style-type: none
     cursor: pointer
@@ -40,8 +40,7 @@ body
       top: 7px
       right: 34px
       background-color: #6A6A6A
-      
-    
+
   &__list--active
     color: #5337FF
     &:before
@@ -384,7 +383,6 @@ body
     border-radius: 16px
     padding: 16px 0 0 16px
     // z-index: 10
-
   &__card-top
     display: flex
     align-items: center
@@ -393,7 +391,6 @@ body
       font-size: 12px
       line-height: 0px
       margin-left: 8px
-
   &__card-icon
     text-align: center
     width: 80px
@@ -402,28 +399,21 @@ body
     border-radius: 100%
     padding: 15px 0 0 14px
     margin-top: 85px
-
   &__card-icon-2
     display: flex
     justify-content: center
     align-items: center
-
     background-color: #EFB178
     padding: 0
-  
   &__card-ring
     width: 49px
     height: 49px
     border-radius: 100%
     background-color: #EFB178
-
     border: 2.27151px solid #955B32
-
   &__card-icon-3
-    
     background-color: #C50002
-    padding: 13.79px 
-
+    padding: 13.79px
   &__card-img
     display: block
     position: relative
@@ -435,9 +425,6 @@ body
     width: 167px
     height: 257px
     // opacity: 0.99
-    
-    
-
   &__card-title
     font-size: 14px
     font-weight: 700
@@ -452,12 +439,105 @@ body
   top: 0px
   width: 167px
   height: 257px
- 
 
+.screen-5
+  display: none
+  background-color: #F5F5F5
+  &__card
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 552px
+    height: 312px
+    background: url('../img/cards/cardgenius.png') center center/cover no-repeat
+    padding: 28px 0 32px 32px
+    margin-top: 64px
+  &__card-title
+    font-weight: 750
+    font-size: 24px
+    line-height: 28px
+    letter-spacing: -0.5px
+    color: #FFFFFF
+    font-stretch: 151
+  &__card-descr
+    width: 200px
+    font-weight: 750
+    font-size: 32px
+    line-height: 36px
+    letter-spacing: -0.5px
+    color: #FFFFFF
+    font-stretch: 151
+  &__title
+    margin-top: 56px
+    width: 800px
 
+.screen-6
+  display: none
+  background-color: #F5F5F5
+  &__label-club
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 109px
+    height: 32px
+    left: 0px
+    top: 0px
+    background-color: #883FFF
+    border-radius: 8px
+    font-weight: 750
+    font-size: 14px
+    line-height: 20px
+    color: #FFFFFF
+    font-stretch: 151
+    margin-top: 70px
 
+  &__title
+    margin-top: 24px
 
+  &__inner
+    display: flex
+    margin-top: 84px
+  &__img
+    width: 313.21px
+    height: 136.5px
+    margin: 24px 24px 0 71px 
+    
 
+  &__card
+    display: flex
+    justify-content: space-between
+    width: 552px
+    height: 288px
+    background-color: #5337FF
+    border-radius: 24px
+    padding: 24px 24px
+
+  &__card-name
+    p
+      font-weight: 500
+      font-size: 20px
+      line-height: 26px
+      color: #fff
+      font-stretch: 151
+      margin-bottom: 14px
+      &:last-child
+        font-weight: 700
+        margin-bottom: 0px
+        margin-top: 30px
+
+  &__card-price
+    p
+      font-weight: 500
+      font-size: 20px
+      line-height: 26px
+      color: #FFB6B6
+      font-stretch: 151
+      text-align: right
+      margin-bottom: 14px
+      &:last-child
+        font-weight: 700
+        margin-bottom: 0px
+        margin-top: 30px
 
 .slide--active
   display: block
