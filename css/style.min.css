@@ -230,7 +230,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 1148px;
 }
 .logo-top__labels {
   display: -webkit-box;
@@ -658,7 +657,7 @@ body {
   font-weight: 700;
   margin-bottom: 0px;
   margin-top: 30px;
-  font-weight: 700;
+  ont-weight: 700;
 }
 .screen-6__card-price p {
   font-weight: 500;
@@ -674,12 +673,9 @@ body {
   margin-bottom: 0px;
   margin-top: 30px;
   color: #4FEA90;
-}
-
-.fix {
-  position: fixed;
+  cursor: pointer;
 }
 
 .slide--active {
-  display: none;
+  display: block;
 }/*# sourceMappingURL=style.min.css.map */
