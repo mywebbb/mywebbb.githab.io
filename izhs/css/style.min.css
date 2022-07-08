@@ -120,6 +120,14 @@ body {
   font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
 }
 
+.label-orng-15deg {
+  position: absolute;
+  top: -10px;
+  right: 155px;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+
 .links-store {
   position: relative;
   margin-top: 61px;
@@ -157,6 +165,11 @@ body {
   margin-right: 8px;
 }
 
+.block-descr {
+  width: 413px;
+  margin-top: 142px;
+}
+
 .screen-1 {
   display: none;
   max-width: 1440px;
@@ -164,6 +177,23 @@ body {
   background: url("../img/woman.jpg") center center/cover no-repeat;
   margin: 0 auto;
   background-color: #F5F5F5;
+  /* &__label-orng-15deg
+  * position: absolute
+  * top: -10px
+  * right: 155px
+  * display: flex
+  * justify-content: center
+  * align-items: center
+  * width: 144px
+  * height: 32px
+  * background-color: #FF6700
+  * border-radius: 8px
+  * transform: rotate(-15deg)
+  * font-size: 14px
+  * font-weight: 500
+  * color: #fff
+  * font-stretch: 151
+  * font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738 */
 }
 .screen-1__inner {
   height: 93%;
@@ -186,35 +216,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-.screen-1__descr {
-  width: 413px;
-  margin-top: 142px;
-}
-.screen-1__label-orng {
-  position: absolute;
-  top: -10px;
-  right: 155px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 144px;
-  height: 32px;
-  background-color: #FF6700;
-  border-radius: 8px;
-  -webkit-transform: rotate(-15deg);
-          transform: rotate(-15deg);
-  font-size: 14px;
-  font-weight: 500;
-  color: #fff;
-  font-stretch: 151;
-  font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
 }
 .screen-1__img {
   width: 264px;
@@ -677,9 +678,88 @@ body {
 }
 
 .fix {
-  position: fixed;
+  position: absolute;
+  z-index: 11;
+}
+
+.screen-7 {
+  display: none;
+}
+.screen-7__slider-wrapper {
+  width: 1032px;
+  margin-top: 16px;
+}
+.screen-7__slider-wrapper .slick-prev {
+  position: absolute;
+  background-color: #F5F5F5;
+  border: none;
+  top: 434px;
+  left: 0px;
+  z-index: 1;
+  cursor: pointer;
+  padding: 0px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.screen-7__slider-wrapper .slick-next {
+  position: absolute;
+  background-color: #F5F5F5;
+  border: none;
+  top: 434px;
+  left: 50px;
+  z-index: 1;
+  cursor: pointer;
+  padding: 0px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.screen-7__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1032px;
+}
+.screen-7__text {
+  width: 456px;
+  padding-top: 200px;
+}
+.screen-7__title {
+  font-weight: 750;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -0.5px;
+  color: #090909;
+  font-stretch: 151;
+}
+.screen-7__descr {
+  font-weight: 750;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -0.5px;
+  color: #6A6A6A;
+  font-stretch: 151;
+  margin-top: 24px;
+}
+.screen-7__img {
+  margin-left: 138px;
+}
+
+.slick-track {
+  display: block;
+}
+
+.screen-8 {
+  display: block;
+}
+.screen-8__slider-wrapper {
+  height: 800px;
+}
+.screen-8__slider {
+  height: 800px;
 }
 
 .slide--active {
-  display: none;
+  display: block;
 }/*# sourceMappingURL=style.min.css.map */

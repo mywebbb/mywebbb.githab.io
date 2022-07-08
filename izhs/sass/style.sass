@@ -96,6 +96,11 @@ body
   color: #fff
   font-stretch: 151
   font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738
+.label-orng-15deg
+  position: absolute
+  top: -10px
+  right: 155px
+  transform: rotate(-15deg)
 
 .links-store
   position: relative
@@ -129,6 +134,10 @@ body
     height: 24px
     margin-right: 8px
 
+.block-descr
+  width: 413px
+  margin-top: 142px
+
 .screen-1
   display: none
   max-width: 1440px
@@ -148,11 +157,8 @@ body
     display: flex
     justify-content: space-between
 
-  &__descr
-    // position: relative
-    width: 413px
-    margin-top: 142px
-  &__label-orng
+  
+  /* &__label-orng-15deg
     position: absolute
     top: -10px
     right: 155px
@@ -168,7 +174,7 @@ body
     font-weight: 500
     color: #fff
     font-stretch: 151
-    font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738
+    font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738 */
 
   &__img
     width: 264px
@@ -180,10 +186,7 @@ body
   display: flex
   justify-content: space-between
   width: 1148px
-  
-  
-  
-  
+
   &__labels
     display: flex
     // justify-content: space-between
@@ -511,8 +514,7 @@ body
   &__img
     width: 313.21px
     height: 136.5px
-    margin: 24px 24px 0 71px 
-    
+    margin: 24px 24px 0 71px
 
   &__card
     display: flex
@@ -551,22 +553,124 @@ body
         margin-bottom: 0px
         margin-top: 30px
         color: #4FEA90
-        
-        
-        
-
 
 .fix
-  position: fixed
-  
-        
-      
-        
-        
-        
+  position: absolute
+  z-index: 11
 
+.screen-7
+  display: none
+  
+  &__slider-wrapper
+    width: 1032px
+    
+    margin-top: 16px
+    .slick-prev
+      position: absolute
+      background-color: #F5F5F5
+      border: none
+      top: 434px
+      left: 0px
+      z-index: 1
+      cursor: pointer
+      padding: 0px
+      width: 40px
+      height: 40px
+      border-radius: 100%
+      img
+        // display: block
+        // width: 40px
+        // height: 40px
         
+    .slick-next
+      position: absolute
+      background-color: #F5F5F5
+      border: none
+      top: 434px
+      left: 50px
+      z-index: 1
+      cursor: pointer
+      padding: 0px
+      width: 40px
+      height: 40px
+      border-radius: 100%
+      img
+        // width: 40px
+        // height: 40px
+    
+    
+  &__slider
+    
+  &__slide
+    display: flex
+    width: 1032px
+    
+    
+  &__text
+    width: 456px
+    padding-top: 200px
+    
+  &__title
+    font-weight: 750
+    font-size: 32px
+    line-height: 36px
+    letter-spacing: -0.5px
+    color: #090909
+    font-stretch: 151
+  &__descr
+    font-weight: 750
+    font-size: 32px
+    line-height: 36px
+    letter-spacing: -0.5px
+    color: #6A6A6A
+    font-stretch: 151
+    margin-top: 24px
+  &__img
+    margin-left: 138px
+
+
+.slick-track
+  display: block
+.screen-8
+  display: block
+  &__slider-wrapper
+    // position: absolute
+    // width: 456px
+    height: 800px
+    // top: -530px
+    // left: 550px
+    
+    
+
+  &__slider
+    // width: 456px
+    height: 800px
+
+.slideh
+
+.slide-1
+
+.slide
+
+.card-title
+
+.label-white
+
+.slide-2
+
+.slide-3
+
+.slide-4
+
+.slide-5
+
+
+
+
+
+
 
 .slide--active
-  display: none
+  display: block
+  // display: none
 @import "media"
