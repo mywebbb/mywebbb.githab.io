@@ -307,6 +307,7 @@ body
   &__slider-wrapper
     position: relative
     width: 1032px
+    
     // height: 588px
     margin-top: 56px
     .slick-prev
@@ -348,21 +349,19 @@ body
     // height: 588px
     margin: 0 auto
 
-.slide-1
-
-  background: url('../img/cards/4.png') center center/cover no-repeat
 
 .slide
   width: 456px
   height: 288px
   display: flex
   justify-content: space-between
-
   padding: 24px 24px 0 24px
   border-radius: 24px
 
-.slide-2
+.slide-1
+  background: url('../img/cards/4.png') center center/cover no-repeat
 
+.slide-2
   background: url('../img/cards/5.png') center center/cover no-repeat
 
 .slide-3
@@ -629,28 +628,43 @@ body
     margin-left: 138px
 
 
-.slick-track
-  display: block
+.slick-vertical 
+  .slick-slide
+    // height: 800px
+.slick-slider
+  // height: 80px
+.slick-list
+  // width: 57px
+  // height: 80px
+.slider
+  // height: 800px
+
 .screen-8
-  display: block
+  display: none
+  // z-index: 15
   &__slider-wrapper
-    // position: absolute
-    // width: 456px
+    position: absolute
+    width: 457px
     height: 800px
-    // top: -530px
-    // left: 550px
+    top: 0px
+    left: 570px
+    // z-index: 15
     
     
 
   &__slider
-    // width: 456px
-    height: 800px
+    
+    // width: 56px
+    // height: 800px
+    // z-index: 15
 
 .slideh
 
 .slide-1
 
 .slide
+  // z-index: 15
+  
 
 .card-title
 
@@ -663,7 +677,8 @@ body
 .slide-4
 
 .slide-5
-
+.wrapper1
+  // display: flex
 
 
 
