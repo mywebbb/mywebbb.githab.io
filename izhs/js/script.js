@@ -57,7 +57,7 @@ $(document).ready(function () {
         // variableWidth: true,
         verticalSwiping: true,
         vertical: true,
-        // centerMode: true,
+        centerMode: true,
         // centerPadding: '400px',
         // infinite: true,
         slidesToShow: 3,
@@ -68,13 +68,7 @@ $(document).ready(function () {
     });
 
 
-    /* $('.screen-3__slider').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-    });
- */
+   
 
 
 

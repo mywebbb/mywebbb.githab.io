@@ -742,6 +742,10 @@ body {
   font-stretch: 151;
   margin-top: 24px;
 }
+.screen-7__img-wrapper {
+  height: 632px;
+  width: 450px;
+}
 .screen-7__img {
   margin-left: 138px;
 }
@@ -752,9 +756,12 @@ body {
 .screen-8__slider-wrapper {
   position: absolute;
   width: 457px;
-  height: 800px;
-  top: 0px;
+  height: 976px;
+  top: -170px;
   left: 570px;
+}
+.screen-8__slider-wrapper .slick-track {
+  top: -60px;
 }
 .slide--active {
   display: block;
