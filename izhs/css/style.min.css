@@ -5,6 +5,9 @@
   font-family: "Roboto Flex", sans-serif;
   font-size: 40px;
   color: #090909;
+  letter-spacing: -0.5px;
+  font-stretch: 151;
+  font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
 }
 
 body {
@@ -77,9 +80,6 @@ body {
 .title {
   font-size: 40px;
   line-height: 44px;
-  letter-spacing: -0.5px;
-  font-stretch: 151;
-  font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
 }
 
 .container {
@@ -116,8 +116,6 @@ body {
   font-size: 14px;
   font-weight: 500;
   color: #fff;
-  font-stretch: 151;
-  font-variation-settings: "GRAD" 0, "slnt" 0, "XTRA" 499, "XOPQ" 96, "YOPQ" 79, "YTLC" 514, "YTUC" 712, "YTAS" 750, "YTDE" -203, "YTFI" 738;
 }
 
 .label-orng-15deg {
@@ -177,23 +175,6 @@ body {
   background: url("../img/woman.jpg") center center/cover no-repeat;
   margin: 0 auto;
   background-color: #F5F5F5;
-  /* &__label-orng-15deg
-  * position: absolute
-  * top: -10px
-  * right: 155px
-  * display: flex
-  * justify-content: center
-  * align-items: center
-  * width: 144px
-  * height: 32px
-  * background-color: #FF6700
-  * border-radius: 8px
-  * transform: rotate(-15deg)
-  * font-size: 14px
-  * font-weight: 500
-  * color: #fff
-  * font-stretch: 151
-  * font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738 */
 }
 .screen-1__inner {
   height: 93%;
@@ -306,7 +287,6 @@ body {
   font-weight: 700;
   font-size: 64px;
   line-height: 64px;
-  letter-spacing: -0.5px;
   color: #FFFFFF;
 }
 .screen-2__card-descr {
@@ -364,17 +344,8 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #090909;
-  font-stretch: 151;
 }
 
-/* .label-app
- * img
- * width: 80px
- * height: 40px */
-/* .label-g-pl
- * img
- * width: 80px
- * height: 40px  */
 .screen-3 {
   display: none;
   background-color: #F5F5F5;
@@ -392,10 +363,9 @@ body {
   right: 143px;
   z-index: 1;
   cursor: pointer;
-}
-.screen-3__slider-wrapper .slick-prev img {
   width: 40px;
   height: 40px;
+  border-radius: 100%;
 }
 .screen-3__slider-wrapper .slick-next {
   position: absolute;
@@ -405,6 +375,9 @@ body {
   right: 90px;
   z-index: 1;
   cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
 }
 .screen-3__title {
   margin-top: 80px;
@@ -476,6 +449,7 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 16px;
   padding: 16px 0 0 16px;
+  z-index: 10;
 }
 .screen-4__card-top {
   display: -webkit-box;
@@ -541,15 +515,6 @@ body {
   margin-top: 8px;
 }
 
-.ggg {
-  display: block;
-  background-color: #fff;
-  z-index: 10;
-  top: 0px;
-  width: 167px;
-  height: 257px;
-}
-
 .screen-5 {
   display: none;
   background-color: #F5F5F5;
@@ -575,18 +540,14 @@ body {
   font-weight: 750;
   font-size: 24px;
   line-height: 28px;
-  letter-spacing: -0.5px;
   color: #FFFFFF;
-  font-stretch: 151;
 }
 .screen-5__card-descr {
   width: 200px;
   font-weight: 750;
   font-size: 32px;
   line-height: 36px;
-  letter-spacing: -0.5px;
   color: #FFFFFF;
-  font-stretch: 151;
 }
 .screen-5__title {
   margin-top: 56px;
@@ -617,7 +578,6 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #FFFFFF;
-  font-stretch: 151;
   margin-top: 70px;
 }
 .screen-6__title {
@@ -652,7 +612,6 @@ body {
   font-size: 20px;
   line-height: 26px;
   color: #fff;
-  font-stretch: 151;
   margin-bottom: 14px;
 }
 .screen-6__card-name p:last-child {
@@ -666,7 +625,6 @@ body {
   font-size: 20px;
   line-height: 26px;
   color: #FFB6B6;
-  font-stretch: 151;
   text-align: right;
   margin-bottom: 14px;
 }
@@ -729,17 +687,13 @@ body {
   font-weight: 750;
   font-size: 32px;
   line-height: 36px;
-  letter-spacing: -0.5px;
   color: #090909;
-  font-stretch: 151;
 }
 .screen-7__descr {
   font-weight: 750;
   font-size: 32px;
   line-height: 36px;
-  letter-spacing: -0.5px;
   color: #6A6A6A;
-  font-stretch: 151;
   margin-top: 24px;
 }
 .screen-7__img-wrapper {
