@@ -717,6 +717,214 @@ body {
 .screen-8__slider-wrapper .slick-track {
   top: -60px;
 }
-.slide--active {
+.screen--active {
   display: block;
+}
+
+@media (max-width: 575px) {
+  .main {
+    width: 360px;
+  }
+
+  .tabs {
+    top: 276px;
+    right: 1px;
+    position: absolute;
+    z-index: 6;
+  }
+  .tabs__list {
+    display: block;
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+    line-htight: 24px;
+    width: 20px;
+    height: 24px;
+    color: #F5F5F5;
+    list-style-type: none;
+    cursor: pointer;
+  }
+  .tabs__list:before {
+    position: absolute;
+    content: "";
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    top: 7px;
+    right: 34px;
+    background-color: #6A6A6A;
+  }
+  .tabs__list--active {
+    color: #5337FF;
+  }
+  .tabs__list--active:before {
+    position: absolute;
+    content: "";
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    top: 7px;
+    right: 34px;
+    background-color: #5337FF;
+  }
+  .tabs__list--active:after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    top: 4px;
+    right: 31px;
+    border-radius: 50%;
+    border: 1px solid #5337FF;
+  }
+
+  .logo {
+    margin: 0px 0 0px 0;
+    width: 54px;
+    height: 16px;
+  }
+
+  .container {
+    padding: 16px 10px 6px 10px;
+  }
+
+  .label-orng {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 144px;
+    height: 32px;
+    background-color: #FF6700;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .label-orng-15deg {
+    position: absolute;
+    top: -10px;
+    right: 155px;
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+
+  .links-store {
+    position: relative;
+    margin-top: 61px;
+  }
+  .links-store__app {
+    width: 179px;
+    height: 64px;
+    margin-right: 24px;
+  }
+  .links-store__goo {
+    width: 200px;
+    height: 64px;
+  }
+
+  .down-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .down-link__img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+
+  .block-descr {
+    margin-top: 12px;
+  }
+
+  .screen-1 {
+    display: block;
+    max-width: 360px;
+    height: 570px;
+    background: url("../img/Mobile360-01.jpg") center center/cover no-repeat;
+    margin: 0 auto;
+    background-color: #F5F5F5;
+  }
+  .screen-1__inner {
+    height: 93%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .screen-1__wrapper {
+    margin-top: 33px;
+    display: block;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .screen-1__img {
+    width: 264px;
+    height: 534px;
+    display: block;
+    margin-right: 96px;
+  }
+
+  .logo-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 360px;
+  }
+  .logo-top__labels {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 328px;
+  }
+
+  .label-app {
+    display: block;
+    width: 80px;
+    height: 40px;
+    margin-left: 16px;
+  }
+
+  .label-g-pl {
+    display: block;
+    width: 80px;
+    height: 40px;
+    margin-left: 8px;
+  }
+
+  .title-mt-58px {
+    margin-top: 58px;
+  }
 }/*# sourceMappingURL=style.min.css.map */

@@ -4,14 +4,14 @@ $(document).ready(function () {
     $('ul.tabs').on('click', 'li:not(.tabs__list--active)', function () {
         $(this)
             .addClass('tabs__list--active').siblings().removeClass('tabs__list--active')
-            .closest('body').find('section').removeClass('slide--active').eq($(this).index()).addClass('slide--active');
+            .closest('body').find('section').removeClass('screen--active').eq($(this).index()).addClass('screen--active');
 
     });
     /* тест нижнего таба */
     $('div.down-link').on('click', function () {
         $(this)
             .addClass('tabs__list--active').siblings().removeClass('tabs__list--active')
-            .closest('body').find('section').removeClass('slide--active').eq($(this).index()).addClass('slide--active');
+            .closest('body').find('section').removeClass('screen--active').eq($(this).index()).addClass('screen--active');
 
     });
     // 
