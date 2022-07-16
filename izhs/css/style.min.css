@@ -725,15 +725,14 @@ body {
   .main {
     width: 360px;
   }
-
-  .tabs {
+  .main .tabs {
     top: 276px;
     right: 1px;
     position: absolute;
     z-index: 6;
   }
-  .tabs__list {
-    display: block;
+  .main .tabs__list {
+    display: none;
     position: relative;
     font-size: 20px;
     font-weight: 700;
@@ -744,7 +743,7 @@ body {
     list-style-type: none;
     cursor: pointer;
   }
-  .tabs__list:before {
+  .main .tabs__list:before {
     position: absolute;
     content: "";
     width: 11px;
@@ -754,10 +753,10 @@ body {
     right: 34px;
     background-color: #6A6A6A;
   }
-  .tabs__list--active {
+  .main .tabs__list--active {
     color: #5337FF;
   }
-  .tabs__list--active:before {
+  .main .tabs__list--active:before {
     position: absolute;
     content: "";
     width: 11px;
@@ -767,7 +766,7 @@ body {
     right: 34px;
     background-color: #5337FF;
   }
-  .tabs__list--active:after {
+  .main .tabs__list--active:after {
     position: absolute;
     content: "";
     width: 15px;
@@ -777,59 +776,66 @@ body {
     border-radius: 50%;
     border: 1px solid #5337FF;
   }
-
-  .logo {
+  .main .logo {
     margin: 0px 0 0px 0;
     width: 54px;
     height: 16px;
   }
-
-  .container {
-    padding: 16px 10px 6px 10px;
+  .main .title {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
   }
-
-  .label-orng {
+  .main .container {
+    width: 360px;
+    height: 560px;
+    padding: 16px 0px 0px 0px;
+  }
+  .main .label-orng {
+    width: 100px;
+    height: 20px;
+    border-radius: 6px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .main .label-orng-15deg {
+    top: -6px;
+    right: 66px;
+  }
+  .main .links-store {
+    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 144px;
-    height: 32px;
-    background-color: #FF6700;
-    border-radius: 8px;
-    font-size: 14px;
-    font-weight: 500;
-    color: #fff;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 229px;
+    top: 390px;
+    left: 65px;
+    z-index: 5;
   }
-
-  .label-orng-15deg {
-    position: absolute;
-    top: -10px;
-    right: 155px;
-    -webkit-transform: rotate(-15deg);
-            transform: rotate(-15deg);
+  .main .links-store__app {
+    width: 106px;
+    height: 40px;
+    margin-right: 0px;
   }
-
-  .links-store {
-    position: relative;
-    margin-top: 61px;
+  .main .links-store__app-img {
+    display: block;
+    width: 106px;
+    height: 40px;
   }
-  .links-store__app {
-    width: 179px;
-    height: 64px;
-    margin-right: 24px;
+  .main .links-store__goo {
+    width: 115px;
+    height: 40px;
   }
-  .links-store__goo {
-    width: 200px;
-    height: 64px;
+  .main .links-store__goo-img {
+    display: block;
+    width: 115px;
+    height: 40px;
   }
-
-  .down-link {
+  .main .down-link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -845,53 +851,46 @@ body {
     letter-spacing: 0.25px;
     text-decoration: none;
     cursor: pointer;
+    margin-top: 81px;
   }
-  .down-link__img {
+  .main .down-link__img {
     width: 24px;
     height: 24px;
     margin-right: 8px;
   }
-
-  .block-descr {
+  .main .block-descr {
+    width: 300px;
+    margin-top: 12px;
+    margin: 0 auto;
     margin-top: 12px;
   }
-
-  .screen-1 {
-    display: block;
-    max-width: 360px;
-    height: 570px;
-    background: url("../img/Mobile360-01.jpg") center center/cover no-repeat;
-    margin: 0 auto;
-    background-color: #F5F5F5;
-  }
-  .screen-1__inner {
-    height: 93%;
+  .main .d-f {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
-  .screen-1__wrapper {
-    margin-top: 33px;
+  .main .screen-1 {
+    width: 360px;
+    height: 560px;
+    background: url("../img/Mobile360-01.jpg") center center/cover no-repeat;
+    background-position-y: 0px;
+    padding: 0 0px 0 0px;
+  }
+  .main .screen-1__wrapper {
+    margin-top: 0px;
+  }
+  .main .screen-1__img {
     display: block;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .screen-1__img {
-    width: 264px;
-    height: 534px;
+    position: absolute;
+    width: 155px;
+    height: 313px;
     display: block;
     margin-right: 96px;
+    margin-top: 0px;
+    left: 160px;
+    top: 155px;
   }
-
-  .logo-top {
+  .main .logo-top {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -900,7 +899,7 @@ body {
             justify-content: center;
     width: 360px;
   }
-  .logo-top__labels {
+  .main .logo-top__labels {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -909,22 +908,45 @@ body {
             align-items: center;
     width: 328px;
   }
-
-  .label-app {
+  .main .label-app {
     display: block;
     width: 80px;
     height: 40px;
     margin-left: 16px;
   }
-
-  .label-g-pl {
+  .main .label-g-pl {
     display: block;
     width: 80px;
     height: 40px;
     margin-left: 8px;
   }
-
-  .title-mt-58px {
+  .main .title-mt-58px {
     margin-top: 58px;
+  }
+  .main .line {
+    width: 72px;
+    height: 2px;
+    background-color: #090909;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-top: 18px;
+  }
+  .main .ff {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    top: 0px;
+    width: 360px;
+    height: 133px;
+    background-color: #F5F5F5;
+    padding-bottom: 8px;
   }
 }/*# sourceMappingURL=style.min.css.map */
