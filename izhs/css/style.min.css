@@ -73,6 +73,13 @@ body {
   border: 1px solid #5337FF;
 }
 
+.l {
+  display: none;
+}
+.l--active {
+  display: none;
+}
+
 .logo {
   margin: 4px 0 4px 0;
 }
@@ -726,13 +733,13 @@ body {
     width: 360px;
   }
   .main .tabs {
-    top: 276px;
-    right: 1px;
+    top: 188px;
+    right: -22px;
     position: absolute;
     z-index: 6;
   }
   .main .tabs__list {
-    display: none;
+    display: block;
     position: relative;
     font-size: 20px;
     font-weight: 700;
@@ -744,37 +751,36 @@ body {
     cursor: pointer;
   }
   .main .tabs__list:before {
-    position: absolute;
-    content: "";
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
+    width: 6px;
+    height: 6px;
     top: 7px;
     right: 34px;
-    background-color: #6A6A6A;
-  }
-  .main .tabs__list--active {
-    color: #5337FF;
   }
   .main .tabs__list--active:before {
-    position: absolute;
-    content: "";
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
+    width: 6px;
+    height: 6px;
     top: 7px;
     right: 34px;
-    background-color: #5337FF;
   }
   .main .tabs__list--active:after {
-    position: absolute;
-    content: "";
-    width: 15px;
-    height: 15px;
-    top: 4px;
-    right: 31px;
-    border-radius: 50%;
-    border: 1px solid #5337FF;
+    width: 12px;
+    height: 12px;
+    top: 3px;
+    right: 30px;
+  }
+  .main .l {
+    display: none;
+  }
+  .main .l--active {
+    position: relative;
+    right: 25px;
+    display: block;
+    color: #5337FF;
+    font-size: 20px;
+    font-weight: 700;
+    line-htight: 24px;
+    width: 20px;
+    height: 24px;
   }
   .main .logo {
     margin: 0px 0 0px 0;
@@ -784,8 +790,10 @@ body {
   .main .title {
     display: block;
     font-size: 16px;
-    text-align: center;
     line-height: 20px;
+  }
+  .main .jc-center {
+    text-align: center;
   }
   .main .container {
     width: 360px;
