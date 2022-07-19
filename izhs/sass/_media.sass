@@ -10,12 +10,13 @@
 	.main
 		width: 360px
 		
+		
 
 
 
 		.tabs
 			top: 188px
-			right: -22px
+			right: 10px
 			position: absolute
 			z-index: 6
 			&__list
@@ -37,7 +38,7 @@
 					height: 6px
 					// border-radius: 50%
 					top: 7px
-					right: 34px
+					right: 12px
 					// top: -15px
 					// right: 7px
 					// background-color: #6A6A6A
@@ -50,7 +51,7 @@
 					height: 6px
 					// border-radius: 50%
 					top: 7px
-					right: 34px
+					right: 12px
 					// top: -15px
 					// right: 7px
 					// background-color: #5337FF
@@ -60,7 +61,7 @@
 					width: 12px
 					height: 12px
 					top: 3px
-					right: 30px
+					right: 8px
 					// border-radius: 50%
 					// border: 1px solid #5337FF
 
@@ -80,9 +81,14 @@
 			height: 24px
 
 		.logo
+			display: block
 			margin: 0px 0 0px 0
 			width: 54px
 			height: 16px
+			
+		.logo-center
+			margin: 0 auto 
+
 
 		.title
 			display: block
@@ -182,7 +188,7 @@
 			background-position-y: 0px
 			// margin: 0 auto
 			// background-color: #F5F5F5
-			padding: 0 0px 0 0px
+			padding: 0 16px 0 16px
 			&__inner
 				// height: 93%
 				// display: flex
@@ -205,27 +211,31 @@
 
 		.logo-top
 			display: flex
-			justify-content: center
-			width: 360px
+			justify-content: space-between
+			align-items: center
+			width: 328px
+			img
+				// margin: 0
 			&__labels
 				display: flex
-				align-items: center
-				width: 328px
+				justify-content: end
+				// align-items: center
+				width: 240px
 
 		.label-app
 			display: block
-			width: 80px
-			height: 40px
-			margin-left: 16px
+			width: 56px
+			height: 28px
+			margin-left: 8px
 
 		.label-g-pl
 			display: block
-			width: 80px
-			height: 40px
-			margin-left: 8px
+			width: 56px
+			height: 28px
+			margin-left: 4px
 
-		.title-mt-58px
-			margin-top: 58px
+		.title-mt
+			margin-top: 48px
 
 		.line
 			width: 72px
@@ -235,7 +245,7 @@
 			margin: 0 auto
 			margin-top: 18px
 
-		.ff
+		.down-wrapper
 			position: relative
 			display: flex
 			flex-direction: column
@@ -246,3 +256,61 @@
 			background-color: #F5F5F5
 			// background-color: red
 			padding-bottom: 8px
+
+
+		.screen-2
+			width: 360px
+			height: 560px
+			padding: 0 16px 0 16px
+			&__cards
+				display: block
+				width: 292px
+				// flex-direction: column
+			&__card
+				width: 270px
+				height: 356px
+				
+			&__card-inner
+				padding-top: 16px
+				padding-left: 16px
+				
+			&__card-numb
+				font-size: 40px
+				line-height: 40px
+				
+			&__card-descr
+				font-size: 16px
+				margin-top: 16px
+				line-height: 20px
+				
+			&__card-pict
+				width: 270px
+				height: 196px
+				
+				border-radius: 20px
+				padding: 16px 16px 0 16px
+				
+			&__card-2
+				
+			&__img
+				width: 270px
+				height: 228px
+				border-radius: 20px
+			&__card-3
+				
+			&__img3
+				width: 236px
+				height: 228px
+				margin-left: 17px
+				
+
+		.card-title
+			font-style: 16px
+
+		.label-white
+			font-size: 10px
+			width: 103px
+			height: 20px
+			border-radius: 6px
+
+

@@ -68,6 +68,24 @@ $(document).ready(function () {
     });
 
 
+
+    // slider-0 screen-2 mobile
+    $('.screen-2__cards').slick({
+        // prevArrow: '<button type="button" class="slick-prev"><img class="slick-prev__img" src="icons/arrow-left.svg" alt=""></button>',
+        // nextArrow: '<button type="button" class="slick-next"><img class="slick-next__img" src="icons/arrow-right.svg" alt=""></button>',
+        variableWidth: true,
+        // centerMode: true,
+        // centerPadding: '400px',
+        // infinite: true,
+        // vertical: true,
+        // slidesToShow: 3,
+        // slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
+
+
    
 
 

@@ -245,7 +245,7 @@ body {
   margin-left: 8px;
 }
 
-.title-mt-58px {
+.title-mt {
   margin-top: 58px;
 }
 
@@ -288,7 +288,7 @@ body {
 }
 .screen-2__card-inner {
   padding-top: 24px;
-  margin-left: 24px;
+  padding-left: 24px;
 }
 .screen-2__card-numb {
   font-weight: 700;
@@ -734,7 +734,7 @@ body {
   }
   .main .tabs {
     top: 188px;
-    right: -22px;
+    right: 10px;
     position: absolute;
     z-index: 6;
   }
@@ -754,19 +754,19 @@ body {
     width: 6px;
     height: 6px;
     top: 7px;
-    right: 34px;
+    right: 12px;
   }
   .main .tabs__list--active:before {
     width: 6px;
     height: 6px;
     top: 7px;
-    right: 34px;
+    right: 12px;
   }
   .main .tabs__list--active:after {
     width: 12px;
     height: 12px;
     top: 3px;
-    right: 30px;
+    right: 8px;
   }
   .main .l {
     display: none;
@@ -783,9 +783,13 @@ body {
     height: 24px;
   }
   .main .logo {
+    display: block;
     margin: 0px 0 0px 0;
     width: 54px;
     height: 16px;
+  }
+  .main .logo-center {
+    margin: 0 auto;
   }
   .main .title {
     display: block;
@@ -882,7 +886,7 @@ body {
     height: 560px;
     background: url("../img/Mobile360-01.jpg") center center/cover no-repeat;
     background-position-y: 0px;
-    padding: 0 0px 0 0px;
+    padding: 0 16px 0 16px;
   }
   .main .screen-1__wrapper {
     margin-top: 0px;
@@ -902,34 +906,37 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 360px;
-  }
-  .main .logo-top__labels {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     width: 328px;
   }
+  .main .logo-top__labels {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    width: 240px;
+  }
   .main .label-app {
     display: block;
-    width: 80px;
-    height: 40px;
-    margin-left: 16px;
+    width: 56px;
+    height: 28px;
+    margin-left: 8px;
   }
   .main .label-g-pl {
     display: block;
-    width: 80px;
-    height: 40px;
-    margin-left: 8px;
+    width: 56px;
+    height: 28px;
+    margin-left: 4px;
   }
-  .main .title-mt-58px {
-    margin-top: 58px;
+  .main .title-mt {
+    margin-top: 48px;
   }
   .main .line {
     width: 72px;
@@ -939,7 +946,7 @@ body {
     margin: 0 auto;
     margin-top: 18px;
   }
-  .main .ff {
+  .main .down-wrapper {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -956,5 +963,56 @@ body {
     height: 133px;
     background-color: #F5F5F5;
     padding-bottom: 8px;
+  }
+  .main .screen-2 {
+    width: 360px;
+    height: 560px;
+    padding: 0 16px 0 16px;
+  }
+  .main .screen-2__cards {
+    display: block;
+    width: 292px;
+  }
+  .main .screen-2__card {
+    width: 270px;
+    height: 356px;
+  }
+  .main .screen-2__card-inner {
+    padding-top: 16px;
+    padding-left: 16px;
+  }
+  .main .screen-2__card-numb {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .main .screen-2__card-descr {
+    font-size: 16px;
+    margin-top: 16px;
+    line-height: 20px;
+  }
+  .main .screen-2__card-pict {
+    width: 270px;
+    height: 196px;
+    border-radius: 20px;
+    padding: 16px 16px 0 16px;
+  }
+  .main .screen-2__img {
+    width: 270px;
+    height: 228px;
+    border-radius: 20px;
+  }
+  .main .screen-2__img3 {
+    width: 236px;
+    height: 228px;
+    margin-left: 17px;
+  }
+  .main .card-title {
+    font-style: 16px;
+  }
+  .main .label-white {
+    font-size: 10px;
+    width: 103px;
+    height: 20px;
+    border-radius: 6px;
   }
 }/*# sourceMappingURL=style.min.css.map */
