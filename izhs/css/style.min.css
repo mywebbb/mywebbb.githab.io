@@ -325,6 +325,10 @@ body {
   margin-left: 27px;
 }
 
+.screen-2__cards-mobile {
+  display: none;
+}
+
 .card-title {
   font-weight: 750;
   font-size: 20px;
@@ -802,7 +806,7 @@ body {
   .main .container {
     width: 360px;
     height: 560px;
-    padding: 16px 0px 0px 0px;
+    padding: 16px 16px 0px 16px;
   }
   .main .label-orng {
     width: 100px;
@@ -863,7 +867,6 @@ body {
     letter-spacing: 0.25px;
     text-decoration: none;
     cursor: pointer;
-    margin-top: 81px;
   }
   .main .down-link__img {
     width: 24px;
@@ -960,9 +963,11 @@ body {
             justify-content: end;
     top: 0px;
     width: 360px;
-    height: 133px;
     background-color: #F5F5F5;
     padding-bottom: 8px;
+  }
+  .main .h-133px {
+    height: 133px;
   }
   .main .screen-2 {
     width: 360px;
@@ -972,6 +977,8 @@ body {
   .main .screen-2__cards {
     display: block;
     width: 292px;
+    margin-top: 16px;
+    height: 356px;
   }
   .main .screen-2__card {
     width: 270px;
@@ -1005,6 +1012,12 @@ body {
     width: 236px;
     height: 228px;
     margin-left: 17px;
+  }
+  .main .screen-2__cards-normal {
+    display: none;
+  }
+  .main .screen-2__cards-mobile {
+    display: block;
   }
   .main .card-title {
     font-style: 16px;
