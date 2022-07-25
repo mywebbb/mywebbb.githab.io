@@ -886,7 +886,7 @@ body {
     display: flex;
   }
   .main .screen-1 {
-    width: 360px;
+    min-width: 360px;
     height: 560px;
     background: url("../img/Mobile360-01.jpg") center center/cover no-repeat;
     background-position-y: 0px;
@@ -1022,12 +1022,27 @@ body {
     display: block;
   }
   .main .card-title {
-    font-style: 16px;
+    font-size: 16px;
+    line-height: 20px;
   }
   .main .label-white {
     font-size: 10px;
     width: 103px;
     height: 20px;
     border-radius: 6px;
+  }
+  .main .screen-3 {
+    width: 360px;
+    height: 560px;
+    padding: 0 0px 0 0px;
+  }
+  .main .screen-3__slider-wrapper {
+    width: 299px;
+  }
+  .main .slide {
+    width: 270px;
+    height: 183px;
+    border-radius: 20px;
+    padding: 16px 16px 0 16px;
   }
 }/*# sourceMappingURL=style.min.css.map */
