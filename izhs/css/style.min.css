@@ -807,6 +807,7 @@ body {
     width: 360px;
     height: 560px;
     padding: 16px 16px 0px 16px;
+    margin: 0 auto;
   }
   .main .label-orng {
     width: 100px;
@@ -889,7 +890,8 @@ body {
     height: 560px;
     background: url("../img/Mobile360-01.jpg") center center/cover no-repeat;
     background-position-y: 0px;
-    padding: 0 16px 0 16px;
+    padding: 0 0px 0 0px;
+    margin: 0 auto;
   }
   .main .screen-1__wrapper {
     margin-top: 0px;
@@ -900,7 +902,7 @@ body {
     width: 155px;
     height: 313px;
     display: block;
-    margin-right: 96px;
+    margin-right: 0px;
     margin-top: 0px;
     left: 160px;
     top: 155px;
@@ -962,7 +964,7 @@ body {
         -ms-flex-pack: end;
             justify-content: end;
     top: 0px;
-    width: 360px;
+    width: 100%;
     background-color: #F5F5F5;
     padding-bottom: 8px;
   }
@@ -972,7 +974,7 @@ body {
   .main .screen-2 {
     width: 360px;
     height: 560px;
-    padding: 0 16px 0 16px;
+    padding: 0 0px 0 0px;
   }
   .main .screen-2__cards {
     display: block;
