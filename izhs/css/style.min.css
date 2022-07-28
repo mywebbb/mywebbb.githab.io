@@ -732,12 +732,58 @@ body {
   display: block;
 }
 
+.b {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.green {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  cursor: pointer;
+  z-index: 51;
+}
+.green:focus {
+  z-index: 57;
+}
+
+.blue {
+  position: relative;
+  top: 10px;
+  left: -80px;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  cursor: pointer;
+  z-index: 53;
+}
+.blue:focus {
+  z-index: 56;
+}
+
+.red {
+  position: relative;
+  top: 20px;
+  left: -150px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  cursor: pointer;
+  z-index: 55;
+}
+.red:focus {
+  z-index: 57;
+}
+
 @media (max-width: 575px) {
   .main {
     width: 360px;
   }
   .main .tabs {
-    top: 188px;
+    top: 207px;
     right: 10px;
     position: absolute;
     z-index: 6;
@@ -1036,6 +1082,9 @@ body {
     height: 560px;
     padding: 0 0px 0 0px;
   }
+  .main .screen-3__title {
+    width: 290px;
+  }
   .main .screen-3__slider-wrapper {
     width: 299px;
   }
@@ -1044,5 +1093,49 @@ body {
     height: 183px;
     border-radius: 20px;
     padding: 16px 16px 0 16px;
+  }
+  .main .screen-4__title {
+    width: 290px;
+  }
+  .main .screen-4__cards {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 20px;
+  }
+  .main .screen-4__card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #e4d0d0;
+    cursor: pointer;
+  }
+  .main .screen-4__card-1 {
+    position: relative;
+    top: 0px;
+    right: 0;
+    left: 0;
+  }
+  .main .screen-4__card-1:focus {
+    z-index: 50;
+  }
+  .main .screen-4__card-2 {
+    position: relative;
+    top: 20px;
+    right: 0px;
+    left: -120px;
+  }
+  .main .screen-4__card-2:focus {
+    z-index: 52;
+  }
+  .main .screen-4__card-3 {
+    position: relative;
+    top: 40px;
+    right: 0px;
+    left: -240px;
+  }
+  .main .screen-4__card-3:focus {
+    z-index: 54;
+  }
+  .main .screen-4__card-img {
+    display: none;
   }
 }/*# sourceMappingURL=style.min.css.map */

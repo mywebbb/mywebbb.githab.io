@@ -23,9 +23,9 @@ $(document).ready(function () {
         nextArrow: '<button type="button" class="slick-next"><img class="slick-next__img" src="icons/arrow-right.svg" alt=""></button>',
         responsive: [
             {
-                breakpoint: 361,
+                breakpoint: 575,
                 settings: {
-                    arrows: false,
+                    arrows: false
                 }
 
             }

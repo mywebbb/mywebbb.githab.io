@@ -12,7 +12,7 @@
 
 		
 		.tabs
-			top: 188px
+			top: 207px
 			right: 10px
 			position: absolute
 			z-index: 6
@@ -336,6 +336,7 @@
 			height: 560px
 			padding: 0 0px 0 0px
 			&__title
+				width: 290px
 				
 			&__slider-wrapper
 				width: 299px
@@ -350,4 +351,45 @@
 			height: 183px
 			border-radius: 20px
 			padding: 16px 16px 0 16px
+
+
+		.screen-4
+			&__title
+				width: 290px
+			&__cards
+				justify-content: flex-start
+				margin-top: 20px
+			&__card
+				// background-color: #c26868cc
+				background-color: #ffffffcc
+				border: 1px solid #e4d0d0
+				cursor: pointer
+			&__card-1
+				position: relative
+				top: 0px
+				right: 0
+				left: 0
+
+				// z-index: 
+				&:focus
+					z-index: 50
+			&__card-2
+				position: relative
+				top: 20px
+				right: 0px
+				left: -120px
+				// z-index: 
+				&:focus
+					z-index: 52
+			&__card-3
+				position: relative
+				top: 40px
+				right: 0px
+				left: -240px
+				// z-index: 
+				&:focus
+					z-index: 54
+			&__card-img
+				display: none
+
 
