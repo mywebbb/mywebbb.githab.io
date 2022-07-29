@@ -548,14 +548,14 @@ body {
   margin-top: 64px;
 }
 .screen-5__card-title {
-  font-weight: 750;
+  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: #FFFFFF;
 }
 .screen-5__card-descr {
   width: 200px;
-  font-weight: 750;
+  font-weight: 700;
   font-size: 32px;
   line-height: 36px;
   color: #FFFFFF;
@@ -713,6 +713,8 @@ body {
 }
 .screen-7__img {
   margin-left: 138px;
+  height: 631px;
+  width: 312px;
 }
 
 .screen-8 {
@@ -732,59 +734,13 @@ body {
   display: block;
 }
 
-.b {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.green {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  background-color: green;
-  cursor: pointer;
-  z-index: 51;
-}
-.green:focus {
-  z-index: 57;
-}
-
-.blue {
-  position: relative;
-  top: 10px;
-  left: -80px;
-  width: 100px;
-  height: 100px;
-  background-color: blue;
-  cursor: pointer;
-  z-index: 53;
-}
-.blue:focus {
-  z-index: 56;
-}
-
-.red {
-  position: relative;
-  top: 20px;
-  left: -150px;
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  cursor: pointer;
-  z-index: 55;
-}
-.red:focus {
-  z-index: 57;
-}
-
 @media (max-width: 575px) {
   .main {
     width: 360px;
   }
   .main .tabs {
     top: 207px;
-    right: 10px;
+    right: 4px;
     position: absolute;
     z-index: 6;
   }
@@ -1102,9 +1058,10 @@ body {
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin-top: 20px;
+    height: 200px;
   }
   .main .screen-4__card {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.88);
     border: 1px solid #e4d0d0;
     cursor: pointer;
   }
@@ -1115,6 +1072,8 @@ body {
     left: 0;
   }
   .main .screen-4__card-1:focus {
+    -webkit-transition: 1s all;
+    transition: 1s all;
     z-index: 50;
   }
   .main .screen-4__card-2 {
@@ -1137,5 +1096,120 @@ body {
   }
   .main .screen-4__card-img {
     display: none;
+  }
+  .main .screen-5__card {
+    width: 299px;
+    height: 168px;
+    border-radius: 20px;
+    padding: 16px 0 16px 16px;
+    margin-top: 80px;
+  }
+  .main .screen-5__card-title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .main .screen-5__card-descr {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .main .screen-5__title {
+    margin-top: 24px;
+    width: 253px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .main .screen-6__label-club {
+    width: 93px;
+    height: 28px;
+    border-radius: 6px;
+    margin-top: 72px;
+  }
+  .main .screen-6__title {
+    margin-top: 16px;
+    width: 200px;
+  }
+  .main .screen-6__inner {
+    margin-top: 16px;
+  }
+  .main .screen-6__img {
+    display: none;
+  }
+  .main .screen-6__card {
+    width: 299px;
+    height: 200px;
+    border-radius: 20px;
+    padding: 16px 16px;
+  }
+  .main .screen-6__card-name p {
+    font-size: 14px;
+    margin-bottom: 12px;
+    line-height: 16px;
+  }
+  .main .screen-6__card-name p:last-child {
+    margin-top: 20px;
+    line-height: 16px;
+  }
+  .main .screen-6__card-price p {
+    font-size: 14px;
+    margin-bottom: 12px;
+    line-height: 16px;
+  }
+  .main .screen-6__card-price p:last-child {
+    margin-top: 20px;
+    line-height: 16px;
+  }
+  .main .fix {
+    position: relative;
+  }
+  .main .screen-7__slider-wrapper {
+    width: 300px;
+    margin-top: 24px;
+  }
+  .main .screen-7__slider-wrapper .slick-prev {
+    top: 150px;
+    left: 28px;
+    width: 32px;
+    height: 32px;
+  }
+  .main .screen-7__slider-wrapper .slick-next {
+    top: 150px;
+    left: 268px;
+    width: 32px;
+    height: 32px;
+    z-index: 10;
+  }
+  .main .screen-7__slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 300px;
+    padding: 0;
+  }
+  .main .screen-7__text {
+    width: 290px;
+    padding-top: 0px;
+    margin-top: 24px;
+  }
+  .main .screen-7__title {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    margin: 0 auto;
+  }
+  .main .screen-7__descr {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 8px;
+  }
+  .main .screen-7__img-wrapper {
+    height: 308px;
+    width: 176px;
+  }
+  .main .screen-7__img {
+    display: block;
+    height: 308px;
+    width: 176px;
+    margin-left: 80px;
   }
 }/*# sourceMappingURL=style.min.css.map */
