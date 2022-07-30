@@ -68,7 +68,7 @@ $(document).ready(function () {
             {
                 breakpoint: 575,
                 settings: {
-                    slidesToShow: 2
+                    slidesToShow: 3
                 }
 
             }
@@ -76,7 +76,7 @@ $(document).ready(function () {
         // variableWidth: true,
         verticalSwiping: true,
         vertical: true,
-        // centerMode: true,
+        centerMode: true,
         // centerPadding: '400px',
         // infinite: true,
         slidesToShow: 3,
