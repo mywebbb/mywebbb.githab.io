@@ -802,12 +802,12 @@ body {
     font-size: 16px;
     line-height: 20px;
   }
-  .main .jc-center {
+  .main .ta-center {
     text-align: center;
   }
   .main .container {
     width: 360px;
-    height: 560px;
+    height: 100vh;
     padding: 16px 16px 0px 16px;
     margin: 0 auto;
   }
@@ -1211,5 +1211,24 @@ body {
     height: 308px;
     width: 176px;
     margin-left: 80px;
+  }
+  .main .screen-8__slider-wrapper {
+    position: relative;
+    display: block;
+    width: 270px;
+    height: 336px;
+    top: -25px;
+    left: 30px;
+  }
+  .main .screen-8__slider-wrapper .slick-track {
+    top: -90px;
+  }
+  .main .screen-8__slider {
+    height: 336px;
+  }
+  .main .links-store-end {
+    position: relative;
+    top: -30px;
+    left: 40px;
   }
 }/*# sourceMappingURL=style.min.css.map */

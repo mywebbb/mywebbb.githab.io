@@ -64,16 +64,25 @@ $(document).ready(function () {
 
     // slider-3
     $('.screen-8__slider').slick({
+        responsive: [
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 2
+                }
+
+            }
+        ],
         // variableWidth: true,
         verticalSwiping: true,
         vertical: true,
-        centerMode: true,
+        // centerMode: true,
         // centerPadding: '400px',
         // infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: false,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 2000,
     });
 
