@@ -1,0 +1,20 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  line-height: none;
+  font-size: 15px;
+  color: #000;
+}
+
+.transition-fade {
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+  -webkit-transform: translateY(500px);
+          transform: translateY(500px);
+}/*# sourceMappingURL=style.min.css.map */

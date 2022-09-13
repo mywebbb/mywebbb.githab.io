@@ -1,0 +1,599 @@
+*
+  margin: 0
+  box-sizing: border-box
+  font-family: "Roboto Flex", sans-serif
+  font-size: 40px
+  color: #090909
+  letter-spacing: -0.5px
+  font-stretch: 151
+  font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 499, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738
+.transition-fade
+  transition: 0.6s
+  opacity: 1
+
+html.is-animating .transition-fade
+  opacity: 0
+  // transform: translateY(500px)
+
+
+body
+  background-color: #F5F5F5
+
+.main
+  position: relative
+  width: 1148px
+  margin: 0 auto
+  z-index: 5
+  
+.tabs
+  top: 276px
+  right: 1px
+  position: absolute
+  z-index: 6
+  &__list
+    display: block
+    position: relative
+    font-size: 20px
+    font-weight: 700
+    line-htight: 24px
+    width: 20px
+    height: 24px
+    color: #F5F5F5
+    list-style-type: none
+    cursor: pointer
+    &:before
+      position: absolute
+      content: ""
+      width: 11px
+      height: 11px
+      border-radius: 50%
+      top: 7px
+      right: 34px
+      background-color: #6A6A6A
+  &__list--active
+    color: #5337FF
+    &:before
+      position: absolute
+      content: ""
+      width: 11px
+      height: 11px
+      border-radius: 50%
+      top: 7px
+      right: 34px
+      background-color: #5337FF
+    &:after
+      position: absolute
+      content: ""
+      width: 15px
+      height: 15px
+      top: 4px
+      right: 31px
+      border-radius: 50%
+      border: 1px solid #5337FF
+
+.l
+  display: none
+  &--active
+    display: none
+
+.logo
+  
+  margin: 4px 0 4px 0
+
+
+.title
+  font-size: 40px
+  line-height: 44px
+  
+.container
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  max-width: 1148px
+  height: 800px
+  padding: 48px 10px 32px 10px
+  margin: 0 auto
+
+.label-orng
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 144px
+  height: 32px
+  background-color: #FF6700
+  border-radius: 8px
+  font-size: 14px
+  font-weight: 500
+  color: #fff
+
+.label-orng-15deg
+  position: absolute
+  top: -7px
+  right: 153px
+  transform: rotate(-15deg)
+
+.links-store-wrapper
+  display: flex
+  justify-content: center
+  background-color: #F5F5F5
+  position: relative
+  margin-top: 30px
+  padding-top: 28px
+  z-index: 15
+.links-store
+  position: relative
+  width: 403px
+  display: flex
+  justify-content: space-between
+  
+  
+  &__app
+    width: 179px
+    height: 64px
+    margin-right: 24px
+  &__goo
+    width: 200px
+    height: 64px
+
+.down-link
+  display: flex
+  justify-content: center
+  align-items: center
+  font-weight: 500
+  font-size: 14px
+  line-height: 20px
+  letter-spacing: 0.25px
+  text-decoration: none
+  cursor: pointer
+  &__img
+    width: 24px
+    height: 24px
+    margin-right: 8px
+
+.block-descr
+  width: 413px
+  margin-top: 142px
+
+
+.screen-1
+  display: block
+  max-width: 1440px
+  height: 800px
+  background: url('../img/woman.jpg') center center/cover no-repeat
+  margin: 0 auto
+  background-color: #F5F5F5
+  &__inner
+    height: 93%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &__wrapper
+    margin-top: 83px
+    display: flex
+    justify-content: space-between
+  &__img
+    width: 264px
+    height: 534px
+    display: block
+    margin-right: 96px
+
+.logo-top
+  position: absolute
+  display: flex
+  justify-content: space-between
+  width: 1148px
+  margin-top: 48px
+  &__labels
+    display: flex
+    align-items: center
+    width: 328px
+
+.label-app
+  display: block
+  width: 80px
+  height: 40px
+  margin-left: 16px
+
+.label-g-pl
+  display: block
+  width: 80px
+  height: 40px
+  margin-left: 8px
+
+.title-mt
+  // margin-top: 58px
+  margin-top: 98px
+
+
+
+
+.screen-2
+  display: block
+  background-color: #F5F5F5
+  &__cards
+    display: flex
+    justify-content: space-between
+    width: 984px
+    height: 432px
+    margin-top: 48px
+  &__card
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 312px
+    height: 432px
+    background: #5337FF
+    border-radius: 24px
+  &__card-2
+    background-color: #56ABFF
+  &__card-3
+    background-color: #883FFF
+  &__card-inner
+    padding-top: 24px
+    padding-left: 24px
+  &__card-numb
+    font-weight: 700
+    font-size: 64px
+    line-height: 64px
+    color: #FFFFFF
+  &__card-descr
+    width: 264px
+    height: 56px
+    font-weight: 700
+    font-size: 20px
+    line-height: 28px
+    color: #FFFFFF
+    margin-top: 16px
+  &__card-pict
+    display: flex
+    justify-content: space-between
+    width: 312px
+    height: 196px
+    border-radius: 24px
+    background: url('../img/cards/1-1.jpg') center center/cover no-repeat
+    margin-bottom: 24px
+    padding: 24px 24px 0 24px
+  &__img3
+    width: 258px
+    height: 256px
+    margin-left: 27px
+
+.screen-2__cards-mobile
+  display: none
+.screen-2__cards-normal
+  // display: flex
+
+.card-title
+  font-weight: 750
+  font-size: 20px
+  line-height: 24px
+  color: #FFFFFF
+
+.label-white
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 149px
+  height: 32px
+  background: #fff
+  border-radius: 8px
+  font-style: normal
+  font-weight: 750
+  font-size: 14px
+  line-height: 20px
+  color: #090909
+
+
+.screen-3
+  display: block
+  background-color: #F5F5F5
+  &__slider-wrapper
+    position: relative
+    width: 1032px
+    margin-top: 56px
+    .slick-prev
+      position: absolute
+      background-color: #F5F5F5
+      border: none
+      top: 325px
+      right: 143px
+      z-index: 1
+      cursor: pointer
+      width: 40px
+      height: 40px
+      border-radius: 100%
+    .slick-next
+      position: absolute
+      background-color: #F5F5F5
+      border: none
+      top: 325px
+      right: 90px
+      z-index: 1
+      cursor: pointer
+      width: 40px
+      height: 40px
+      border-radius: 100%
+  &__title
+    margin-top: 80px
+    width: 900px
+  &__slider
+    width: 1032
+    margin: 0 auto
+
+
+.slide
+  width: 456px
+  height: 288px
+  display: flex
+  justify-content: space-between
+  padding: 24px 24px 0 24px
+  border-radius: 24px
+
+.slide-1
+  background: url('../img/cards/4.png') center center/cover no-repeat
+
+.slide-2
+  background: url('../img/cards/5.png') center center/cover no-repeat
+
+.slide-3
+  background: url('../img/cards/6.png') center center/cover no-repeat
+
+.slide-4
+  background: url('../img/cards/7.png') center center/cover no-repeat
+
+.slide-5
+  background: url('../img/cards/8.png') center center/cover no-repeat
+
+.screen-4
+  display: block
+  background-color: #F5F5F5
+  &__title
+    width: 800px
+    margin-top: 74px
+  &__cards
+    position: revative
+    display: flex
+    justify-content: space-between
+    width: 674px
+    height: 257px
+    margin-top: 88px
+    z-index: 10
+  &__card
+    display: block
+    width: 167px
+    height: 257px
+    background-color: #ffffffcc
+    border-radius: 16px
+    padding: 16px 0 0 16px
+    z-index: 10
+  &__card-top
+    display: flex
+    align-items: center
+    span
+      font-weight: 700
+      font-size: 12px
+      line-height: 0px
+      margin-left: 8px
+  &__card-icon
+    text-align: center
+    width: 80px
+    height: 80px
+    background: #E0E0E0
+    border-radius: 100%
+    padding: 15px 0 0 14px
+    margin-top: 85px
+  &__card-icon-2
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #EFB178
+    padding: 0
+  &__card-ring
+    width: 49px
+    height: 49px
+    border-radius: 100%
+    background-color: #EFB178
+    border: 2.27151px solid #955B32
+  &__card-icon-3
+    background-color: #C50002
+    padding: 13.79px
+  &__card-img
+    display: block
+    position: relative
+    top: 0px
+    left: -128px
+    z-index: 7
+    width: 167px
+    height: 257px
+    // opacity: 0.99
+  &__card-title
+    font-size: 14px
+    font-weight: 700
+    line-height: 130%
+    color: #090909
+    margin-top: 8px
+
+  
+.screen-5
+  display: block
+  background-color: #F5F5F5
+  &__card
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 552px
+    height: 312px
+    background: url('../img/cards/cardgenius.png') center center/cover no-repeat
+    padding: 28px 0 32px 32px
+    margin-top: 64px
+  &__card-title
+    font-weight: 700
+    font-size: 24px
+    line-height: 28px
+    color: #FFFFFF
+  &__card-descr
+    width: 200px
+    font-weight: 700
+    font-size: 32px
+    line-height: 36px
+    color: #FFFFFF
+  &__title
+    margin-top: 56px
+    width: 800px
+
+
+.screen-6
+  display: block
+  background-color: #F5F5F5
+  &__label-club
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 109px
+    height: 32px
+    left: 0px
+    top: 0px
+    background-color: #883FFF
+    border-radius: 8px
+    font-weight: 750
+    font-size: 14px
+    line-height: 20px
+    color: #FFFFFF
+    margin-top: 70px
+  &__title
+    margin-top: 24px
+  &__inner
+    display: flex
+    margin-top: 84px
+  &__img
+    width: 313.21px
+    height: 136.5px
+    margin: 24px 24px 0 71px
+  &__card
+    display: flex
+    justify-content: space-between
+    width: 552px
+    height: 288px
+    background-color: #5337FF
+    border-radius: 24px
+    padding: 24px 24px
+  &__card-name
+    p
+      font-weight: 500
+      font-size: 20px
+      line-height: 26px
+      color: #fff
+      margin-bottom: 14px
+      &:last-child
+        font-weight: 700
+        margin-bottom: 0px
+        margin-top: 30px
+        font-weight: 700
+  &__card-price
+    p
+      font-weight: 500
+      font-size: 20px
+      line-height: 26px
+      color: #FFB6B6
+      text-align: right
+      margin-bottom: 14px
+      &:last-child
+        font-weight: 700
+        margin-bottom: 0px
+        margin-top: 30px
+        color: #4FEA90
+
+.fix
+  position: absolute
+  z-index: 11
+
+
+.screen-7
+  display: block
+  &__slider-wrapper
+    width: 1032px
+    margin-top: 16px
+    .slick-prev
+      position: absolute
+      background-color: #F5F5F5
+      border: none
+      top: 434px
+      left: 0px
+      z-index: 1
+      cursor: pointer
+      padding: 0px
+      width: 40px
+      height: 40px
+      border-radius: 100%
+    .slick-next
+      position: absolute
+      background-color: #F5F5F5
+      border: none
+      top: 434px
+      left: 50px
+      z-index: 1
+      cursor: pointer
+      padding: 0px
+      width: 40px
+      height: 40px
+      border-radius: 100% 
+  &__slider
+  &__slide
+    display: flex
+    width: 1032px
+  &__text
+    width: 456px
+    padding-top: 200px
+  &__title
+    font-weight: 750
+    font-size: 32px
+    line-height: 36px
+    color: #090909
+  &__descr
+    font-weight: 750
+    font-size: 32px
+    line-height: 36px
+    color: #6A6A6A
+    margin-top: 24px
+  &__img-wrapper
+    height: 632px
+    width: 450px
+  &__img
+    display: none
+    margin-left: 138px
+    height: 631px
+    width: 312px
+  &__img-min
+    display: none
+
+
+
+.screen-8
+  display: block
+  &__slider-wrapper
+    position: absolute
+    width: 457px
+    height: 976px
+    top: -170px
+    left: 570px
+    .slick-track
+      top: -60px
+  &__slider
+    
+
+
+.screen--active
+  display: block
+  // display: none
+
+
+
+
+
+
+
+
+@import "media"
+    
+
+  
