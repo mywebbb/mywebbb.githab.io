@@ -4,7 +4,9 @@ $(document).ready(function () {
     $('ul.tabs').on('click', 'li:not(.tabs__list--active)', function () {
         $(this)
             .addClass('tabs__list--active').siblings().removeClass('tabs__list--active')
-            .closest('body').find('section').removeClass('screen--active').eq($(this).index()).addClass('screen--active');
+            .closest('body').find('section').removeClass('screen--active').eq($(this).index()).addClass('screen--active')
+            .closest('body').find('section').removeClass('ttt').eq($(this).index()).addClass('ttt');
+
 
     });
     /* тест нижнего таба */

@@ -1,0 +1,12 @@
+{
+    "emmet.optimizeStylesheetParsing": true,
+    "emmet.showExpandedAbbreviation": "always",
+    "editor.quickSuggestions": {
+        "other": "on",
+        "comments": "off",
+        "strings": "off"
+    },
+    "liveSassCompile.settings.includeItems": [
+    
+    ]
+}

@@ -202,7 +202,6 @@ body {
   background: url("../img/woman.jpg") center center/cover no-repeat;
   margin: 0 auto;
   background-color: #F5F5F5;
-  opacity: 0;
 }
 .screen-1__inner {
   height: 93%;
@@ -218,7 +217,7 @@ body {
           justify-content: space-between;
 }
 .screen-1__wrapper {
-  margin-top: 33px;
+  margin-top: 83px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -234,6 +233,7 @@ body {
 }
 
 .logo-top {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -241,11 +241,11 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 1148px;
+  margin-top: 48px;
+  z-index: 10;
 }
 .logo-top__labels {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -267,7 +267,7 @@ body {
 }
 
 .title-mt {
-  margin-top: 58px;
+  margin-top: 88px;
 }
 
 .screen-2 {
@@ -412,7 +412,7 @@ body {
   border-radius: 100%;
 }
 .screen-3__title {
-  margin-top: 80px;
+  margin-top: 110px;
   width: 900px;
 }
 .screen-3__slider {
@@ -459,7 +459,7 @@ body {
 }
 .screen-4__title {
   width: 800px;
-  margin-top: 74px;
+  margin-top: 110px;
 }
 .screen-4__cards {
   position: revative;
@@ -566,7 +566,7 @@ body {
   height: 312px;
   background: url("../img/cards/cardgenius.png") center center/cover no-repeat;
   padding: 28px 0 32px 32px;
-  margin-top: 64px;
+  margin-top: 100px;
 }
 .screen-5__card-title {
   font-weight: 700;
@@ -610,7 +610,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #FFFFFF;
-  margin-top: 70px;
+  margin-top: 100px;
 }
 .screen-6__title {
   margin-top: 24px;
@@ -755,16 +755,19 @@ body {
 .screen-8__slider-wrapper .slick-track {
   top: -60px;
 }
+.labels--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .screen--active {
   display: block;
 }
 
-.ttt {
-  -webkit-transition: 1s 0.8s;
-  transition: 1s 0.8s;
-  opacity: 1;
-}
-
+/* .ttt
+ * transition: 1s 0.8s
+ * opacity: 1 */
 @media (max-width: 575px) {
   .main {
     width: 360px;
