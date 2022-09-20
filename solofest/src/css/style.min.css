@@ -77,7 +77,7 @@ section {
   display: block;
   position: relative;
   width: 1920px;
-  height: 1100px;
+  height: 100vh;
   background: url("../img/bg/main-bg.jpg") center center/cover no-repeat;
   margin-top: 0;
   padding-top: 330px;
@@ -106,9 +106,9 @@ section {
           justify-content: space-evenly;
   position: absolute;
   width: 1920px;
-  height: 1000px;
+  height: 100vh;
   background: #021023;
-  top: 1000px;
+  top: 1500px;
   -webkit-transition: 1.5s all;
   transition: 1.5s all;
 }
@@ -121,18 +121,36 @@ section {
       justify-content: space-around;
   position: absolute;
   width: 1920px;
-  height: 1000px;
+  height: 100vh;
   background: #253d61;
-  top: 1000px;
+  top: 1500px;
   -webkit-transition: 1.5s all;
   transition: 1.5s all;
+}
+
+.balloon-1 {
+  display: block;
+  position: absolute;
+  top: 900px;
+  left: 200px;
+  -webkit-transition: 5s all;
+  transition: 5s all;
 }
 
 .balloon-2 {
   display: block;
   position: absolute;
-  top: 300px;
-  left: 100px;
+  top: 600px;
+  left: 400px;
+  -webkit-transition: 3.3s all;
+  transition: 3.3s all;
+}
+
+.balloon-3 {
+  display: block;
+  position: absolute;
+  top: 1000px;
+  left: 800px;
   -webkit-transition: 3s all;
   transition: 3s all;
 }
@@ -157,5 +175,9 @@ section {
 }
 
 .active-title {
+  top: -270px;
+}
+
+.active-balloon-2 {
   top: -270px;
 }/*# sourceMappingURL=style.min.css.map */

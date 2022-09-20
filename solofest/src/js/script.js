@@ -6,7 +6,10 @@ $(document).ready(function () {
             .addClass('menu__list--active').siblings().removeClass('menu__list--active')
             .closest('body').find('section').removeClass('active').eq($(this).index()).addClass('active')
             .closest('body').find('h1').addClass('active-title').eq($(this).index()).removeClass('active-title')
-            .closest('body').find('img.balloon-2').addClass('active-title').eq($(this).index()).removeClass('active-title')
+            $('img.balloon-1').addClass('active-balloon-2').eq($(this).index()).removeClass('active-balloon-2')
+            $('img.balloon-2').addClass('active-balloon-2').eq($(this).index()).removeClass('active-balloon-2')
+            $('img.balloon-3').addClass('active-balloon-2').eq($(this).index()).removeClass('active-balloon-2');
+            // .closest('body').find('img').addClass('active-balloon-2').eq($(this).index()).removeClass('active-balloon-2');
             // .closest('body').find('section').removeClass('ttt').eq($(this).index()).addClass('ttt');
 
 
