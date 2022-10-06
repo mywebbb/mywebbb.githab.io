@@ -79,8 +79,11 @@ section {
   width: 1920px;
   height: 100vh;
   background: url("../img/bg/main-bg.jpg") center center/cover no-repeat;
+  background-size: 122%;
   margin-top: 0;
   padding-top: 330px;
+  -webkit-transition: 2s all;
+  transition: 2s all;
 }
 .main__title {
   display: block;
@@ -95,6 +98,12 @@ section {
   right: 550px;
   -webkit-transition: 3s all;
   transition: 3s all;
+}
+
+.main-bs100 {
+  background-size: 100%;
+  -webkit-transition: 2s all;
+  transition: 2s all;
 }
 
 .second {

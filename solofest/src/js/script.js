@@ -1,4 +1,15 @@
 $(document).ready(function () {
+    
+    
+    $("section.main").addClass("main-bs100");
+
+
+    /* $(window).on("load", function() {
+        
+        
+
+        
+    }); */
 
 
     $('ul.menu').on('click', 'li:not(.menu__list--active)', function () {
