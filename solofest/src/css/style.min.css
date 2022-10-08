@@ -16,6 +16,15 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 10;
+  top: -90px;
+  opacity: 0;
+}
+
+.nav-load-anim {
+  top: 0px;
+  opacity: 1;
+  -webkit-transition: 2s all;
+  transition: 2s all;
 }
 
 .nav-wrapper {
@@ -94,10 +103,16 @@ section {
   font-size: 150px;
   line-height: 176px;
   color: #FFFFFF;
-  top: 300px;
-  right: 550px;
+  top: 150px;
+  right: 1920px;
   -webkit-transition: 3s all;
   transition: 3s all;
+}
+.main__title-anim {
+  top: 150px;
+  right: 430px;
+  -webkit-transition: 2s all;
+  transition: 2s all;
 }
 
 .main-bs100 {
@@ -140,28 +155,49 @@ section {
 .balloon-1 {
   display: block;
   position: absolute;
-  top: 900px;
-  left: 200px;
+  top: 360px;
+  left: 30px;
   -webkit-transition: 5s all;
   transition: 5s all;
+}
+
+.balloon-1-anim {
+  top: 440px;
+  left: 115px;
+  -webkit-transition: 2s all;
+  transition: 2s all;
 }
 
 .balloon-2 {
   display: block;
   position: absolute;
-  top: 600px;
-  left: 400px;
+  top: 50px;
+  left: 160px;
   -webkit-transition: 3.3s all;
   transition: 3.3s all;
+}
+
+.balloon-2-anim {
+  top: 140px;
+  left: 260px;
+  -webkit-transition: 2s all;
+  transition: 2s all;
 }
 
 .balloon-3 {
   display: block;
   position: absolute;
-  top: 1000px;
-  left: 800px;
+  top: 420px;
+  left: 620px;
   -webkit-transition: 3s all;
   transition: 3s all;
+}
+
+.balloon-3-anim {
+  top: 525px;
+  left: 705px;
+  -webkit-transition: 2s all;
+  transition: 2s all;
 }
 
 .box {

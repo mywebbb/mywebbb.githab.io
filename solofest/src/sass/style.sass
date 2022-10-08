@@ -19,6 +19,13 @@ nav
   position: fixed
   width: 100%
   z-index: 10
+  top: -90px
+  opacity: 0
+
+.nav-load-anim
+  top: 0px
+  opacity: 1
+  transition: 2s all
   
   
   // background-color: red
@@ -84,10 +91,17 @@ section
     // height: 100px
     // text-align: center
     color: #FFFFFF
-    top: 300px
-    right: 550px
+    top: 150px
+    right: 1920px
+    // right: 1170px
     // z-index: 2
     transition: 3s all
+    &-anim
+      top: 150px
+      right: 430px
+      transition: 2s all
+
+  
 
 .main-bs100
   background-size: 100%
@@ -121,23 +135,38 @@ section
 .balloon-1
   display: block
   position: absolute
-  top: 900px
-  left: 200px
+  top: 360px
+  left: 30px
   transition: 5s all
+
+.balloon-1-anim
+  top: 440px
+  left: 115px
+  transition: 2s all
 
 .balloon-2
   display: block
   position: absolute
-  top: 600px
-  left: 400px
+  top: 50px
+  left: 160px
   transition: 3.3s all
+
+.balloon-2-anim
+  top: 140px
+  left: 260px
+  transition: 2s all
 
 .balloon-3
   display: block
   position: absolute
-  top: 1000px
-  left: 800px
+  top: 420px
+  left: 620px
   transition: 3s all
+
+.balloon-3-anim
+  top: 525px
+  left: 705px
+  transition: 2s all
 
 .box
   width: 300px

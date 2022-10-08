@@ -1,9 +1,16 @@
 $(window).on("load", function() {
         
-        $("section.main").addClass("main-bs100");
+    $("section.main").addClass("main-bs100");
+    $("img.balloon-1").addClass("balloon-1-anim");
+    $("img.balloon-2").addClass("balloon-2-anim");
+    $("h1.main__title").addClass("main__title-anim");
+    $("nav").addClass("nav-load-anim");
+    $("img.balloon-3").addClass("balloon-3-anim");
+
 
         
-    });
+});
+
 $(document).ready(function () {
     
     
