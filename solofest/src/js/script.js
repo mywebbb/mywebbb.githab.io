@@ -1,7 +1,13 @@
+$(window).on("load", function() {
+        
+        $("section.main").addClass("main-bs100");
+
+        
+    });
 $(document).ready(function () {
     
     
-    $("section.main").addClass("main-bs100");
+    
 
 
     /* $(window).on("load", function() {
