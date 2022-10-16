@@ -6,23 +6,14 @@ $(window).on("load", function() {
     $("h1.main__title").addClass("main__title-anim");
     $("nav").addClass("nav-load-anim");
     $("img.balloon-3").addClass("balloon-3-anim");
+    $("div.main__block").addClass("block-centr");
 
 
         
 });
 
 $(document).ready(function () {
-    
-    
-    
 
-
-    /* $(window).on("load", function() {
-        
-        
-
-        
-    }); */
 
 
     $('ul.menu').on('click', 'li:not(.menu__list--active)', function () {
