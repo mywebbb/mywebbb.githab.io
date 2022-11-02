@@ -6,6 +6,7 @@
   line-height: none;
   font-size: 15px;
   color: #E5E5E5;
+  margin: 0;
 }
 
 body {
@@ -68,13 +69,14 @@ nav {
   width: 287px;
   padding: 0;
   margin: 0;
+  color: #E5E5E5;
 }
 .menu__list {
   list-style-type: none;
   margin: 0;
 }
 .menu__list--active {
-  color: #e48282;
+  border-bottom: 3px solid #E5E5E5;
 }
 
 section {
@@ -103,16 +105,48 @@ section {
   font-size: 150px;
   line-height: 176px;
   color: #FFFFFF;
-  top: 150px;
+  top: 270px;
   right: 1920px;
   -webkit-transition: 3s all;
   transition: 3s all;
 }
 .main__title-anim {
-  top: 150px;
   right: 430px;
   -webkit-transition: 2s all;
   transition: 2s all;
+}
+.main__block {
+  position: absolute;
+  right: -900px;
+  bottom: 0px;
+  width: 1130px;
+  height: 160px;
+  background: #C4C4C4;
+  border-radius: 10px 10px 0px 0px;
+  -webkit-transition: 2s all;
+  transition: 2s all;
+  padding: 25px 30px;
+}
+.main__block-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+.main__block-descr {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  color: #595050;
+  margin-top: 15px;
+}
+
+.block-centr {
+  right: 395px;
 }
 
 .main-bs100 {
