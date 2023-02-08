@@ -259,4 +259,21 @@ section {
 
 .active-balloon-2 {
   top: -270px;
+}
+
+.rrr {
+  position: relative;
+  width: 50px;
+  height: 20px;
+  border: solid 1px #000;
+  right: -100px;
+  z-index: 10;
+}
+.rrr span {
+  position: absolute;
+  color: #000;
+  top: 0px;
+  right: -20px;
+  z-index: 9;
+  opacity: 0.3;
 }/*# sourceMappingURL=style.min.css.map */
