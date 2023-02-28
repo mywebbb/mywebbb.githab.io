@@ -1,0 +1,22 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  line-height: none;
+  font-size: 15px;
+  color: #000;
+  margin: 0;
+}
+
+body {
+  background-image: url(../img/bg/G.png);
+  background-attachment: fixed;
+}
+
+div {
+  display: block;
+  border: 1px blak;
+  width: 500px;
+  height: 500px;
+}/*# sourceMappingURL=style.min.css.map */
