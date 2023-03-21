@@ -20,7 +20,7 @@ a {
 }
 
 .container {
-  max-width: 1109px;
+  max-width: 1220px;
   padding: 0 10px;
   margin: 0 auto;
 }
@@ -49,12 +49,11 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-right: 24px;
-  font-size: 15, 53px;
+  font-size: 15.6px;
 }
 
 .logo {
-  margin-right: 16px;
+  margin-right: 8px;
 }
 
 .menu-list {
@@ -69,8 +68,12 @@ body {
   color: #363636;
 }
 
-.menu-right {
+.menu-left {
   padding-left: 25px;
+}
+
+.menu-right {
+  padding-right: 80px;
 }
 
 .promo {
