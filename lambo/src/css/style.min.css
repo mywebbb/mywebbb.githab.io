@@ -138,7 +138,30 @@ body {
 }
 
 .info {
+  padding-bottom: 100px;
+}
+.info__part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 100px;
+}
+.info__part--one {
+  display: block;
+}
+.info__part--two {
+  gap: 0 106px;
+}
+.info__part--three {
+  gap: 81px;
+  padding-top: 36px;
+}
+.info__part--three .info__content {
+  -ms-flex-preferred-size: 377px;
+      flex-basis: 377px;
 }
 .info__title {
   ont-family: "Roboto Condensed";
@@ -155,15 +178,75 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 30px;
+  gap: 0 20px;
 }
 .info__text {
-  max-width: 439px;
+  -ms-flex-preferred-size: 440px;
+      flex-basis: 440px;
   font-family: "Roboto Condensed";
   font-weight: 400;
   font-size: 14px;
   line-height: 120%;
+  margin-bottom: 30px;
 }
 .info__text--bold {
   font-weight: 700;
+}
+.info__img {
+  display: block;
+  margin: 0 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.info__content {
+  -ms-flex-preferred-size: 354px;
+      flex-basis: 354px;
+  gap: 0 106px;
+}
+.info__table {
+  -ms-flex-preferred-size: 450px;
+      flex-basis: 450px;
+  border-bottom: 1px solid #040404;
+  position: relative;
+  top: 20px;
+}
+.info__table::before {
+  content: "";
+  border-top: 1px solid #040404;
+  position: absolute;
+  width: 100%;
+  top: -20px;
+}
+.info__table td {
+  padding-bottom: 20px;
+}
+
+.track {
+  background: url("../img/track-bg.jpg") center center/cover no-repeat;
+  height: 100vh;
+}
+.track__inner {
+  padding-top: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+.track__title {
+  font-family: "Roboto Condensed";
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 38px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.track__text {
+  max-width: 435px;
+}
+.track__img {
+  margin: auto 0 90px auto;
 }/*# sourceMappingURL=style.min.css.map */
