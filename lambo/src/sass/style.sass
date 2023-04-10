@@ -226,6 +226,23 @@ body
   height: 871px
   color: #fff
   &__inner
+    position: relative
+    &::before
+      position: absolute
+      content: ''
+      background: url('../img/dec-1.svg') center center/cover no-repeat
+      width: 185px
+      height: 213px
+      top: 210px  
+      left: -130px
+    &::after 
+      position: absolute
+      content: ''
+      background: url('../img/dec-2.svg') center center/cover no-repeat
+      width: 498px
+      height: 572px
+      top: 295px  
+      left: -40px
 
   &__info
     display: flex
@@ -238,16 +255,21 @@ body
     line-height: 38px
     text-transform: uppercase
     padding-right: 50px
+    
 
   &__infoblock
     flex-basis: 437px
 
   &__text
     font-size: 14px
+    
+    margin-bottom: 30px
 
   &__img
     display: block
     margin: 170px auto 60px
+    position: relative
+    z-index: 1
 
 .evo
   &__descr-list
@@ -263,17 +285,47 @@ body
 .evo-white
   &__inner
     padding-top: 125px
+    position: relative
+    &::before
+      position: absolute
+      content: ''
+      background: url('../img/dec-3.png') center center/cover no-repeat
+      width: 274px
+      height: 257px
+      top: -25px  
+      left: 360px
+    &::after 
+      position: absolute
+      content: ''
+      background: url('../img/dec-4.png') center center/cover no-repeat
+      width: 326px
+      height: 304px
+      top: 122px  
+      left: 610px
 
   &__text
     margin-bottom: 30px
     &:first-child
+      max-width: 285px
     &:nth-child(2)
+      max-width: 437px
     &:nth-child(3)
+      max-width: 590px
       
 
   &__video
+    margin-top: 100px
+    background: url('../img/evo-video.png') center center/cover no-repeat
+    height: 264px
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
 
   &__video-link
+    span
+      display: block
+      color: #fff
 
 
 
