@@ -1,3 +1,17 @@
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    // direction: 'vertical',
+    slidesPerView: 2,
+    spaceBetween: 20,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-left',
+      prevEl: '.swiper-button-right',
+    },
+
+  });
+
+
 $(window).on("load", function() {
         
     $("section.main").addClass("main-bs100");
