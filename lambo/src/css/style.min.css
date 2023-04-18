@@ -419,6 +419,36 @@ body {
   cursor: pointer;
   left: 50%;
 }
+.blog__quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0 20px;
+}
+.blog__quote-box {
+  -ms-flex-preferred-size: 434px;
+      flex-basis: 434px;
+}
+.blockquote {
+  margin-bottom: 30px;
+}
+.blockquote__name {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.blockquote__name span {
+  display: block;
+  font-size: 12px;
+  color: #9F6B08;
+  margin-bottom: 3px;
+}
+.blockquote__text {
+  font-style: italic;
+}
+
 .swiper-button-left {
   -webkit-transform: translateX(-41px);
           transform: translateX(-41px);
