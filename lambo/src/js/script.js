@@ -1,3 +1,8 @@
+const menuBtn = document.querySelector('.menu-btn');
+const menuMobile = document.querySelector('.menu-mobile');
+
+
+
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     // direction: 'vertical',
