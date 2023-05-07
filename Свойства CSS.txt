@@ -1,0 +1,13 @@
+
+background: url('../img/bg.jpg') center center/cover no-repeat 
+border-top: 1px solid #040404
+text-transform: uppercase
+transform: translateX(-41px)
+
+flex-grow:
+gap: 0 40px
+flex:
+flex-basis: 377px
+flex-shrink:
+flex-base:
+object-fit: cover обрезает и растягивает содержимое по центру (для картинок-защита от не верного формата)
