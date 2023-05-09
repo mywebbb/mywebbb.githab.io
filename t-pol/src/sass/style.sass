@@ -4,11 +4,12 @@
   font-family: 'Roboto Condensed', sans-serif
   box-sizing: border-box
   font-weight: 700
-  line-height: none
+  font-style: normal
   font-size: 15px
   color: #000
   margin: 0
   text-decoration: none
+  padding: 0
 
 li
   list-style: none
@@ -22,48 +23,165 @@ body
   background: url('../img/bg/menu-bg.jpg') center center/cover no-repeat
   height: 181px
   padding-top: 41px
+
   &__menu
 
   &__title
+    font-family: 'Roboto Condensed'
+    font-weight: 700
+    font-size: 23px
+    line-height: 23px
+    letter-spacing: 0.006em
+    color: #F3F3F3
+    margin-left: 15px
+    margin-top: 7px
     span
       display: flex
-
+      font-family: 'Roboto'
+      font-weight: 400
+      font-size: 14px
+      line-height: 23px
+      letter-spacing: -0.01em
+      text-transform: uppercase
+      font-feature-settings: 'cpsp' on
+      color: #C9CCCF
+      margin-top: 3px
   &__subtitle
+    font-family: 'PT Sans Narrow'
+    font-weight: 700
+    font-size: 15.1616px
+    line-height: 23px
+    letter-spacing: 0.008em
+    text-transform: uppercase
+    color: #FAFAFA
+    margin-left: 32px
+    margin-top: 3px
     span
       display: flex
+      font-family: 'PT Sans Narrow'
+      font-weight: 400
+      font-size: 13.9953px
+      line-height: 23px
+      text-transform: uppercase
+      color: #C9CCCF
 
   &__contacts
+    // width: 508px
+    padding-right: 53px
+    // display: flex
+    // flex-direction: column
+    // justify-content: right
 
-  &__adress
+
+  &__address
+    position: relative
+
+    font-family: 'PT Sans Narrow'
+    font-weight: 400
+    font-size: 13px
+    line-height: 20px
+    letter-spacing: 0.008em
+    color: #FAFAFA
+    margin-top: 4px
+    text-align: right
+    &::before
+      position: absolute
+      content: ''
+      background: url('../icons/point.svg') center center/cover no-repeat
+      width: 16px
+      height: 20px
+      left: 90px
+      top: -1px   
+
 
   &__contacts-items
     display: flex
+    margin-top: 35px
+
+  &__contacts-item
+    margin-left: 30px
 
   &__phons
-
+    
+    
   &__phone
     display: block
+    font-family: 'PT Sans Narrow'
+    font-weight: 700
+    font-size: 13px
+    line-height: 13px
+    letter-spacing: 0.008em
+    text-transform: uppercase
+    color: #FAFAFA
+    margin-bottom: 7px
+    &:nth-child(2)
+      color: #C9CCCF
+
 
   &__button
+    width: 110px
+    height: 32px
+    background: #BB8E34
+    border: 1px solid #BB8E34
+    border-radius: 6px
+    font-family: 'PT Sans Narrow'
+    font-weight: 700
+    font-size: 12px
+    line-height: 14px
+    display: flex
+    align-items: center
+    justify-content: center
+    letter-spacing: 0.008em
+    text-transform: uppercase
+    color: #FAFAFA
+    padding: 0 12px
+    cursor: pointer
+    margin-left: 20px
+
 
   &__schedule
+    font-family: 'Roboto'
+    font-weight: 400
+    font-size: 14px
+    line-height: 14px
+    color: #C9CCCF
+    margin-bottom: 3px
 
   &__mail
+    font-family: 'Roboto'
+    font-weight: 400
+    font-size: 14px
+    line-height: 14px
+    font-feature-settings: 'cpsp' on
+    color: #FFFFFF
 
 .header-container
   display: flex
   justify-content: space-between
-  width: 1280px
+  width: 1300px
   margin: 0 auto
+  padding: 0 10px 0 10px
 
 
 .menu-list
   display: flex
   margin-bottom: 20px
+  // width: 584px
+  justify-content: space-between
+  gap: 0 60px
+  margin-left: 85px
 
 .menu-item
 
 .menu-link
+  display: block
+  font-family: 'PT Sans Narrow'
+  font-weight: 700
+  font-size: 15px
+  line-height: 22px
+  letter-spacing: 0.01em
+  color: #FAFAFA
+  
 
 .logo-items
   display: flex
