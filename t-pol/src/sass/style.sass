@@ -19,8 +19,41 @@ body
   background-image: url(../img/bg/g.png)
   background-attachment: fixed
 
+.container
+  padding: 0 10px
+
+.btn
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 17.5px 24px
+  width: 207px
+  height: 48px
+  background: #BB8E34
+  box-shadow: 0px 4px 10px rgba(102, 102, 102, 0.25)
+  border-radius: 6px
+  border-style: none
+  font-family: 'PT Sans Narrow'
+  font-weight: 700
+  font-size: 14px
+  line-height: 20px
+  text-align: center
+  letter-spacing: 0.008em
+  text-transform: uppercase
+  color: #FFFFFF
+  cursor: pointer
+
+
+.header-container
+  display: flex
+  justify-content: space-between
+  max-width: 1300px
+  margin: 0 auto
+  padding: 0 10px 0 10px
+
 .header
-  background: url('../img/bg/menu-bg.jpg') center center/cover no-repeat
+  // display: none
+  background: url('../img/bg/menu-bg.png') center center/cover no-repeat
   height: 181px
   padding-top: 41px
 
@@ -90,7 +123,7 @@ body
       background: url('../icons/point.svg') center center/cover no-repeat
       width: 16px
       height: 20px
-      left: 90px
+      left: 121px
       top: -1px   
 
 
@@ -99,9 +132,27 @@ body
     margin-top: 35px
 
   &__contacts-item
-    margin-left: 30px
+    position: relative
+    margin-left: 60px
+    &::before
+      position: absolute
+      content: ''
+      background: url('../icons/mail.svg') center center/cover no-repeat
+      width: 24px
+      height: 24px
+      left: -32px
+      top: 5px
 
   &__phons
+    position: relative
+    &::before
+      position: absolute
+      content: ''
+      background: url('../icons/headphones.svg') center center/cover no-repeat
+      width: 24px
+      height: 24px
+      left: -32px
+      top: 3px   
     
     
   &__phone
@@ -121,21 +172,12 @@ body
   &__button
     width: 110px
     height: 32px
-    background: #BB8E34
     border: 1px solid #BB8E34
-    border-radius: 6px
-    font-family: 'PT Sans Narrow'
     font-weight: 700
     font-size: 12px
     line-height: 14px
-    display: flex
-    align-items: center
-    justify-content: center
-    letter-spacing: 0.008em
-    text-transform: uppercase
     color: #FAFAFA
     padding: 0 12px
-    cursor: pointer
     margin-left: 20px
 
 
@@ -155,12 +197,7 @@ body
     font-feature-settings: 'cpsp' on
     color: #FFFFFF
 
-.header-container
-  display: flex
-  justify-content: space-between
-  width: 1300px
-  margin: 0 auto
-  padding: 0 10px 0 10px
+
 
 
 .menu-list
@@ -188,5 +225,120 @@ body
 
 .logo
   &__img
+
+
+.main
+  // display: none
+  max-width: 1280px
+  // height: 654px
+  // height: 100vh
+  margin: 0 auto
+  background: url('../img/bg/main-bg.png') center center/cover no-repeat
+  padding: 42px 10px 0 10px
+  &__content
+    width: 675px
+
+  &__title
+    font-family: 'PT Sans Narrow'
+    font-weight: 400
+    font-size: 22px
+    line-height: 22px
+    letter-spacing: 0.008em
+    text-transform: uppercase
+    color: #666666
+    span
+      font-family: 'PT Sans Narrow'
+      font-weight: 700
+      font-size: 22px
+      line-height: 22px
+      letter-spacing: 0.008em
+      text-transform: uppercase
+      color: #666666
+
+
+  &__subtitle
+    font-family: 'PT Sans Narrow'
+    font-weight: 700
+    font-size: 36px
+    line-height: 40px
+    letter-spacing: 0.008em
+    text-transform: uppercase
+    color: #BB8E34
+    margin-top: 22px
+
+  &__icons
+    display: flex
+    margin-top: 55px
+    margin-bottom: 72px
+    gap: 0 70px
+    
+
+  &__icon
+    text-align: center
+    width: 127px
+    &:nth-child(3)
+      width: 150px
+
+  &__icon-img
+
+  &__inon-descr
+    font-family: 'PT Sans Narrow'
+    font-weight: 400
+    font-size: 14px
+    line-height: 16px
+    letter-spacing: 0.008em
+    color: #666666
+    text-align: center
+    margin-top: 8px
+
+  &__descr
+    font-family: 'PT Sans Narrow'
+    font-style: normal
+    font-weight: 700
+    font-size: 20px
+    line-height: 23px
+    letter-spacing: 0.008em
+    text-transform: uppercase
+    color: #666666
+    span
+      font-family: 'PT Sans Narrow'
+      font-style: normal
+      font-weight: 400
+      font-size: 20px
+      line-height: 23px
+      letter-spacing: 0.008em
+      text-transform: uppercase
+      color: #666666
+
+  &__btn
+    margin-top: 20px
+
+
+  &__text
+    position: relative
+    width: 665px
+    // height: 78px
+    background: #FAFAFA
+    box-shadow: 0px 4px 10px rgba(102, 102, 102, 0.25)
+    border-radius: 6px
+    font-family: 'PT Sans Narrow'
+    font-weight: 400
+    font-size: 13px
+    line-height: 13px
+    letter-spacing: 0.008em
+    color: #757575
+    margin-top: 32px
+    padding: 14px 5px 14px 12px
+    &::before
+      position: absolute
+      content: '*'
+      width: 16px
+      height: 20px
+      left: 7px
+      top: 12px
+
+.container
+
+
 
 
