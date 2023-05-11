@@ -245,6 +245,31 @@ body {
   display: flex;
 }
 
+.title {
+  font-family: "PT Sans Narrow";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.008em;
+  text-transform: uppercase;
+  color: #666666;
+}
+.title span {
+  font-family: "PT Sans Narrow";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.008em;
+  text-transform: uppercase;
+  color: #666666;
+}
+
+.left {
+  text-align: left;
+}
+
 .main {
   max-width: 1280px;
   margin: 0 auto;
@@ -353,4 +378,64 @@ body {
   height: 20px;
   left: 7px;
   top: 12px;
+}
+
+.calculation {
+  width: 100%;
+  padding: 20px 0 40px 0;
+}
+.calculation__box-1 {
+  max-width: 1920px;
+  height: 211px;
+  background-color: #FAFAFA;
+  -webkit-box-shadow: 0px 4px 10px rgba(102, 102, 102, 0.25);
+          box-shadow: 0px 4px 10px rgba(102, 102, 102, 0.25);
+  border-radius: 6px;
+  padding-top: 25px;
+}
+.calculation__items {
+  max-width: 1280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.calculation__item {
+  width: 67px;
+  text-align: center;
+}
+.calculation__descr {
+  width: 1280px;
+  height: 68px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 10px rgba(102, 102, 102, 0.25);
+          box-shadow: 0px 4px 10px rgba(102, 102, 102, 0.25);
+  border-radius: 6px;
+  margin: 0 auto;
+  padding: 10px 50px 10px 50px;
+  margin-top: 20px;
+  font-family: "PT Sans Narrow";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.008em;
+  color: #666666;
+}
+.calculation__box-2 {
+  width: 100%;
+  background: #FAFAFA;
+  -webkit-box-shadow: 0px 4px 10px rgba(102, 102, 102, 0.25);
+          box-shadow: 0px 4px 10px rgba(102, 102, 102, 0.25);
+  border-radius: 6px;
+  margin-top: 20px;
+  padding: 40px 0 40px 0;
+}
+.calculation__img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
 }/*# sourceMappingURL=style.min.css.map */
