@@ -393,7 +393,7 @@ body {
   border-radius: 6px;
   padding-top: 25px;
 }
-.calculation__items {
+.calculation__tabs {
   max-width: 1280px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -404,11 +404,39 @@ body {
   margin: 0 auto;
   margin-top: 30px;
 }
-.calculation__item {
+.calculation__tab {
+  position: relative;
   width: 67px;
   text-align: center;
+  cursor: pointer;
+}
+.calculation__tab--active p {
+  color: #BB8E34;
+  text-decoration: underline;
+  font-weight: 700;
+}
+.calculation__tab--active svg > * {
+  stroke: #BB8E34;
+}
+.calculation__tab--active::after {
+  position: absolute;
+  content: "";
+  background: url("../icons/calculation/narrow.svg") center center/cover no-repeat;
+  width: 34px;
+  height: 37px;
+  left: 18px;
+  top: 130px;
+}
+.calculation__tab-descr {
+  font-family: "PT Sans Narrow";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.008em;
+  color: #666666;
 }
 .calculation__descr {
+  display: none;
   width: 1280px;
   height: 68px;
   background: #FFFFFF;
@@ -425,6 +453,9 @@ body {
   letter-spacing: 0.008em;
   color: #666666;
 }
+.calculation__descr--active {
+  display: block;
+}
 .calculation__box-2 {
   width: 100%;
   background: #FAFAFA;
@@ -438,4 +469,8 @@ body {
   display: block;
   margin: 0 auto;
   margin-top: 20px;
+}
+
+.img-svg path {
+  fill: #BB8E34;
 }/*# sourceMappingURL=style.min.css.map */

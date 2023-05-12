@@ -375,22 +375,55 @@ body
     
 
   
-  &__items
+  &__tabs
     max-width: 1280px
     display: flex
     justify-content: space-evenly
     // gap: 0 128px
     margin: 0 auto
     margin-top: 30px
-  &__item
+  &__tab
+    position: relative
     width: 67px
     text-align: center
+    cursor: pointer
+    &--active
+      p
+        color: #BB8E34
+        text-decoration: underline
+        font-weight: 700
+      svg > *
+        stroke: #BB8E34
+      svg
+        .y
+          // fill: none
+        
+      &::after
+        position: absolute
+        content: ''
+        background: url('../icons/calculation/narrow.svg') center center/cover no-repeat
+        width: 34px
+        height: 37px
+        left: 18px
+        top: 130px 
+        
+      
 
-  &__item-img
+      
 
-  &__item-descr
+  &__tab-img
+    // stroke: #BB8E34
+
+  &__tab-descr
+    font-family: 'PT Sans Narrow'
+    font-weight: 400
+    font-size: 14px
+    line-height: 16px
+    letter-spacing: 0.008em
+    color: #666666
 
   &__descr
+    display: none
     width: 1280px
     height: 68px
     background: #FFFFFF
@@ -405,6 +438,9 @@ body
     line-height: 24px
     letter-spacing: 0.008em
     color: #666666
+    &--active
+      display: block
+      
 
 
   &__box-2
@@ -422,6 +458,10 @@ body
     display: block
     margin: 0 auto
     margin-top: 20px
+
+
+.img-svg path
+  fill: #BB8E34
 
 
 
