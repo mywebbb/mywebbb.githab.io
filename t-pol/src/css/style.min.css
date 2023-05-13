@@ -24,7 +24,9 @@ body {
 }
 
 .container {
+  max-width: 1300px;
   padding: 0 10px;
+  margin: 0 auto;
 }
 
 .btn {
@@ -382,7 +384,7 @@ body {
 
 .calculation {
   width: 100%;
-  padding: 20px 0 40px 0;
+  padding: 20px 0 0px 0;
 }
 .calculation__box-1 {
   max-width: 1920px;
@@ -471,6 +473,34 @@ body {
   margin-top: 20px;
 }
 
-.img-svg path {
-  fill: #BB8E34;
+.installation {
+  background-color: rgba(102, 102, 102, 0.25);
+  padding: 75px 0;
+}
+.installation__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px 10px;
+  margin-top: 30px;
+}
+.installation__item {
+  width: 312px;
+  height: 315px;
+  border-radius: 6px 6px 0px 0px;
+  -webkit-filter: drop-shadow(0px 4px 10px rgba(102, 102, 102, 0.25));
+          filter: drop-shadow(0px 4px 10px rgba(102, 102, 102, 0.25));
+  background-color: #FAFAFA;
+}
+.installation__img {
+  width: 100%;
+  border-radius: 6px 6px 0px 0px;
+}
+.installation__subtitle {
+  margin: 33px 12px 0 12px;
+}
+.installation__descr {
+  margin: 6px 12px 20px 12px;
 }/*# sourceMappingURL=style.min.css.map */

@@ -20,7 +20,9 @@ body
   background-attachment: fixed
 
 .container
+  max-width: 1300px
   padding: 0 10px
+  margin: 0 auto
 
 .btn
   display: flex
@@ -364,7 +366,7 @@ body
 .calculation
   // height: 1000px
   width: 100%
-  padding: 20px 0 40px 0
+  padding: 20px 0 0px 0
   &__box-1
     max-width: 1920px
     height: 211px
@@ -459,9 +461,38 @@ body
     margin: 0 auto
     margin-top: 20px
 
+.installation
+  background-color: rgba(102, 102, 102, 0.25)
+  // opacity: 0.3
+  padding: 75px 0
+  &__inner
+    display: flex
+    flex-wrap: wrap
+    gap: 30px 10px
+    margin-top: 30px
 
-.img-svg path
-  fill: #BB8E34
+
+  &__item
+    width: 312px
+    height: 315px
+    border-radius: 6px 6px 0px 0px
+    filter: drop-shadow(0px 4px 10px rgba(102, 102, 102, 0.25))
+    background-color: #FAFAFA
+
+  &__img
+    width: 100%
+    border-radius: 6px 6px 0px 0px
+
+  &__subtitle
+    margin: 33px 12px 0 12px
+
+  &__descr
+    // display: block
+    margin: 6px 12px 20px 12px
+
+.title
+
+
 
 
 
