@@ -1,12 +1,12 @@
 *
   font-family: 'PT Sans Narrow', sans-serif
-  font-family: 'Roboto', sans-serif
-  font-family: 'Roboto Condensed', sans-serif
+  // font-family: 'Roboto', sans-serif
+  // font-family: 'Roboto Condensed', sans-serif
   box-sizing: border-box
   font-weight: 700
   font-style: normal
   font-size: 15px
-  color: #000
+  color: #666666
   margin: 0
   text-decoration: none
   padding: 0
@@ -470,27 +470,128 @@ body
     flex-wrap: wrap
     gap: 30px 10px
     margin-top: 30px
+    
 
 
   &__item
+    position: relative
     width: 312px
     height: 315px
-    border-radius: 6px 6px 0px 0px
+    border-radius: 6px
     filter: drop-shadow(0px 4px 10px rgba(102, 102, 102, 0.25))
     background-color: #FAFAFA
+    // &:hover
+      // transform: scale(1.02)
+    
+    &::before
+      position: absolute
+      content: ''
+      background-color: #BB8E34
+      width: 36px
+      height: 36px
+      border-radius: 100%
+      left: 12px
+      top: 150px
+      color: #FAFAFA
+      font-weight: 700
+      font-size: 24px
+      text-align: center
+      align-items: center
+      display: flex
+      justify-content: center
+    &:nth-child(1)::before
+      content: '1'
+    &:nth-child(2)::before
+      content: '2'
+    &:nth-child(3)::before
+      content: '3'
+    &:nth-child(4)::before
+      content: '4'
+    &:nth-child(5)::before
+      content: '5'
+    &:nth-child(6)::before
+      content: '6'
+    &:nth-child(7)::before
+      content: '7'
+    &:nth-child(8)::before
+      content: '8'
+      
+
+
+    
+
 
   &__img
     width: 100%
     border-radius: 6px 6px 0px 0px
 
   &__subtitle
-    margin: 33px 12px 0 12px
+    font-weight: 700
+    font-size: 13px
+    line-height: 13px
+    color: #BB8E34
+    margin: 20px 12px 0 12px
 
   &__descr
-    // display: block
+    font-weight: 400
+    font-size: 13px
+    line-height: 14px
+    letter-spacing: 0.008em
     margin: 6px 12px 20px 12px
 
-.title
+
+
+.examples
+  padding: 53px 0 60px 0
+
+.swiper
+
+.swiper-wrapper
+
+.swiper-slide
+  
+  
+  
+.swiper-slide__inner
+  display: flex
+  justify-content: space-between
+  width: 1280px
+  margin: 0 auto
+  margin-top: 37px
+
+
+
+.swiper-small
+  width: 654px
+  height: 380px
+  background-color: #000
+  &__descr
+    width: 521px
+
+  &__title
+
+  &__text
+
+  &__tabs
+    display: flex
+    flex-wrap: wrap
+    gap: 8px 8px
+    
+
+  &__tab
+    background: url('../img/examples/2.jpg') center center/cover no-repeat
+    width: 96px
+    height: 96px
+
+.swiper-pagination
+
+.swiper-button-prev
+
+.swiper-button-next
+
+.swiper-scrollbar
+
+
 
 
 

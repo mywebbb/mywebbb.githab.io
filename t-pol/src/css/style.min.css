@@ -1,13 +1,11 @@
 * {
   font-family: "PT Sans Narrow", sans-serif;
-  font-family: "Roboto", sans-serif;
-  font-family: "Roboto Condensed", sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-weight: 700;
   font-style: normal;
   font-size: 15px;
-  color: #000;
+  color: #666666;
   margin: 0;
   text-decoration: none;
   padding: 0;
@@ -487,20 +485,114 @@ body {
   margin-top: 30px;
 }
 .installation__item {
+  position: relative;
   width: 312px;
   height: 315px;
-  border-radius: 6px 6px 0px 0px;
+  border-radius: 6px;
   -webkit-filter: drop-shadow(0px 4px 10px rgba(102, 102, 102, 0.25));
           filter: drop-shadow(0px 4px 10px rgba(102, 102, 102, 0.25));
   background-color: #FAFAFA;
+}
+.installation__item::before {
+  position: absolute;
+  content: "";
+  background-color: #BB8E34;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  left: 12px;
+  top: 150px;
+  color: #FAFAFA;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.installation__item:nth-child(1)::before {
+  content: "1";
+}
+.installation__item:nth-child(2)::before {
+  content: "2";
+}
+.installation__item:nth-child(3)::before {
+  content: "3";
+}
+.installation__item:nth-child(4)::before {
+  content: "4";
+}
+.installation__item:nth-child(5)::before {
+  content: "5";
+}
+.installation__item:nth-child(6)::before {
+  content: "6";
+}
+.installation__item:nth-child(7)::before {
+  content: "7";
+}
+.installation__item:nth-child(8)::before {
+  content: "8";
 }
 .installation__img {
   width: 100%;
   border-radius: 6px 6px 0px 0px;
 }
 .installation__subtitle {
-  margin: 33px 12px 0 12px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 13px;
+  color: #BB8E34;
+  margin: 20px 12px 0 12px;
 }
 .installation__descr {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 14px;
+  letter-spacing: 0.008em;
   margin: 6px 12px 20px 12px;
+}
+
+.examples {
+  padding: 53px 0 60px 0;
+}
+
+.swiper-slide__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1280px;
+  margin: 0 auto;
+  margin-top: 37px;
+}
+
+.swiper-small {
+  width: 654px;
+  height: 380px;
+  background-color: #000;
+}
+.swiper-small__descr {
+  width: 521px;
+}
+.swiper-small__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px 8px;
+}
+.swiper-small__tab {
+  background: url("../img/examples/2.jpg") center center/cover no-repeat;
+  width: 96px;
+  height: 96px;
 }/*# sourceMappingURL=style.min.css.map */
