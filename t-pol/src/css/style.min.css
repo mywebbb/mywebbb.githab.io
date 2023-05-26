@@ -578,7 +578,7 @@ body {
 .swiper-small {
   width: 654px;
   height: 380px;
-  background-color: #000;
+  background: url("../img/examples/1.jpg") center center/cover no-repeat;
 }
 .swiper-small__descr {
   width: 521px;
@@ -595,4 +595,33 @@ body {
   background: url("../img/examples/2.jpg") center center/cover no-repeat;
   width: 96px;
   height: 96px;
+}
+
+.buildings {
+  padding: 40px 0;
+}
+.buildings__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+.buildings__img {
+  position: relative;
+  display: block;
+  width: 320px;
+  height: 360px;
+  z-index: 1;
+}
+.buildings__img::before {
+  position: absolute;
+  content: "111";
+  width: 36px;
+  height: 36px;
+  left: 0px;
+  top: 0px;
+  color: #000;
+  font-weight: 700;
+  font-size: 24px;
+  z-index: 10;
 }/*# sourceMappingURL=style.min.css.map */
