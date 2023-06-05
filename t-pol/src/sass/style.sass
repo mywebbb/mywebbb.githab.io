@@ -361,7 +361,7 @@ body
       left: 7px
       top: 12px
 
-.container
+
 
 .calculation
   // height: 1000px
@@ -426,8 +426,8 @@ body
 
   &__descr
     display: none
-    width: 1280px
-    height: 68px
+    max-width: 1280px
+    min-height: 68px
     background: #FFFFFF
     box-shadow: 0px 4px 10px rgba(102, 102, 102, 0.25)
     border-radius: 6px
@@ -592,6 +592,7 @@ body
 
 .swiper-scrollbar
 
+  
 .buildings
   padding: 40px 0
   &__inner
@@ -600,31 +601,215 @@ body
 
   &__img
     position: relative
-    display: block
+    display: flex
+    // display: block
     width: 320px
     height: 360px
-    z-index: 1
+    border-radius: 6px
+    &:nth-child(1)
+      background: url('../img/buildings/1.jpg') center center/cover no-repeat
+    &:nth-child(2)
+      background: url('../img/buildings/2.jpg') center center/cover no-repeat
+    &:nth-child(3)
+      background: url('../img/buildings/3.jpg') center center/cover no-repeat
+    &:nth-child(4)
+      background: url('../img/buildings/4.jpg') center center/cover no-repeat
     &::before
       position: absolute
-      content: '111'
+      content: ''
       width: 36px
       height: 36px
-      left: 0px
-      top: 0px
-      color: #000
+      left: 26px
+      top: 300px
+      font-family: 'PT Sans Narrow'
       font-weight: 700
-      font-size: 24px
-      z-index: 10
-      
-     
-    // &:nth-child(1)::before
-      // content: '1'
-    // &:nth-child(2)::before
-      // content: '2'
-    // &:nth-child(3)::before
-      // content: '3'
-    // &:nth-child(4)::before
-      // content: '4'
+      font-size: 13px
+      line-height: 16px
+      display: flex
+      align-items: center
+      letter-spacing: 0.008em
+      text-transform: uppercase
+      color: #FAFAFA
+    &:nth-child(1)::before
+      content: 'таунхаусы и дома'
+    &:nth-child(2)::before
+      content: 'коттеджи и дачи'
+    &:nth-child(3)::before
+      content: 'производства и склады'
+    &:nth-child(4)::before
+      content: 'гостиницы и офисы'
+  &__gradient
+    width: 320px
+    height: 102px
+    margin-bottom: 0
+    margin-top: auto
+    background: linear-gradient(180deg, rgba(102, 102, 102, 0) 0%, rgba(60, 60, 60, 0.408054) 38.54%, rgba(34, 34, 34, 0.671141) 65.1%, #000000 100%)
+    border-radius: 6px
+
+.automation
+  background: rgba(255, 255, 255, 0.8)
+  padding: 27px 0 27px 0
+  &__inner
+    display: flex
+    justify-content: space-between
+    max-width: 1000px
+    margin: 0 auto
+    margin-top: 30px
+
+  &__content
+    width: 473px
+
+  &__img
+
+  &__subtitle
+    margin-top: 24px
+    text-align-last: left
+
+  &__descr
+    margin-top: 10px
+    font-weight: 400
+    font-size: 13px
+    line-height: 20px
+    letter-spacing: 0.008em
+    text-transform: uppercase
+    color: #757575
+
+.equipment
+  padding: 52px 0 52px 0
+  background: #FAFAFA
+  box-shadow: 0px 4px 10px rgba(102, 102, 102, 0.25)
+  &__inner
+    display: flex
+    justify-content: center
+    gap: 0 60px
+    margin: 0 auto
+    margin-top: 30px
+
+
+  &__descr
+    width: 430px
+    p
+      font-weight: 400
+      font-size: 13px
+      line-height: 20px
+      letter-spacing: 0.008em
+      text-transform: uppercase
+      color: #757575
+      &:nth-child(2)
+        margin-top: 15px
+
+  &__logo
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    max-width: 372px
+    gap: 8px 32px
+
+  &__img
+    display: block
+    width: 170px
+    height: 70px
+
+.guarantee
+  padding: 40px 0 40px 0
+  
+  &__title
+    max-width: 600px
+    margin: 0 auto
+    
+  &__inner
+    display: flex
+    margin: 0 auto
+    margin-top: 20px
+    justify-content: space-between
+    max-width: 850px
+
+  &__content
+    display: flex
+    gap: 0 20px
+    width: 315px
+    
+
+  &__item
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 101px
+    height: 101px
+    background: #FAFAFA
+    box-shadow: 0px 4.56092px 11.4023px rgba(102, 102, 102, 0.25)
+    border-radius: 6.84138px
+
+  &__img
+    width: 77px
+    height: 77px
+
+  &__descr
+    padding-top: 17px
+    p
+      &:nth-child(1)
+        font-weight: 700
+        font-size: 36px
+        line-height: 40px
+        letter-spacing: 0.008em
+        text-transform: uppercase
+        color: #BB8E34
+      &:nth-child(2)
+        font-weight: 700
+        font-size: 13px
+        line-height: 20px
+        letter-spacing: 0.008em
+        text-transform: uppercase
+        color: #757575
+        margin-top: 10px
+
+.order
+  padding: 40px 0
+  background: #FAFAFA
+  box-shadow: 0px 4px 10px rgba(102, 102, 102, 0.25)
+  &__inner
+    display: flex
+    margin-top: 20px
+
+  &__img
+    width: 487px
+    height: 368px
+    // filter: drop-shadow(0px 4px 10px rgba(102, 102, 102, 0.25))
+    box-shadow: 0px 4px 10px rgba(102, 102, 102, 0.25))
+    border-radius: 6px
+
+  &__descr
+    max-width: 790px
+    padding-top: 20px
+    p
+      font-weight: 400
+      font-size: 18px
+      line-height: 25px
+      color: #757575
+      span
+        color: #BB8E34
+
+  &__btn
+    margin-top: 40px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
 
 
 
