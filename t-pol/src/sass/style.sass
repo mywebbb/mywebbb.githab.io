@@ -769,28 +769,79 @@ body
   box-shadow: 0px 4px 10px rgba(102, 102, 102, 0.25)
   &__inner
     display: flex
+    justify-content: center
     margin-top: 20px
+    gap: 0 20px
 
   &__img
     width: 487px
-    height: 368px
-    // filter: drop-shadow(0px 4px 10px rgba(102, 102, 102, 0.25))
-    box-shadow: 0px 4px 10px rgba(102, 102, 102, 0.25))
+    height: 348px
+    filter: drop-shadow(0px 4px 10px rgba(102, 102, 102, 0.25))
+    // box-shadow: 0px 4px 10px rgba(102, 102, 102, 0.25))
     border-radius: 6px
 
   &__descr
     max-width: 790px
-    padding-top: 20px
+    padding-top: 15px
     p
       font-weight: 400
       font-size: 18px
       line-height: 25px
       color: #757575
+      margin-top: 8px
       span
         color: #BB8E34
 
   &__btn
     margin-top: 40px
+
+.vk
+  background-color: rgba(102, 102, 102, 0.25)
+  padding: 40px 0
+  &__inner
+    display: flex
+    justify-content: center
+    gap: 0 100px
+
+  &__img
+
+  &__content
+    padding: 38px 0
+
+  &__title
+    // display: inline
+    position: relative
+    font-size: 24px
+    // width: 200px
+    // align-self: right
+    text-align: right
+    margin-right: 30px
+    &::before
+      position: absolute
+      content: ''
+      background: url('../icons/vk.svg') center center/cover no-repeat
+      width: 42px
+      height: 42px
+      left: 488px
+      top: -10px
+      
+
+  &__pages
+    margin-top: 10px
+
+  &__link
+    display: block
+    padding-right: 15px
+    text-align: right
+    font-weight: 700
+    font-size: 24.6991px
+    line-height: 32px
+    letter-spacing: 0.008em
+    text-decoration-line: underline
+    color: #BB8E34
+
+
+
 
 
 
