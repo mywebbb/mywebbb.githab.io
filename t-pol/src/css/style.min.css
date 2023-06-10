@@ -898,7 +898,7 @@ body {
 .vk__link {
   display: block;
   padding-right: 15px;
-  text-align: right;
+  text-align: center;
   font-weight: 700;
   font-size: 24.6991px;
   line-height: 32px;
@@ -906,4 +906,93 @@ body {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #BB8E34;
+}
+
+.questions {
+  padding: 40px 0;
+  background-color: #FAFAFA;
+  -webkit-box-shadow: 0px 4px 10px rgba(102, 102, 102, 0.25);
+          box-shadow: 0px 4px 10px rgba(102, 102, 102, 0.25);
+}
+
+.accordion {
+  max-width: 954px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.accordion__item {
+  margin-bottom: 2px;
+  position: relative;
+}
+.accordion__item::before {
+  position: absolute;
+  content: "";
+  background-color: #BB8E34;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  left: 38px;
+  top: 10px;
+  color: #FAFAFA;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 10;
+}
+.accordion__item:nth-child(1)::before {
+  content: "1";
+}
+.accordion__item:nth-child(2)::before {
+  content: "2";
+}
+.accordion__item:nth-child(3)::before {
+  content: "3";
+}
+.accordion__item:nth-child(4)::before {
+  content: "4";
+}
+.accordion__item:nth-child(5)::before {
+  content: "5";
+}
+.accordion__item:nth-child(6)::before {
+  content: "6";
+}
+.accordion__item:nth-child(7)::before {
+  content: "7";
+}
+.accordion__item:nth-child(8)::before {
+  content: "8";
+}
+.accordion__item:nth-child(9)::before {
+  content: "9";
+}
+.accordion__header {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.008em;
+  text-transform: uppercase;
+  color: #666666;
+  padding-left: 70px;
+}
+.accordion__content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.008em;
+  color: #666666;
+  background: #FAFAFA;
+  -webkit-box-shadow: 0px 4px 10px rgba(102, 102, 102, 0.25);
+          box-shadow: 0px 4px 10px rgba(102, 102, 102, 0.25);
+  border-radius: 0px 0px 6px 6px;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.min.css.map */
