@@ -28,7 +28,7 @@ body
   display: flex
   justify-content: center
   align-items: center
-  padding: 17.5px 24px
+  // padding: 17.5px 24px
   width: 207px
   height: 48px
   background: #BB8E34
@@ -812,8 +812,10 @@ body
     // display: inline
     position: relative
     font-size: 24px
-    // width: 200px
-    // align-self: right
+    width: 200px
+    // background-color: grey
+    align-self: end
+    margin: auto
     text-align: right
     margin-right: 30px
     &::before
@@ -822,7 +824,7 @@ body
       background: url('../icons/vk.svg') center center/cover no-repeat
       width: 42px
       height: 42px
-      left: 488px
+      left: -4px
       top: -10px
       
 
@@ -830,11 +832,18 @@ body
     margin-top: 10px
 
   &__link
-    display: block
-    // width: 100px
+    // display: block
+    // display: flex
+    // width: 300px
+    // margin: 0 auto
+    // justify-content: end
+    float: right
     padding-right: 15px
-    text-align: center
+    // text-align: right
+    align-self: right
     font-weight: 700
+    // margin: auto
+    // margin-right: 5px
     font-size: 24.6991px
     line-height: 32px
     letter-spacing: 0.008em
@@ -905,6 +914,106 @@ body
     box-shadow: 0px 4px 10px rgba(102, 102, 102, 0.25)
     border-radius: 0px 0px 6px 6px
     margin-bottom: 20px
+
+.connection
+  padding: 80px 0 40px 0
+  &__title
+
+  &__subtitle, &__phone
+    font-weight: 700
+    font-size: 36px
+    line-height: 22px
+    text-align: center
+    letter-spacing: 0.008em
+    text-transform: uppercase
+    color: #BB8E34
+    margin-top: 20px
+
+  &__descr
+    font-weight: 700
+    font-size: 18px
+    line-height: 18px
+    text-align: center
+    letter-spacing: 0.008em
+    color: #666666
+    width: 510px
+    margin: 0 auto
+    margin-top: 20px
+  &__inner
+    display: flex
+    justify-content: space-between
+    margin-top: 20px
+    
+
+  &__img
+
+  &__form
+    display: flex
+    flex-direction: column
+    width: 516px
+    gap: 20px 0px
+    
+
+  &__form-title
+    font-weight: 400
+    font-size: 13px
+    line-height: 13px
+    text-align: center
+    letter-spacing: 0.008em
+    text-transform: uppercase
+    color: #666666
+    span
+      color: #BB8E34
+      font-weight: 700
+      font-size: 13px
+      line-height: 13px
+      text-align: center
+      letter-spacing: 0.008em
+      text-transform: uppercase
+
+
+  &__form-inner
+    display: flex
+    justify-content: space-between
+    width: 516px
+
+  &__name-text
+
+  &__name-input
+    width: 246px
+
+  &__phone-text
+
+  &__phone-input
+    width: 246px
+
+  &__question-text
+
+  &__question-input
+    width: 100%
+    height: 96px
+
+  &__submit-inner
+    display: flex
+    justify-content: space-between
+    
+
+  &__submit-text
+    font-weight: 400
+    font-size: 12px
+    line-height: 12px
+    letter-spacing: 0.008em
+    color: #757575
+    width: 200px
+
+  &__submit
+
+textarea
+  resize: none
+
+
+
+
     
 
 

@@ -604,17 +604,33 @@
 
     <section class="connection">
         <div class="container">
-            <div class="connection__title">ОСТАЛИСЬ ВОПРОСЫ?</div>
+            <div class="title connection__title">ОСТАЛИСЬ ВОПРОСЫ?</div>
             <div class="connection__subtitle">ЗВОНИТЕ ПО ТЕЛ. <a href="tel:+78122452346" class="connection__phone">8 (812) 245-23-46</a> ИЛИ ОСТАВЬТЕ ЗАЯВКУ!</div>
             <div class="connection__descr">Основное отопление дома от водяного пола всего <span>за 5 дней</span> без радиаторов. Водяной теплый пол - лучшее решение!</div>
             <div class="connection__inner">
-                <img src="img/connection/1.jpg" alt="" class="connection__img">
+                <img src="img/connection/1.png" alt="" class="connection__img">
                 <form class="connection__form">
                     <div class="connection__form-title">Закажите <span>БЕСПЛАТНЫЙ</span> расчет прямо сейчас</div>
                     <div class="connection__form-inner">
-                        <input type="name" value="Ввод имени">
-
+                        <div>
+                            <div class="connection__name-text">Ваше имя</div>
+                            <input class="connection__name-input" type="name" value="">
+                        </div>
+                        <div>
+                            <div class="connection__phone-text">Номер телефона</div>
+                            <input class="connection__phone-input" id="phone-mask" type="text" value="">
+                        </div>
                     </div>
+                    <div>
+                        <div class="connection__question-text">Ваш вопрос</div>
+                        <textarea class="connection__question-input" name="" id="" cols="300" rows="10" readonly="readonly"></textarea>
+                        
+                    </div>
+                    <div class="connection__submit-inner">
+                        <div class="connection__submit-text">Гарантируем конфидициальность и целевое использование данных</div>
+                        <input class="connection__submit btn" type="submit" value="ЗАКАЗАТЬ ТЕПЛЫЙ ПОЛ"> 
+                    </div>
+
                 </form>
             </div>
         </div>
@@ -630,7 +646,7 @@
     
     
 
-    
+   <script src="https://unpkg.com/imask"></script>
    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
    <script src="js/script.js"></script>

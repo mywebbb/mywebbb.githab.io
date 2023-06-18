@@ -38,7 +38,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 17.5px 24px;
   width: 207px;
   height: 48px;
   background: #BB8E34;
@@ -880,6 +879,10 @@ body {
 .vk__title {
   position: relative;
   font-size: 24px;
+  width: 200px;
+  -ms-flex-item-align: end;
+      align-self: end;
+  margin: auto;
   text-align: right;
   margin-right: 30px;
 }
@@ -889,16 +892,17 @@ body {
   background: url("../icons/vk.svg") center center/cover no-repeat;
   width: 42px;
   height: 42px;
-  left: 488px;
+  left: -4px;
   top: -10px;
 }
 .vk__pages {
   margin-top: 10px;
 }
 .vk__link {
-  display: block;
+  float: right;
   padding-right: 15px;
-  text-align: center;
+  -ms-flex-item-align: right;
+      align-self: right;
   font-weight: 700;
   font-size: 24.6991px;
   line-height: 32px;
@@ -995,4 +999,105 @@ body {
           box-shadow: 0px 4px 10px rgba(102, 102, 102, 0.25);
   border-radius: 0px 0px 6px 6px;
   margin-bottom: 20px;
+}
+
+.connection {
+  padding: 80px 0 40px 0;
+}
+.connection__subtitle, .connection__phone {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.008em;
+  text-transform: uppercase;
+  color: #BB8E34;
+  margin-top: 20px;
+}
+.connection__descr {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.008em;
+  color: #666666;
+  width: 510px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.connection__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+.connection__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 516px;
+  gap: 20px 0px;
+}
+.connection__form-title {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.008em;
+  text-transform: uppercase;
+  color: #666666;
+}
+.connection__form-title span {
+  color: #BB8E34;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.008em;
+  text-transform: uppercase;
+}
+.connection__form-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 516px;
+}
+.connection__name-input {
+  width: 246px;
+}
+.connection__phone-input {
+  width: 246px;
+}
+.connection__question-input {
+  width: 100%;
+  height: 96px;
+}
+.connection__submit-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.connection__submit-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.008em;
+  color: #757575;
+  width: 200px;
+}
+textarea {
+  resize: none;
 }/*# sourceMappingURL=style.min.css.map */
