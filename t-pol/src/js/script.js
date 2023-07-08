@@ -26,9 +26,9 @@ const swiper = new Swiper('.swiper', {
     },
   
     // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
   });
 
   var phoneMask = IMask(
@@ -36,5 +36,11 @@ const swiper = new Swiper('.swiper', {
       mask: '+{7}(000)000-00-00'
     });
 
+var image = document.querySelector('.installation__img');
+
+    image.addEventListener(click, function() {
+      image.classList.toggle('show');
+    });
+  
 
   
