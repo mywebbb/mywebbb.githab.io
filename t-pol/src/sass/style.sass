@@ -543,8 +543,13 @@ body
 
 .examples
   padding: 53px 0 60px 0
+  background-color: #FAFAFA
+  box-shadow: 0px 4px 10px 0px rgba(102, 102, 102, 0.25)
 
 .swiper
+  position: relative
+  
+  
 
 .swiper-wrapper
 
@@ -556,6 +561,7 @@ body
   display: flex
   justify-content: space-between
   width: 1280px
+  height: 432px
   margin: 0 auto
   margin-top: 37px
 
@@ -584,13 +590,40 @@ body
     width: 96px
     height: 96px
 
-.swiper-pagination
 
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after
+  content: ''
+  background: url('../icons/arrow-next.svg') center center/cover no-repeat
+  top: 0px
+  left: 0px
+  width: 8px
+  height: 14px
+
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-prev:after
+  content: ''
+  background: url('../icons/arrow-prev.svg') center center/cover no-repeat
+  top: 0px
+  left: 0px
+  width: 8px
+  height: 14px
+
+
+.swiper-pagination
 .swiper-button-prev
+  // display: none
+.swiper-button-prev1
+  position: absolute
+  background: url('../img/examples/2.jpg') center center/cover no-repeat
+  top: 0px
+  left: 0px
+  width: 20px
+  height: 20px
+  z-index: 10
 
 .swiper-button-next
 
 .swiper-scrollbar
+  display: none
 
   
 .buildings

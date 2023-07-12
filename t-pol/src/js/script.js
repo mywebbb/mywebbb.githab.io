@@ -23,6 +23,7 @@ const swiper = new Swiper('.swiper', {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+      
     },
   
     // And if we need scrollbar
@@ -36,7 +37,7 @@ const swiper = new Swiper('.swiper', {
       mask: '+{7}(000)000-00-00'
     });
 
-var image = document.querySelector('.installation__img');
+  var image = document.querySelector('.installation__img');
 
     image.addEventListener(click, function() {
       image.classList.toggle('show');
